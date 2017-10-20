@@ -12,7 +12,7 @@ import android.text.TextUtils;
 public abstract class LogFilter {
 
     /**
-     * if true, filter the log.
+     * if true, filter the log...
      *
      * @param level
      * @param tag
