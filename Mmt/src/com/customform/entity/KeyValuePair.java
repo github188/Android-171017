@@ -5,7 +5,7 @@ package com.customform.entity;
  */
 public class KeyValuePair<K, V> {
     public K key;
-    public V value;
+    public V value;//mao
 
     public KeyValuePair(K key, V value) {
         this.key = key;
