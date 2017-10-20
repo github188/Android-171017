@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/list_card"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:contentPadding="8dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_index"
+                style="@style/default_text_medium_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                tools:text="1."/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/tv_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/ll_index"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_top_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="HNZH-2016-000009"/>
+
+            <TextView
+                android:id="@+id/tv_top_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="0"
+                android:drawablePadding="5dp"
+                android:textSize="14sp"
+                android:textColor="@color/red"
+                tools:text="反馈数目"/>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/divider_mid_top"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tv_top"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tv_mid_one_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_top"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ll_index"
+            android:textColor="@color/callout_background"
+            android:textSize="15sp"
+            tools:text="工程名"/>
+
+        <TextView
+            android:id="@+id/tv_mid_two_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_mid_one_left"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/ll_index"
+            android:textColor="@color/callout_background"
+            android:textSize="15sp"
+            tools:text="施工人"/>
+
+        <TextView
+            android:id="@+id/tv_mid_three_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_mid_two_left"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/ll_index"
+            android:textColor="@color/callout_background"
+            android:textSize="15sp"
+            tools:text="分派人"/>
+
+        <TextView
+            android:id="@+id/tv_mid_four_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_mid_three_left"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/ll_index"
+            android:textColor="@color/callout_background"
+            android:textSize="15sp"
+            tools:text="分派人"/>
+
+        <TextView
+            android:id="@+id/tv_mid_five_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_mid_four_left"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/ll_index"
+            android:textColor="@color/callout_background"
+            android:textSize="15sp"
+            tools:text="设计图编号"/>
+
+        <View
+            android:id="@+id/divider_mid_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tv_mid_five_left"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider_mid_bottom"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/ll_index">
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                tools:text="地址"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="50dip"
+    android:background="@drawable/main_menu_top" >
+
+    <ImageButton
+        android:id="@+id/burstAnalysisTitleBack"
+        android:layout_width="50dip"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dip"
+        android:background="@drawable/default_actionbar"
+        android:src="@drawable/common_back"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/burstAnalysisTitleDetail"
+        android:layout_toRightOf="@+id/burstAnalysisTitleBack"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/burstAnalysisTitleName"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white_text" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/burstAnalysisTitleState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_text"
+            android:textSize="12sp" >
+        </TextView>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/burstAnalysisTitleBar"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:indeterminateDrawable="@drawable/progress_bar_drawable"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/burstAnalysisTitleDetail"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/default_actionbar"
+        android:src="@drawable/detail"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dp"
+              android:background="#ffffffff"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:text="分派信息"
+        android:textAppearance="@android:style/TextAppearance.Large"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#ffe8eaea"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分派时间："
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="#ff858585"/>
+
+        <TextView
+            android:id="@+id/tvAssignTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-06-03 10:18:13"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAssignOptional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="紧急程度："
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#ff858585"/>
+
+            <TextView
+                android:id="@+id/tvEmergencyLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一般"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="处理级别："
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#ff858585"/>
+
+            <TextView
+                android:id="@+id/tvProcessLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2小时 - 抢险类"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预计完成："
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#ff858585"/>
+
+            <TextView
+                android:id="@+id/tvWishFinishTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015-06-03 12:18:13"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="延期完成："
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#ff858585"/>
+
+            <TextView
+                android:id="@+id/tvDelayFinishTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015-06-03 16:53:13"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分派人员："
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="#ff858585"/>
+
+        <TextView
+            android:id="@+id/tvAssigner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统管理员"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分派部门："
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="#ff858585"/>
+
+        <TextView
+            android:id="@+id/tvAssignDept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统管理员"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAssignOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvAssignOptionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分派意见："
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="#ff858585"/>
+
+        <TextView
+            android:id="@+id/tvAssignOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已阅读"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            />
+    </LinearLayout>
+</LinearLayout>

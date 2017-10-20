@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffeeeeec"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/cusActionBar"
+        layout="@layout/search_actionbar" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="40.0dip"
+        android:background="@color/snow"
+        android:scrollbars="none">
+
+        <com.mapgis.mmt.common.widget.filtermenubar.FilterMenuBar
+            android:id="@+id/mMenuBar"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+    </HorizontalScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@color/default_light_dark" />
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

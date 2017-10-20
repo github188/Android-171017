@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:text="登录失败，请点击屏幕重新登录！"
+        style="@style/style_alarm_notify_text"/>
+
+</merge>

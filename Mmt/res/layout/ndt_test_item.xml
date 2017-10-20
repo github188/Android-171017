@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="1"
+            android:textColor="@color/red"/>
+
+        <CheckBox
+            android:id="@+id/flag"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="false"
+            android:paddingRight="24dp"
+            />
+
+        <TextView
+            android:id="@+id/task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="焊缝任务"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/remark"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_below="@id/task"-->
+            <!--android:layout_marginLeft="24dp"-->
+            <!--android:layout_marginTop="24dp"-->
+            <!--android:text="备注"/>-->
+
+        <LinearLayout
+            android:id="@+id/imgLayat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/task"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/mutiline_height"
+            android:orientation="horizontal"
+            >
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="照片:"/>-->
+
+            <!--<FrameLayout-->
+                <!--android:id="@+id/imageFrameLayout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/margin_left">-->
+            <!--</FrameLayout>-->
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/imgLayat"
+            android:layout_marginTop="12dp"
+            android:background="#310c0c0c"/>
+    </RelativeLayout>
+</LinearLayout>

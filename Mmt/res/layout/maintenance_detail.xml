@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/maintenanceDetailTop"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:gravity="center"
+        android:visibility="visible" >
+
+        <com.mapgis.mmt.common.widget.customview.MultiSwitchButton
+            android:id="@+id/maintenanceDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/maintenanceFormBottom"
+        android:layout_below="@+id/maintenanceDetailTop" >
+
+        <FrameLayout
+            android:id="@+id/maintenanceDetailFrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/maintenanceFormBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/mapview_bottombar_bg"
+        android:baselineAligned="false"
+        android:minHeight="50dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/maintenanceDetailFinish"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dip"
+                android:src="@drawable/mapview_back" />
+
+            <TextView
+                style="@style/default_text_medium_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/maintenanceDetailBack"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dip"
+                android:src="@drawable/handoverform_report" />
+
+            <TextView
+                style="@style/default_text_medium_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="回退" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/maintenanceDetailDelay"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dip"
+                android:src="@drawable/handoverform_report" />
+
+            <TextView
+                style="@style/default_text_medium_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="延期" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/maintenanceDetailManage"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dip"
+                android:src="@drawable/handoverform_report" />
+
+            <TextView
+                style="@style/default_text_medium_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="处理" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

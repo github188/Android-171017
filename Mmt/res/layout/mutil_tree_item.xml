@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ListView tree字段 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:minHeight="40dip" >
+
+    <TextView
+        android:id="@+id/mutilTreeItemPadding"
+        android:layout_width="2dip"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical|left"
+        android:textColor="#ff000000"
+        android:textSize="16dip" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/mutilTreeItemExEc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip" >
+    </ImageView>
+
+    <CheckBox
+        android:id="@+id/mutilTreeItemSelect"
+        android:layout_width="25dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/mutilTreeItemPadding"
+        android:button="@drawable/checkbox_state"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="#ff000000" >
+    </CheckBox>
+
+    <ImageView
+        android:id="@+id/mutilTreeItemIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/mutilTreeItemSelect"
+        android:gravity="center_vertical" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/mutilTreeItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_toLeftOf="@id/mutilTreeItemExEc"
+        android:layout_toRightOf="@id/mutilTreeItemIcon"
+        android:gravity="center_vertical|left"
+        android:textColor="#ff000000"
+        android:textSize="16dip" >
+    </TextView>
+
+</RelativeLayout>

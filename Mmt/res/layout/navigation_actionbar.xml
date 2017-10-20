@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/main_menu_top"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/baseActionBarImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@drawable/default_actionbar"
+        android:drawableLeft="@drawable/common_userinfo"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#ffffff" />
+    <!-- android:drawableLeft="@drawable/common_userinfo" -->
+
+    <TextView
+        android:id="@+id/baseActionBarTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/baseActionBarRightImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/default_actionbar"
+        android:drawableRight="@drawable/logout"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#ffffff" />
+    <!-- android:drawableLeft="@drawable/logout" -->
+
+    <ProgressBar
+        android:id="@+id/baseActionBarProgressBar"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dip"
+        android:indeterminateDrawable="@drawable/progressbar_circle_purple"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/asset_detail_head" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/asset_detail_bg"
+        android:orientation="vertical"
+        android:paddingBottom="12.0dip" >
+
+        <include layout="@layout/asset_detail_title" />
+
+        <include layout="@layout/asset_detail_media" />
+
+        <include layout="@layout/asset_detail_props_list" />
+    </LinearLayout>
+
+</LinearLayout>

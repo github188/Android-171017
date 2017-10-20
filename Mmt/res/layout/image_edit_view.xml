@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="48dp">
+
+    <ImageView
+        android:id="@+id/imageEditViewImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:contentDescription="@string/text_image"
+        android:src="@drawable/handoverfo_clock" />
+
+    <TextView
+        android:id="@+id/imageEditViewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/imageEditViewImage"
+        tools:text="心情" />
+
+    <TextView
+        android:id="@+id/imageEditViewMust"
+        android:layout_width="8dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/imageEditViewText"
+        android:text="*"
+        android:textColor="@color/sketch_last_vertex_background_color" />
+
+    <TextView
+        android:id="@+id/imageEditViewModifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        tools:text="$" />
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/imageEditViewModifier"
+        android:paddingRight="16dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:src="@drawable/btn_icon_delete" />
+
+    <EditText
+        android:id="@+id/imageEditViewEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@id/ivDelete"
+        android:layout_toRightOf="@id/imageEditViewMust"
+        android:background="@color/default_no_bg"
+        android:hint="请输入文字..." />
+
+</RelativeLayout>

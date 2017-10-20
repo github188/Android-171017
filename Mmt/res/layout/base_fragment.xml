@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_root_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <!-- 标题栏信息 -->
+    <LinearLayout
+        android:id="@+id/baseTopView"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:orientation="vertical" >
+        <include layout="@layout/main_actionbar" />
+    </LinearLayout>
+    
+    <!-- 错误栏信息 -->
+    <LinearLayout
+        android:id="@+id/baseErrorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/baseTopView"
+        android:layout_marginTop="-2dp"
+        android:background="#e84e40"
+        android:minHeight="56dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:contentDescription="@string/text_image"
+            android:src="@drawable/commom_notice" />
+        <TextView
+            android:id="@+id/baseErrorMsg"
+            style="@style/default_text_medium_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:layout_weight="8"
+            android:gravity="center_vertical"
+            android:maxLines="3"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!-- 底部工具栏信息 -->
+    <LinearLayout
+        android:id="@+id/baseBottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/mapview_bottombar_bg"
+        android:baselineAligned="false"
+        android:minHeight="50dip"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <!-- 界面信息 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/baseBottomView"
+        android:layout_below="@id/baseErrorLayout" >
+        <FrameLayout
+            android:id="@+id/baseFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/otherFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

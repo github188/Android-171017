@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rect_bounds"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp" >
+
+        <ImageView
+            android:id="@+id/wxyhListItemDo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/text_image" />
+
+        <TextView
+            android:id="@+id/wxyhListItemLeftTop"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/wxyhListItemRightTop"
+            android:layout_toRightOf="@+id/wxyhListItemDo"
+            android:textColor="@color/default_purple" />
+
+        <TextView
+            android:id="@+id/wxyhListItemRightTop"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/default_purple" />
+
+        <TextView
+            android:id="@+id/wxyhListItemMiddle"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wxyhListItemLeftTop"
+            android:layout_toLeftOf="@+id/wxyhListItemDistance"
+            android:layout_toRightOf="@+id/wxyhListItemDo"
+            android:textColor="@color/default_accent_color" />
+
+        <TextView
+            android:id="@+id/wxyhListItemLeftBottom"
+            style="@style/default_text_small_purity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wxyhListItemMiddle"
+            android:layout_toLeftOf="@+id/wxyhListItemDistance"
+            android:layout_toRightOf="@+id/wxyhListItemDo"
+            android:textColor="@color/default_accent_color" />
+
+        <TextView
+            android:id="@+id/wxyhListItemDate"
+            style="@style/default_text_little_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/wxyhListItemDistance"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/default_red" />
+
+        <TextView
+            android:id="@+id/wxyhListItemDistance"
+            style="@style/default_text_little_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/wxyhListItemMiddle"
+            android:textColor="@color/default_red" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/default_line_bg"
+        android:contentDescription="@string/text_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/wxyhListItemLocation"
+            style="@style/default_text_small_purity"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:gravity="center" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/default_line_bg"
+            android:contentDescription="@string/text_image" />
+
+        <TextView
+            android:id="@+id/wxyhListItemDetail"
+            style="@style/default_text_small_purity"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

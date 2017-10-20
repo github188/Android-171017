@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:setting="http://schemas.android.com/apk/res-auto"
+    style="@style/style_setting_group"
+    android:orientation="vertical">
+
+    <com.mapgis.mmt.module.systemsetting.itemwidget.MoreItemSettingView
+        android:id="@+id/itemTraffic"
+        style="@style/style_setting_item"
+        setting:iconMoreVisiable="false"
+        setting:text_message="本月APP已使用流量：0.00MB"
+        setting:text_right_message="100MB"
+        setting:text_title="流量统计"/>
+    <com.mapgis.mmt.module.systemsetting.itemwidget.MoreItemSettingView
+        android:id="@+id/itemBackgroundTask"
+        style="@style/style_setting_item"
+        setting:text_message="后台任务"
+        setting:text_title="后台任务" />
+    <com.mapgis.mmt.module.systemsetting.itemwidget.MoreItemSettingView
+        android:id="@+id/itemNetRequest"
+        style="@style/style_setting_item"
+        setting:text_message="网络请求"
+        setting:text_title="网络请求" />
+
+</LinearLayout>

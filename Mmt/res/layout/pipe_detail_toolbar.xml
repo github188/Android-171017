@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60.0dip"
+    android:divider="?android:dividerVertical"
+    android:orientation="horizontal"
+    android:showDividers="middle">
+
+    <LinearLayout
+        android:id="@+id/attrEditLayout"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/leba_bg_left_selector"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/css_header_bar_button"
+            android:contentDescription="@string/text_image"
+            android:src="@drawable/detail_upload" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8.0dip"
+            android:text="属性编辑"
+            android:textColor="#ff719e11"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pipeDetailToolbarLeftLayout"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/leba_bg_left_selector"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/pipeDetailToolbarLeftImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/css_header_bar_button"
+            android:clickable="true"
+            android:contentDescription="@string/text_image"
+            android:src="@drawable/detail_upload" />
+
+        <TextView
+            android:id="@+id/pipeDetailToolbarLeftText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8.0dip"
+            android:textColor="#ff719e11"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pipeDetailToolbarRightLayout"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/leba_bg_right_selector"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/pipeDetailToolbarRightImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/css_header_bar_button"
+            android:clickable="true"
+            android:contentDescription="@string/text_image"
+            android:src="@drawable/detail_upload" />
+
+        <TextView
+            android:id="@+id/pipeDetailToolbarRightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8.0dip"
+            android:textColor="#ff719e11"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pipeDetailToolbarAuxDataBtn"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/leba_bg_left_selector"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/css_header_bar_button"
+            android:contentDescription="@string/text_image"
+            android:src="@drawable/detail_download" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8.0dip"
+            android:text="附属数据"
+            android:textColor="#ff719e11"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/deviceDetailToolbarEventReport"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/leba_bg_left_selector"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/css_header_bar_button"
+            android:contentDescription="@string/text_image"
+            android:src="@drawable/ic_report_64px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8.0dip"
+            android:text="事件上报"
+            android:textColor="#ff719e11"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/deviceDetailToolbarNavigation"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/leba_bg_left_selector"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/css_header_bar_button"
+            android:contentDescription="@string/text_image"
+            android:src="@drawable/ic_navigation_64px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8.0dip"
+            android:text="地图导航"
+            android:textColor="#ff719e11"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="action_bar_height">45.0dip</dimen>
+    <dimen name="action_bar_icon_width">44.0dip</dimen>
+    <dimen name="draw_complete_width">80dip</dimen>
+    <dimen name="draw_complete_height">35dip</dimen>
+    <dimen name="units_button_stroke">1.0dip</dimen>
+    <dimen name="find_webmap_group_radius">7.0dip</dimen>
+    <dimen name="attribute_min_height">50.0dip</dimen>
+    <dimen name="attribute_text_size">14.0dip</dimen>
+    <dimen name="edittext_padding_left">5.0dip</dimen>
+    <dimen name="attribute_button_padding_vertical">7.0dip</dimen>
+    <dimen name="textview_padding_horizontal">5.0dip</dimen>
+    <dimen name="textview_padding_vertical">5.0dip</dimen>
+    <dimen name="attribute_title_text_size">16.0dip</dimen>
+    <dimen name="spatial_painter_title_text_size">20sp</dimen>
+    <dimen name="spatial_painter_item_text_size">17sp</dimen>
+    <dimen name="margin_tendip">10dip</dimen>
+    <dimen name="detail_face_edge">90px</dimen>
+
+    <!-- 规范控件间距 -->
+    <dimen name="margin_left">16dp</dimen>
+    <dimen name="margin_right">16dp</dimen>
+
+    <!-- 单行最小高度 -->
+    <dimen name="singline_height">48dp</dimen>
+    <!-- 多行最小高度 -->
+    <dimen name="mutiline_height">72dp</dimen>
+    <dimen name="toolbar_padding_top">25dip</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="padding_tablayout">1dp</dimen>
+
+    <dimen name="expand_list_margin_left">16dp</dimen>
+
+    <!--标题文字大小-->
+    <dimen name="textSize_alert_title">22sp</dimen>
+    <dimen name="textSize_actionsheet_title">14sp</dimen>
+    <!--标题文字高度-->
+    <dimen name="height_alert_title">60dp</dimen>
+    <dimen name="height_actionsheet_title">40dp</dimen>
+    <!--消息文字大小-->
+    <dimen name="textSize_alert_msg">15sp</dimen>
+    <dimen name="textSize_actionsheet_msg">14sp</dimen>
+    <!--消息距离底部间距-->
+    <dimen name="marginBottom_alert_msg">25dp</dimen>
+    <dimen name="marginBottom_actionsheet_msg">14dp</dimen>
+    <!--窗口模式左右两边到屏幕的间距-->
+    <dimen name="margin_alert_left_right">40dp</dimen>
+    <dimen name="margin_actionsheet_left_right">10dp</dimen>
+    <!--线条粗细-->
+    <dimen name="size_divier">1dp</dimen>
+    <!--按钮的高度-->
+    <dimen name="height_alert_button">48dp</dimen>
+    <!--按钮文字大小-->
+    <dimen name="textSize_alert_button">18sp</dimen>
+    <!--圆角-->
+    <dimen name="radius_alertview">15px</dimen>
+
+    <dimen name="video_bottom_height">80dp</dimen>
+
+    <dimen name="item_attach_width">60dp</dimen>
+
+    <dimen name="file_thumbnail_width">55dp</dimen>
+    <dimen name="file_thumbnail_height">55dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="posandpath_text_size">12sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="min_list_item_height">48dp</dimen>
+    <dimen name="list_item_margin_left">8dp</dimen>
+    <dimen name="live_title_height">48dp</dimen>
+    <dimen name="backbutton_margin_left">10dp</dimen>
+    <dimen name="gps_text_divide_height">6dp</dimen>
+
+    <dimen name="text_12sp">12sp</dimen>
+    <dimen name="text_14sp">14sp</dimen>
+    <dimen name="text_16sp">16sp</dimen>
+    <dimen name="text_18sp">18sp</dimen>
+    <dimen name="text_20sp">20sp</dimen>
+    <dimen name="text_24sp">24sp</dimen>
+
+    <dimen name="dimen_0dp">0dp</dimen>
+    <dimen name="dimen_2dp">2dp</dimen>
+    <dimen name="dimen_4dp">4dp</dimen>
+    <dimen name="dimen_5dp">5dp</dimen>
+    <dimen name="dimen_6dp">6dp</dimen>
+    <dimen name="dimen_8dp">8dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_12dp">12dp</dimen>
+    <dimen name="dimen_14dp">14dp</dimen>
+    <dimen name="dimen_16dp">16dp</dimen>
+    <dimen name="dimen_24dp">24dp</dimen>
+    <dimen name="dimen_32dp">32dp</dimen>
+    <dimen name="dimen_40dp">40dp</dimen>
+    <dimen name="dimen_48dp">48dp</dimen>
+    <dimen name="dimen_50dp">50dp</dimen>
+    <dimen name="dimen_60dp">60dp</dimen>
+    <dimen name="dimen_75dp">75dp</dimen>
+    <dimen name="dimen_80dp">80dp</dimen>
+
+</resources>

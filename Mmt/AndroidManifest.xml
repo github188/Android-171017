@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.mapgis.mmt"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:installLocation="auto">
+    <meta-data
+        android:name="com.baidu.lbsapi.API_KEY"
+        android:value="t2Zw8jgnNnNBqeR9A1neMSwqlGC7IAy4"></meta-data>
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="22"/>
+
+    <!-- ****************************** 开始注册 权限 ************************************** -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+
+    <!-- Permission for shortcut -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+
+    <!-- 查询快捷方式 Common -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher2.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher2.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher3.permission.WRITE_SETTINGS"/>
+    <!-- 查询快捷方式 Special -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.huawei.launcher2.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.launcher2.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.huawei.launcher3.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.launcher3.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.miui.mihome2.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.miui.mihome2.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.meizu.flyme.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.meizu.flyme.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.google.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.google.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="net.oneplus.launcher.permission.READ_SETTINGS"/>
+    <!-- Permission for shortcut -->
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+
+    <!-- ****************************** 结束注册 权限 ************************************** -->
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:theme="@style/MmtBaseTheme">
+
+        <!-- ***************************开始注册 市政移动产品配置******************************* -->
+        <!-- ***********************01.开始注册 Mmt中所用到的Activity************************** -->
+        <activity
+            android:name="com.mapgis.mmt.module.welcome.Welcome"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mapgis.mmt.module.gis.MapGISFrame"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter android:priority="1000">
+                <action android:name="com.mapgis.mmt.MapGISFrame"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mapgis.mmt.module.login.Login"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/MmtBaseThemeAppCompat.ThemeLogin"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity
+            android:name="com.mapgis.mmt.module.login.SystemSetter"
+            android:theme="@style/MmtBaseTheme"/>
+        <activity android:name="com.mapgis.mmt.module.login.NetCheckActivity"
+            android:theme="@style/MmtBaseThemeAppCompat"/>
+        <activity
+            android:name="com.mapgis.mmt.module.navigation.NavigationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity
+            android:name="com.mapgis.mmt.module.gis.toolbar.query.spatial.LayerSelectActivity"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.mapgis.mmt.module.relevance.RelevanceReportActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name="com.mapgis.mmt.common.widget.PictureViewActivity"/>
+        <activity android:name="com.mapgis.mmt.common.widget.customgallery.CustomGalleryActivity"/>
+        <activity
+            android:name="com.maintainproduct.module.basereport.BaseReportActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity
+            android:name="com.mapgis.mmt.module.gis.toolbar.layercontrol.LayerManage"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.mapgis.mmt.module.gis.toolbar.mapselect.MapSelectActivity"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.mapgis.mmt.module.flowreport.FlowReportActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name="com.mapgis.mmt.common.widget.RecorderPlayActivity"/>
+        <activity android:name="com.mapgis.mmt.module.flowreport.history.FlowReportHistoryActivity"/>
+        <activity android:name="com.mapgis.mmt.module.flowreport.FlowReportDetailActivity"/>
+        <activity android:name="com.mapgis.mmt.module.gis.spatialquery.PipeDetailActivity"/>
+        <activity
+            android:name="com.mapgis.mmt.module.gps.gpsstate.GpsStateActivity"/>
+        <activity android:name="com.mapgis.mmt.module.welcome.Introduction"/>
+        <activity android:name="com.mapgis.mmt.module.gps.GpsHistoryActivity"/>
+        <activity android:name="com.mapgis.mmt.module.gis.spatialquery.SpatialSearchResultList"/>
+        <activity android:name="com.mapgis.mmt.module.gis.toolbar.analyzer.AddressSearchResultActivity"/>
+        <activity android:name="com.mapgis.mmt.module.systemsetting.AppAboutActivity"/>
+        <activity android:name=".module.systemsetting.backgruoundinfo.items.BackgroundTaskStateActivity"/>
+        <activity android:name=".module.systemsetting.backgruoundinfo.BackgroundInfoActivity"/>
+        <activity android:name="com.mapgis.mmt.module.systemsetting.customsetting.CustomSettingActivity"/>
+        <activity android:name=".module.systemsetting.backgruoundinfo.items.NetRequestListActivity" />
+        <activity android:name=".module.systemsetting.backgruoundinfo.items.RequestDetailActivity"/>
+        <activity
+            android:name="com.mapgis.mmt.module.gis.toolbar.query.nearby.NearbyQueryResultList"
+            android:theme="@style/Theme.AppCompat"/>
+        <activity
+            android:name="com.mapgis.mmt.module.login.LoginUserInfo"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name="com.mapgis.mmt.module.gis.toolbar.online.query.spatial.OnlineQueryResultActivity"/>
+        <activity android:name="com.mapgis.mmt.module.gis.toolbar.online.query.spatial.OnlineWhereQueyActivity"/>
+        <activity android:name="com.mapgis.mmt.module.gis.toolbar.online.query.spatial.OnlineWhereQueryResultActivity"/>
+        <activity android:name="com.mapgis.mmt.module.gis.toolbar.online.query.spatial.OnlineSpatialQueryResultActivity"/>
+        <activity android:name="com.mapgis.mmt.module.gis.toolbar.online.query.nearby.OnlineNearbyQueryResultActivity"/>
+        <activity android:name="com.mapgis.mmt.module.shortmessage.ShortMessageTabs"/>
+        <activity android:name="com.mapgis.mmt.module.gis.toolbar.query.spatial.WhereQueryActivity"/>
+        <activity android:name="com.mapgis.mmt.module.relevance.RelevanceExplorerActivity"/>
+        <activity android:name="com.mapgis.mmt.module.taskcontrol.TaskControlActivity"/>
+        <activity android:name="com.mapgis.mmt.module.taskcontrol.TaskControlDetailActivity"/>
+        <activity android:name="com.mapgis.mmt.module.systemsetting.SystemSettingActivity"/>
+        <activity android:name="com.mapgis.mmt.module.systemsetting.download.DownloadActivity"/>
+        <activity android:name="com.sltphoto.activity.ImageFileActivity"/>
+        <activity android:name="com.sltphoto.activity.ShowImagesActivity"/>
+        <activity android:name="com.sltphoto.activity.PreviewActivity"/>
+        <activity
+            android:name="com.zbar.lib.CaptureActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.cameralibary.CameraActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.mapgis.mmt.module.gis.toolbar.accident.gas.BurstDetailActivity"/>
+        <activity android:name="com.mapgis.mmt.module.gis.investigation.AttributeEditActivity"/>
+        <activity
+            android:name="com.mapgis.mmt.module.gis.investigation.ProtertyEditDialog"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.repair.errimgreport.ErrImgReportActivity"
+            android:theme="@android:style/Theme.Holo.Dialog"/>
+        <!-- 本地登录解锁 -->
+        <activity
+            android:name="com.mapgis.mmt.module.systemsetting.locksetting.numpwd.CreateNumberPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity
+            android:name="com.mapgis.mmt.module.systemsetting.locksetting.numpwd.UnlockNumberPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity
+            android:name="com.mapgis.mmt.module.systemsetting.locksetting.gesturepwd.CreateGesturePasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name="com.mapgis.mmt.module.systemsetting.locksetting.gesturepwd.UnlockGesturePasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name="com.mapgis.mmt.module.systemsetting.locksetting.numpwd.UnlockAccountActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".module.systemsetting.locksetting.fingerprint.CreateFingerprintPasswordActivity"
+            android:theme="@style/Theme.Transparent"/>
+        <activity
+            android:name=".module.systemsetting.locksetting.fingerprint.UnlockFingerprintPasswordActivity"
+            android:theme="@style/Theme.Transparent"/>
+        <activity
+            android:name="com.mapgis.mmt.module.gis.toolbar.accident.AccidentCheckActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name="com.mapgis.mmt.common.camera.CameraVideoActivtiy"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.mapgis.mmt.common.widget.VideoViewerActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.mapgis.mmt.common.attach.RootFileActivity"/>
+        <activity android:name="com.mapgis.mmt.common.attach.FileListActivity"/>
+        <activity android:name=".module.gis.toolbar.accident2.AnalysisResultActivity"/>
+        <activity android:name="com.mapgis.mmt.module.gis.toolbar.accident2.AttachDataActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <receiver android:name="com.mapgis.mmt.module.systemsetting.HomeEventReceiver"/>
+
+        <receiver android:name="com.mapgis.mmt.receiver.DeviceShutDownReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.mapgis.mmt.module.systemsetting.download.DownloadBroadcastReceiver"/>
+        <receiver android:name="com.mapgis.mmt.module.gps.Receiver.GpsPointReceiver"/>
+        <receiver android:name="com.mapgis.mmt.receiver.NetPingReceiver"/>
+
+        <service android:name="com.mapgis.mmt.module.gps.Receiver.BluetoothService"/>
+        <service android:name="com.mapgis.mmt.module.systemsetting.download.DownloadService"/>
+
+        <!-- ***********************结束注册 Mmt中所用到的Activity*********************** -->
+
+
+        <!-- ***********************02.开始注册 PatrolProduct中所用到的Activity*********************** -->
+        <activity android:name="com.patrolproduct.module.myplan.list.PlanDetailActivity"/>
+        <activity
+            android:name="com.patrolproduct.module.spatialquery.PipeDetailForPatrolActivity"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name="com.patrolproduct.module.myplan.feedback.MyPlanFeedback"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name="com.patrolproduct.module.projectquery.QueryProjectActivity"/>
+        <activity
+            android:name="com.repair.zhoushan.module.tablecommonhand.TableOneRecordDialog"
+            android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity
+            android:name="com.patrol.module.changeman.ChangePatrolManDialog"
+            android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:name="com.patrol.module.posandpath2.UserInfoListActivity"/>
+        <activity android:name="com.patrol.module.posandpath2.detailinfo.DetailInfoActivity"/>
+        <activity
+            android:name="com.patrolproduct.module.nearbyquery.NearbyQueryActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <!-- ***********************结束注册 PatrolProduct中所用到的Activity*********************** -->
+
+
+        <!-- ***********************03.开始注册 RepairProduct中所用到的Activity *********************** -->
+        <activity android:name="com.maintainproduct.module.basereport.history.ReportHistoryActivity"/>
+        <activity android:name="com.maintainproduct.module.basereport.history.ReportHistoryDetailActivity"/>
+        <activity
+            android:name="com.maintainproduct.module.maintenance.feedback.MaintenanceFormActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.maintainproduct.module.maintenance.detail.MaintenanceDetailActivity"/>
+        <activity android:name="com.maintainproduct.module.casehandover.CasehandoverListActivity"/>
+        <activity android:name="com.maintainproduct.module.maintenance.list.MaintenanceListActivity"/>
+        <activity
+            android:name="com.repair.eventreport.EventReportActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.repair.reporthistory.PatrolReportHistoryActivity"/>
+        <activity
+            android:name="com.maintainproduct.v2.caselist.MaintainGDListActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.maintainproduct.v2.caselist.MaintainGDDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.maintainproduct.v2.caselist.BaseFeedBackActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.repair.mycase.MyCaseActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.repair.mycase.detail.CaseDetailOperActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.repair.common.CaseSearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateVisible|adjustPan"/>
+        <activity
+            android:name="com.repair.allcase.AllCaseActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.repair.huangdao.MyCaseHDActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.repair.huangdao.FeedbackHDAcitivy"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.patrol.module.patrolanalyze.PatrolAnalyzeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.patrol.module.posandpath.PosAndPathActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <activity android:name="com.repair.auxiliary.pointquery.module.auxlist.AuxListActivity"/>
+        <activity
+            android:name="com.repair.auxiliary.conditionquery.module.ConditionPanelActivity"
+            android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity android:name="com.repair.auxiliary.conditionquery.module.ConditionQueryAuxListActivity"/>
+        <activity android:name="com.repair.auxiliary.conditionquery.module.ConditionChoseActivity"/>
+        <activity android:name="com.repair.auxiliary.conditionquery.changsha.SC_ConditionChoseActivity"/>
+        <activity android:name="com.repair.auxiliary.conditionquery.changsha.CS_ConditionQueryAuxListActivity"/>
+        <activity android:name="com.repair.gisdatagather.enn.GISDataGatherActivity"/>
+
+        <activity android:name="com.repair.gisdatagather.enn.editdata.EditDataActivity"/>
+        <activity android:name="com.repair.gisdatagather.product.projectlist.ProjectListActivity"/>
+
+        <activity
+            android:name="com.repair.gisdatagather.product.addproject.AddProjectDialogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Holo.Dialog"/>
+
+        <activity
+            android:name="com.repair.gisdatagather.product.editdata.EditDataActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Holo.Dialog"/>
+
+        <activity
+            android:name="com.repair.live.player.LivePlayerActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.repair.live.player.LiveListActivity"/>
+        <activity
+            android:name="com.repair.live.publisher.LivePublishActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name="com.repair.zhoushan.module.devicecare.touchchange.TJPointReportActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.platfromadd.PlatfromListActivity"/>
+
+        <activity android:name="com.repair.zhoushan.module.devicecare.platfromadd.PlatfromLinkListActivity"/>
+
+        <activity android:name="com.repair.zhoushan.module.devicecare.platfromadd.PlatfromDetailActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.platfromadd.PlatfromLinkDetailActivity"/>
+
+        <activity
+            android:name="com.repair.zhoushan.module.devicecare.platfromadd.AddTaskActivity"
+            android:theme="@android:style/Theme.Holo.Dialog"/>
+
+        <activity android:name="com.repair.zhoushan.module.tablecommonhand.FlowNodeMetaActivity"/>
+        <activity android:name="com.repair.zhoushan.module.tablecommonhand.FlowTableInfoActivity"/>
+
+        <activity android:name="com.repair.zhoushan.module.casemanage.casedetail.FeedBackListActivity"/>
+        <activity android:name="com.repair.zhoushan.module.casemanage.casedetail.FeebReportActivity"/>
+        <activity
+            android:name="com.mapgis.mmt.module.bluetooth.DeviceListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Holo.Dialog"/>
+
+        <!-- ***********************结束注册 RepairProduct中所用到的Activity *********************** -->
+
+
+        <!-- ***********************04.开始注册 所需服务*********************** -->
+        <service
+            android:name="com.mapgis.mmt.global.MmtMainService"
+            android:enabled="true"
+            android:process=":main"/>
+        <service
+            android:name="com.mapgis.mmt.global.MmtGuardService"
+            android:enabled="true"/>
+        <service
+            android:name="com.mapgis.mmt.global.MmtGISService"
+            android:enabled="true"
+            android:process=":gisserver"/>
+
+        <service android:name="com.mapgis.mmt.net.update.MmtUpdateService"/>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="fcbafa78a97174b99f1fd3e9c69809b5"/>
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService"/>
+        <!-- ***********************结束注册 所需服务*********************** -->
+        <!-- ***********************结束注册 市政移动产品配置*********************** -->
+
+        <!-- ***********************开始注册 舟山项目特有配置*********************** -->
+        <activity android:name="com.repair.zhoushan.module.eventreport.ZSEventReportActivity"/>
+        <activity android:name="com.repair.zhoushan.module.casemanage.mycase.MyCaseListActivity"/>
+        <activity android:name="com.repair.zhoushan.module.casemanage.caseoverview.CaseOverviewListActivity"/>
+        <activity android:name="com.repair.zhoushan.module.casemanage.mydonecase.MyDoneCaseListActivity"/>
+        <activity android:name="com.repair.zhoushan.module.casemanage.casedetail.CaseDetailActivity"/>
+        <activity android:name="com.repair.zhoushan.module.casemanage.casehandover.CaseHandoverActivity"/>
+        <activity android:name="com.repair.zhoushan.module.casemanage.casedetail.CaseHandleProcedureActivity"/>
+        <activity android:name="com.repair.zhoushan.module.flowcenter.FlowCenterNavigationActivity"/>
+        <activity android:name="com.repair.zhoushan.module.casemanage.mydonecase.MyDoneCaseDetailActivity"/>
+        <activity android:name="com.repair.zhoushan.module.casemanage.infotrack.OnlineTrackListActivity"/>
+        <activity android:name="com.repair.zhoushan.module.casemanage.infotrack.OnlineTrackDetailActivity"/>
+        <activity
+            android:name="com.repair.zhoushan.module.casemanage.infotrack.InfoTrackDialogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name="com.repair.zhoushan.module.projectmanage.projectsitereport.ProjectSiteReportListActivity"/>
+        <activity android:name="com.repair.zhoushan.module.projectmanage.projectsitereport.ProjectSiteReportActivity"/>
+        <activity android:name="com.repair.zhoushan.module.projectmanage.waterplantpatrolhistory.WaterPlantPatrolHistoryListActivity"/>
+        <activity android:name="com.repair.zhoushan.module.projectmanage.waterplantpatrolhistory.WaterPlantPatrolHistoryDetailActivity"/>
+
+        <activity
+            android:name="com.patrol.module.feedback.PlanFeedbackActivity"
+            android:theme="@style/MmtBaseThemeAppCompat"/>
+        <activity android:name="com.patrol.module.note.NoteActivity"/>
+
+        <activity android:name="com.repair.zhoushan.module.eventmanage.eventreporthistory.ERHListActivity"/>
+        <activity android:name="com.repair.zhoushan.module.eventmanage.eventbox.EventListActivity"/>
+        <activity android:name="com.repair.zhoushan.module.eventmanage.eventbox.EventDetailActivity"/>
+        <activity android:name="com.repair.zhoushan.module.eventmanage.eventbox.EventDispatchActivity"/>
+        <activity android:name="com.repair.zhoushan.module.eventmanage.eventoverview.EventOverviewListActivity"/>
+        <activity android:name="com.repair.zhoushan.module.eventmanage.eventoverview.EventDetailActivity"/>
+        <activity android:name="com.repair.zhoushan.module.eventmanage.eventoverview.CaseProcedureActivity"/>
+
+        <activity android:name="com.repair.zhoushan.module.devicecare.DeviceCareListActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.carehistory.CareHistoryListActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.carehistory.RelatedEventDetailActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.carehistory.FeedbackInfoActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.carehistory.CaiGouListActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.TaskSearchActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.TaskDetailActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.EditAccountTableActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.DeviceFeedbackActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.DeviceFBEventReportActivity"/>
+
+        <activity
+            android:name="com.repair.zhoushan.module.devicecare.DeviceFeedbackDialogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.consumables.MaterialListActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.consumables.AddMaterialActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.consumables.AddMaterialSearchActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.consumables.UpdateMaterialActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.consumables.PurchaseOrderListActivity"/>
+        <activity
+            android:name="com.repair.zhoushan.module.devicecare.consumables.AddPurchaseOrderDialogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.consumables.AddPurchaseOrderChooseSupplierActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.consumables.AddHaoCaiActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.stationaccount.StationAccountListActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.stationaccount.StationDeviceFeedbackActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.stationaccount.StationDeviceDetailActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.stationaccount.stationdeviceselect.StationDeviceListActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.stationaccount.stationdeviceselect.StationDevicePropertyActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.careoverview.CareOverviewListActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.careoverview.detail.CareOverviewDetailActivity"/>
+
+        <activity android:name="com.repair.zhoushan.module.devicecare.touchchange.TCCaseDetailActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.touchchange.TCCaseFBActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.touchchange.ZHTQCaseDetailActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.touchchange.TJPointListActivity"/>
+        <activity
+            android:name="com.repair.zhoushan.module.devicecare.touchchange.DelayStopGasDialogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.platfromgislink.PlatfromGisLinkListActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.platfromgislink.PlatfromGisLinkDetailActivity"/>
+
+        <activity
+            android:name="com.repair.zhoushan.module.devicecare.szd.SZDFeedbackActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity
+            android:name="com.repair.zhoushan.module.devicecare.szd.SZDDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+        <activity android:name="com.repair.zhoushan.module.projectmanage.threepartconstruct.caregiver.CaregiverDetailActivity"/>
+        <activity
+            android:name="com.repair.zhoushan.module.projectmanage.threepartconstruct.caregiver.PopActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.repair.zhoushan.module.projectmanage.threepartconstruct.caregiver.OSCFeedbackDialogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name="com.repair.zhoushan.module.projectmanage.threepartconstruct.caregiver.OnSiteConfirmDetailActivity"/>
+        <activity android:name="com.repair.zhoushan.module.projectmanage.threepartconstruct.caregiver.OnSiteConfirmActivity"/>
+        <activity android:name="com.repair.zhoushan.module.projectmanage.threepartconstruct.caregiver.EveryDayCheck"/>
+        <activity android:name="com.repair.zhoushan.module.projectmanage.threepartconstruct.caregiver.CaregiverDetailInfoReportAcitvity"/>
+        <activity android:name="com.repair.zhoushan.module.projectmanage.threepartconstruct.caregiver.HandActivity"/>
+        <activity android:name="com.repair.zhoushan.module.projectmanage.threepartconstruct.supervisereporthistory.SuperviseReportHistoryListActivity"/>
+        <activity android:name="com.repair.zhoushan.module.projectmanage.threepartconstruct.supervisereporthistory.SuperviseReportHistoryDetailActivity"/>
+
+        <activity android:name="com.repair.zhoushan.module.devicecare.patrolmonitor.PatrolMonitorDetail"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.patrolmonitor.TouchListActivity"/>
+        <activity android:name="com.repair.zhoushan.module.devicecare.merchantsecuritycheck.MerchantSecurityCheckDCActivity"/>
+
+        <activity android:name="com.repair.zhoushan.module.tablecommonhand.TableOneRecordActivity"/>
+
+        <activity android:name="com.repair.zhoushan.module.flownodecommonhand.PojListActivity"/>
+        <!-- ***********************结束注册 舟山项目特有配置*********************** -->
+
+        <!-- ***********************开始注册 绍兴项目特有配置*********************** -->
+        <activity android:name="com.repair.shaoxin.gas.editdata.EditDataActivity"/>
+        <activity android:name="com.repair.shaoxin.water.riskonsitereport.RiskOnSiteReportDetailActivity"/>
+        <activity android:name="com.repair.shaoxin.water.riskonsitereport.RiskOnSiteFBReportActivity"/>
+        <activity
+            android:name="com.repair.shaoxin.water.riskonsitereport.EditDataDialogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Dialog"/>
+
+        <activity android:name="com.repair.shaoxin.water.repairtask.RepairTaskListActivity"/>
+        <activity android:name="com.repair.shaoxin.water.repairtask.RepairTaskDetailActivity"/>
+        <activity
+            android:name="com.repair.shaoxin.water.repairtask.RepairTaskReportDialogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name="com.repair.shaoxin.water.hotlinetask.HotlineTaskListActivity"/>
+        <activity android:name="com.repair.shaoxin.water.hotlinetask.HotlineTaskDetailActivity"/>
+        <activity
+            android:name="com.repair.shaoxin.water.hotlinetask.HotlineTaskReportDialogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Dialog"/>
+
+        <activity android:name="com.repair.shaoxin.water.gis.AttributeEditActivityForSX"/>
+        <activity android:name="com.repair.shaoxin.water.highrisesearch.HRCVInputTextDialog"/>
+
+        <activity android:name="com.repair.shaoxin.water.valveinstruction.ValveDevicePropertyActivity"/>
+        <activity android:name="com.repair.shaoxin.water.valveinstruction.ValveInstructionListActivity"/>
+        <activity
+            android:name="com.repair.shaoxin.water.valveinstruction.ValveInstructionFeedbackActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Dialog"/>
+        <!-- ***********************结束注册 绍兴项目特有配置*********************** -->
+
+        <!-- ***********************开始注册 泉州项目特有配置*********************** -->
+        <activity android:name="com.repair.quanzhou.module.GDQueryActivity"/>
+        <activity android:name="com.repair.quanzhou.module.GDDetailActivity"/>
+        <activity android:name="com.repair.quanzhou.module.GDHandActivity"/>
+        <!-- ***********************结束注册 泉州项目特有配置*********************** -->
+
+        <!-- ***********************开始注册  北海项目特有配置*********************** -->
+        <activity android:name="com.repair.beihai.poj.custrompag.ConstructDetailActivity"/>
+        <activity android:name="com.repair.beihai.poj.hbpoj.module.construct.ConstructEventListActivity"/>
+        <activity android:name="com.repair.beihai.poj.hbpoj.module.construct.ConstructReportListAcitvity"/>
+        <activity android:name="com.repair.beihai.poj.gdpoj.module.construct.GDConstructEventListActivity"/>
+        <activity android:name="com.repair.beihai.poj.hbpoj.module.userwatermeter.UserWatermeterPojListActivity"/>
+        <activity android:name="com.repair.beihai.poj.hbpoj.module.userwatermeter.WatermeterUserListActivity"/>
+        <activity android:name="com.repair.beihai.poj.hbpoj.module.userwatermeter.UserWatermeterEditActivity"/>
+        <activity android:name="com.repair.beihai.poj.hbpoj.module.userwatermeter.UserWatermeterPojDetail"/>
+        <activity android:name="com.repair.beihai.poj.hbpoj.module.userwaterecheck.UserWatermeterCheckPojListActivity"/>
+        <activity android:name="com.repair.beihai.poj.hbpoj.module.userwaterecheck.WatermeterUserCheckListActivity"/>
+        <activity android:name="com.repair.beihai.poj.hbpoj.module.userwaterecheck.UserWatermeterCheckEditActivity"/>
+        <activity android:name="com.repair.beihai.poj.hbpoj.module.userwaterecheck.UserWatermeterCheckPojDetail"/>
+        <activity android:name="com.repair.beihai.poj.hbpoj.module.construct.ConstructReportActivity"/>
+        <activity android:name="com.repair.beihai.patrol.assistmodule.valveorder.ValveOrderListActivity"
+            android:theme="@style/MmtBaseThemeAppCompat" />
+        <activity android:name="com.repair.beihai.patrol.assistmodule.valveorder.ValveOrderOperActivity" />
+        <!-- ***********************结束注册 北海项目特有配置*********************** -->
+
+        <!-- ***********************开始注册  常州PDA升级项目特有配置*********************** -->
+        <activity android:name="com.repair.changzhou.pianguan.PianGuanCaseListActivity" />
+        <activity android:name="com.repair.changzhou.pianguan.PianGuanCaseDetailActivity" />
+        <!-- ***********************结束注册  常州PDA升级项目特有配置*********************** -->
+
+        <!-- ***********************开始注册  济南水务*********************** -->
+        <activity android:name="com.repair.jinanwater.inapparentleak.ReceiveCaseDetailActivity" />
+        <activity android:name="com.repair.jinanwater.inapparentleak.ReceiveCaseHandoverActivity" />
+        <!-- ***********************结束注册  济南水务*********************** -->
+
+        <!-- ***********************开始注册  webapp入口***********************-->
+        <activity android:name=".module.webappentry.WebAppActivity"/>
+        <!-- ***********************结束注册  webapp入口***********************-->
+
+        <!-- ***********************开始注册  百度全景入口***********************-->
+        <activity android:name=".module.gis.toolbar.query.point.PanoramaActivity"/>
+        <!-- ***********************结束注册  webapp入口***********************-->
+        <activity android:name="com.repair.scada.ScadaWebView"/>
+
+
+    </application>
+
+</manifest>

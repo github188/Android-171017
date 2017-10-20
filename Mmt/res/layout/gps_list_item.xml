@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:minHeight="42dip" >
+
+    <ImageView
+        android:id="@+id/gpsItemImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:minWidth="20dp"
+        android:src="@drawable/gps_settings_accuracy" />
+
+    <TextView
+        android:id="@+id/gpsItemName"
+        style="@style/default_text_large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dip"
+        android:layout_toRightOf="@+id/gpsItemImage"
+        android:text="内存使用率：" />
+
+    <TextView
+        android:id="@+id/gpsItemValue"
+        style="@style/default_text_medium_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/gpsItemName"
+        android:text="随即模拟GPS坐标无纬度数据" />
+
+    <ImageView
+        android:id="@+id/gpsItemMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dip"
+        android:src="@drawable/button_for_more"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="12dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="12dp">
+
+    <TextView
+        android:id="@+id/eventReportListItemIndex"
+        style="@style/default_text_medium_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        tools:text="1"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/txtEventCode"
+        style="@style/default_text_medium_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/eventReportListItemIndex"
+        tools:text="编号：PE150000245" />
+
+    <TextView
+        android:id="@+id/txtEventName"
+        style="@style/default_text_medium_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEventCode"
+        android:layout_toRightOf="@id/eventReportListItemIndex"
+        tools:text="名称：困难用水" />
+
+    <TextView
+        android:id="@+id/stateText"
+        style="@style/default_text_small_purity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        tools:text="（未上报）"
+        android:textColor="@color/default_line_bg" />
+
+    <TextView
+        android:id="@+id/txtEventSummary"
+        style="@style/default_text_medium_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEventName"
+        android:layout_toRightOf="@id/eventReportListItemIndex"
+        tools:text="摘要：水压小" />
+
+    <TextView
+        android:id="@+id/addressText"
+        style="@style/default_text_medium_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEventSummary"
+        android:layout_toRightOf="@id/eventReportListItemIndex"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="地址：光谷软件园光谷软件园光谷软件园光谷软件园光谷软件园光谷软件园" />
+
+    <TextView
+        android:id="@+id/reportTimeText"
+        style="@style/default_text_medium_1"
+        android:textColor="#808A87"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressText"
+        android:layout_toRightOf="@id/eventReportListItemIndex"
+        tools:text="时间：" />
+
+    <TextView
+        android:id="@+id/line5right"
+        style="@style/default_text_medium_1"
+        android:textColor="#292421"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressText"
+        android:layout_toRightOf="@id/reportTimeText"
+        tools:text="1989/11/11" />
+
+</RelativeLayout>

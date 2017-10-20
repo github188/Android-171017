@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/margin_left" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/maintenanceHisTime"
+            style="@style/default_text_little_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间" />
+
+        <TextView
+            android:id="@+id/maintenanceHisCaseno"
+            style="@style/default_text_little_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="案件编号" />
+
+        <TextView
+            android:id="@+id/maintenanceHisAddr"
+            style="@style/default_text_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址" />
+
+        <TextView
+            android:id="@+id/maintenanceHisSource"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="类型" />
+
+        <TextView
+            android:id="@+id/maintenanceHisDesc"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="井盖丢失" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:contentDescription="@string/text_image"
+        android:src="@drawable/button_for_more" />
+
+</LinearLayout>

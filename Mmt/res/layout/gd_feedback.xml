@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+    
+    <Button
+        android:id="@+id/feedBackReportBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_radius"
+        android:text="上      报"
+        android:textColor="@color/white_text"
+        android:textSize="20sp" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/feedBackReportBtn"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+        
+        <ScrollView
+        android:id="@+id/scroolView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_above="@+id/patrolReportBtn">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <!--  拍照  -->
+            <RelativeLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left" android:layout_marginRight="@dimen/margin_right"
+                android:minHeight="@dimen/mutiline_height" >
+                <ImageView android:id="@+id/imageView"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_centerVertical="true" android:src="@drawable/flex_flow_takephoto" />
+                <TextView  android:id="@+id/textView" style="@style/default_text_large"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left" android:layout_toRightOf="@+id/imageView"
+                    android:minWidth="60dip"  android:text="拍照" />
+                <FrameLayout android:id="@+id/photoFrameLayout"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_centerVertical="true" android:layout_toRightOf="@+id/textView" />
+            </RelativeLayout>
+            
+            <!--  录音  -->
+            <RelativeLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left" android:layout_marginRight="@dimen/margin_right"
+                android:minHeight="@dimen/mutiline_height" >
+                <ImageView android:id="@+id/imageView7"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_centerVertical="true" android:src="@drawable/record" />
+                <TextView  android:id="@+id/textView7" style="@style/default_text_large"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left" android:layout_toRightOf="@+id/imageView7"
+                    android:minWidth="60dip"  android:text="录音" />
+                <FrameLayout android:id="@+id/recorderFrameLayout"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_centerVertical="true" android:layout_toRightOf="@+id/textView7" />
+            </RelativeLayout>
+            
+             <!--  描述  -->
+            <com.mapgis.mmt.common.widget.customview.ImageEditView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                />
+            
+            <!--  上报人姓名  -->
+            <com.mapgis.mmt.common.widget.customview.ImageTextView
+                android:id="@+id/reporterName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:visibility="invisible"/>
+        </LinearLayout>
+        
+    </ScrollView>
+        
+    </LinearLayout>
+            
+</RelativeLayout>

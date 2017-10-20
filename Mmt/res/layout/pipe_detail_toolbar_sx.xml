@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60.0dip"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/layoutAttEdit"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/leba_bg_left_selector"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/css_header_bar_button"
+            android:contentDescription="@string/text_image"
+            android:src="@drawable/detail_download" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8.0dip"
+            android:text="属性确认"
+            android:textColor="#ff719e11"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1.0px"
+        android:layout_height="fill_parent"
+        android:background="@drawable/css_divider_line" />
+
+    <LinearLayout
+        android:id="@+id/layoutProblemEvent"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/leba_bg_left_selector"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/css_header_bar_button"
+            android:contentDescription="@string/text_image"
+            android:src="@drawable/button_reset_painter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8.0dip"
+            android:text="隐患上报"
+            android:textColor="#ff719e11"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1.0px"
+        android:layout_height="fill_parent"
+        android:background="@drawable/css_divider_line" />
+
+    <LinearLayout
+        android:id="@+id/layoutLeakEvent"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/leba_bg_left_selector"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/css_header_bar_button"
+            android:contentDescription="@string/text_image"
+            android:src="@drawable/button_main_layercontrol" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8.0dip"
+            android:text="检漏上报"
+            android:textColor="#ff719e11"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1.0px"
+        android:layout_height="fill_parent"
+        android:background="@drawable/css_divider_line" />
+
+    <LinearLayout
+        android:id="@+id/layoutPatrolEvent"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/leba_bg_right_selector"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/css_header_bar_button"
+            android:contentDescription="@string/text_image"
+            android:src="@drawable/detail_upload" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8.0dip"
+            android:text="事件上报"
+            android:textColor="#ff719e11"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+</LinearLayout>

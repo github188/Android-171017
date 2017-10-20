@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:setting="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#22888888"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/setting_divider"
+        android:orientation="vertical"
+        android:showDividers="none">
+
+        <TextView
+            android:paddingTop="@dimen/dimen_5dp"
+            style="@style/title_setting_group"
+            android:text="@string/setting_normal"/>
+
+        <LinearLayout
+            style="@style/style_setting_group">
+
+            <com.mapgis.mmt.module.systemsetting.itemwidget.SwitchItemSettingView
+                android:id="@+id/itemRealtimeLocate"
+                style="@style/style_setting_item"
+                setting:checked="false"
+                setting:text_message="开启定时定位功能"
+                setting:text_title="定时定位"/>
+
+            <com.mapgis.mmt.module.systemsetting.itemwidget.MoreItemSettingView
+                android:id="@+id/itemRealtimeValue"
+                style="@style/style_setting_item"
+                setting:text_message="定时定位的时间间隔"
+                setting:text_right_message="5S"
+                setting:text_title="定时定位间隔"/>
+
+            <!--<com.mapgis.mmt.module.systemsetting.itemwidget.SwitchItemSettingView-->
+                <!--android:id="@+id/itemCamera"-->
+                <!--style="@style/style_setting_item"-->
+                <!--setting:text_message="使用自定义相机：否"-->
+                <!--setting:text_title="自定义相机"/>-->
+            <!--<com.mapgis.mmt.module.systemsetting.itemwidget.MoreItemSettingView-->
+            <!--android:id="@+id/itemTraffic"-->
+            <!--style="@style/style_setting_item"-->
+            <!--setting:iconMoreVisiable="false"-->
+            <!--setting:text_message="本月APP已使用流量：0.00MB"-->
+            <!--setting:text_right_message="100MB"-->
+            <!--setting:text_title="流量"/>-->
+            <!--<com.mapgis.mmt.module.systemsetting.itemwidget.MoreItemSettingView-->
+                <!--android:id="@+id/itemBackgroundInfo"-->
+                <!--style="@style/style_setting_item"-->
+                <!--setting:text_message="后台统计"-->
+                <!--setting:text_title="后台统计" />-->
+
+            <com.mapgis.mmt.module.systemsetting.itemwidget.MoreItemSettingView
+                android:id="@+id/itemSaomiao"
+                style="@style/style_setting_item"
+                android:visibility="gone"
+                setting:text_message="扫描条形码、二维码"
+                setting:text_title="扫一扫"/>
+
+            <com.mapgis.mmt.module.systemsetting.itemwidget.MoreItemSettingView
+                android:id="@+id/itemClearAppCache"
+                style="@style/style_setting_item"
+                setting:text_message="清理应用程序中的缓存文件"
+                setting:text_title="清理缓存"/>
+
+            <com.mapgis.mmt.module.systemsetting.itemwidget.MoreItemSettingView
+                android:id="@+id/itemClearMediaFile"
+                style="@style/style_setting_item"
+                setting:text_message="@string/file_clear"
+                setting:text_title="@string/memory_manager"/>
+
+            <com.mapgis.mmt.module.systemsetting.itemwidget.MoreItemSettingView
+                android:id="@+id/itemVideoBitRate"
+                style="@style/style_setting_item"
+                setting:text_right_message="256"
+                setting:text_title="视频传出码率"/>
+
+            <com.mapgis.mmt.module.systemsetting.itemwidget.MoreItemSettingView
+                android:id="@+id/itemCustomSetting"
+                style="@style/style_setting_item"
+                setting:text_message="个性化设置"
+                setting:text_title="个性化设置"/>
+
+            <com.mapgis.mmt.module.systemsetting.itemwidget.MoreItemSettingView
+                android:id="@+id/itemBackgroundInfo"
+                style="@style/style_setting_item"
+                setting:text_message="后台统计，流量、后台任务等"
+                setting:text_title="后台统计" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/title_setting_group"
+            android:text="账号与安全"/>
+
+        <LinearLayout
+            style="@style/style_setting_group">
+
+            <com.mapgis.mmt.module.systemsetting.itemwidget.MoreItemSettingView
+                android:id="@+id/itemChangePwd"
+                style="@style/style_setting_item"
+                setting:rightMessageVisiable="false"
+                setting:text_message="修改当前用户密码"
+                setting:text_title="修改密码"/>
+
+            <com.mapgis.mmt.module.systemsetting.itemwidget.MoreItemSettingView
+                android:id="@+id/itemLockScreen"
+                style="@style/style_setting_item"
+                setting:text_message="@string/text_gesture_password_description"
+                setting:text_right_message="指纹"
+                setting:text_title="@string/text_gesture_password"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/title_setting_group"
+            android:text=""/>
+
+        <LinearLayout
+            style="@style/style_setting_group">
+
+            <com.mapgis.mmt.module.systemsetting.itemwidget.MoreItemSettingView
+                android:id="@+id/itemDownloadManager"
+                style="@style/style_setting_item"
+                setting:text_message="应用，地图，字体更新管理"
+                setting:text_right_message="5"
+                setting:text_title="下载管理"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/title_setting_group"
+            android:text=""/>
+
+        <LinearLayout
+            style="@style/style_setting_group">
+
+            <com.mapgis.mmt.module.systemsetting.itemwidget.MoreItemSettingView
+                android:id="@+id/itemAppAbout"
+                style="@style/style_setting_item"
+                setting:rightMessageVisiable="false"
+                setting:text_message="当前版本信息"
+                setting:text_title="关于"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
+    </LinearLayout>
+</ScrollView>

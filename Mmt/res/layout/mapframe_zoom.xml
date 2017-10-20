@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mapframeZoom"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageview_main_zoomin"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dip"
+        android:background="@drawable/layout_focus_bg"
+        android:contentDescription="@string/product"
+        android:src="@drawable/mapview_zoomin" />
+
+    <ImageView
+        android:id="@+id/imageview_main_zoomout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dip"
+        android:background="@drawable/layout_focus_bg"
+        android:contentDescription="@string/product"
+        android:src="@drawable/mapview_zoomout" />
+
+    <ImageView
+        android:id="@+id/imageview_main_zoomfull"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/layout_focus_bg"
+        android:contentDescription="@string/product"
+        android:src="@drawable/mapview_zoomfull" />
+
+</LinearLayout>

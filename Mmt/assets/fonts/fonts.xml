@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fonts ttf="DroidSansFallback.ttf">
+  <font ttf="DroidSansFallback.ttf">
+    <name>宋体</name>
+  </font>
+  <font ttf="DroidSansFallback.ttf">
+    <name>黑体</name>
+  </font>
+  <font ttf="DroidSansFallback.ttf">
+    <name>仿宋_GB2312</name>
+  </font>
+  <font ttf="DroidSansFallback.ttf">
+    <name>隶书</name>
+  </font>
+  <font ttf="DroidSansFallback.ttf">
+    <name>楷体</name>
+  </font>
+</fonts>

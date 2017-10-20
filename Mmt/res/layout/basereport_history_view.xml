@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.mapgis.mmt.common.widget.customview.MultiSwitchButton
+        android:id="@+id/baseReportHistoryTop"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <FrameLayout
+        android:id="@+id/baseReportHistoryMid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</LinearLayout>

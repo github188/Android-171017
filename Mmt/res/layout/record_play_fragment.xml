@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#fff">
+    
+    <!--  用于 放置 波形View 的 布局容器  -->
+    <LinearLayout 
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp"
+        android:background="#bbb"
+        android:gravity="center_horizontal">
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal">
+        
+        <TextView 
+            android:id="@+id/recordFileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="录音文件名称"/>
+        
+        <TextView 
+            android:id="@+id/recordLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时长"/>
+        
+        <TextView 
+            android:id="@+id/recordTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="备注"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal" >
+            <ImageView
+                android:id="@+id/preItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/prerecord" />
+
+            <ImageView
+                android:id="@+id/playBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/playrecord" />
+
+            <ImageView
+                android:id="@+id/nextItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/nextrecord" />
+        </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>

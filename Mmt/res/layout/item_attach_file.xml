@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="56dp"
+    android:layout_height="56dp"
+    android:layout_centerInParent="true">
+
+    <ImageView
+        android:id="@+id/ivItem"
+        android:layout_width="@dimen/file_thumbnail_width"
+        android:layout_height="@dimen/file_thumbnail_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/doc_unknow" />
+
+</RelativeLayout>

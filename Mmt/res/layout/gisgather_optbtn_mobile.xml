@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/gisgather_optbtnPanel_mobile"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/half_transpant_corners_bg"
+    android:orientation="vertical"
+    android:padding="1dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/targetAddDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+
+        android:background="@drawable/corners_bg"
+        android:padding="3dp">
+
+        <TextView
+
+            style="@style/default_text_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/button_for_more"
+            android:focusable="false"
+            android:gravity="center"
+
+            android:text="添点"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/corners_bg"
+        android:padding="3dp">
+
+        <TextView
+
+            style="@style/default_text_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/button_for_more"
+            android:gravity="center"
+            android:text="连线"
+
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/editGraphic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/corners_bg"
+        android:padding="3dp">
+
+        <TextView
+
+            style="@style/default_text_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/button_for_more"
+            android:gravity="center"
+            android:text="编辑"
+
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/deleteGraphic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/corners_bg"
+        android:padding="3dp">
+
+        <TextView
+
+            style="@style/default_text_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/button_for_more"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/red"/>
+    </LinearLayout>
+</LinearLayout>

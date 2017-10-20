@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="2dp"
+    card_view:cardElevation="2dp"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardUseCompatPadding="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_index"
+                style="@style/default_text_medium_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                android:paddingTop="1dp"
+                android:textColor="@color/red"
+                android:textSize="14sp"
+                tools:text="1." />
+
+            <LinearLayout
+                android:id="@+id/ll_tag_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="2dp">
+
+                <TextView
+                    android:id="@+id/tv_top_right1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_bounds_small"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="2dp"
+                    android:textSize="11sp"
+                    tools:text="新" />
+
+                <TextView
+                    android:id="@+id/tv_top_right2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/rect_bounds_small"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="2dp"
+                    android:textSize="11sp"
+                    tools:text="处理中" />
+
+                <TextView
+                    android:id="@+id/tv_top_right3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/rect_bounds_small"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="2dp"
+                    android:textSize="11sp"
+                    android:visibility="gone"
+                    tools:text="已办结" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_top_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/ll_tag_group"
+                android:layout_toRightOf="@id/tv_index"
+                android:maxLines="1"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textStyle="bold"
+                tools:text="HNZH-2016-000009" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider_top_mid"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/rl_top_layout"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/tv_mid_one_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/divider_top_mid"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            tools:text="X" />
+
+        <TextView
+            android:id="@+id/tv_mid_one_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/divider_top_mid"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@id/tv_mid_one_right"
+            android:textColor="@color/text_darkGray"
+            android:textSize="15sp"
+            tools:text="户内置换 - 置换执行" />
+
+        <TextView
+            android:id="@+id/tv_mid_two_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_mid_one_left"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/text_darkGray"
+            android:textSize="15sp"
+            tools:text="中地数码空调坏了抢维修, 中地数码空调坏了抢维修, 中地数码空调坏了抢维修" />
+
+        <View
+            android:id="@+id/divider_mid_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tv_mid_two_left"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider_mid_bottom"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                tools:text="2016-09-12 12:12:15" />
+
+            <TextView
+                android:id="@+id/tv_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/ic_place_indigo"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:textColor="#2881a2"
+                android:textSize="14sp"
+                tools:text="523.2m" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+

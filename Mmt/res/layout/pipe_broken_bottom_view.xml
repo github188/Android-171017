@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/color_dfe9f3"
+    android:padding="5dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_before_broken"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_close_valve"
+            style="@style/cb_pipe_analysis_bottom"
+            android:text="@string/close_valve" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:id="@+id/cb_allow_open_valve"
+            style="@style/cb_pipe_analysis_bottom"
+            android:checked="true"
+            android:text="@string/allow_open_valve" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_after_broken"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/cb_pipe_analysis_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/export_xls"
+            android:drawablePadding="@dimen/dimen_5dp"
+            android:gravity="center"
+            android:text="关阀通知单"
+            android:visibility="gone" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_live_repair"
+            style="@style/cb_pipe_analysis_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:drawableLeft="@drawable/broken_live_repair"
+            android:drawablePadding="@dimen/dimen_5dp"
+            android:gravity="center"
+            android:text="现场维修图" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:id="@+id/cb_show_area"
+            style="@style/cb_pipe_analysis_bottom"
+            android:checked="false"
+            android:gravity="center"
+            android:text="影响区域" />
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:background="@drawable/item_focus_bg"
+    android:paddingBottom="12dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="5.0dp"
+    android:paddingTop="12dp">
+
+    <ImageView
+        android:id="@+id/iv_delay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:src="@drawable/ic_task_delay"/>
+
+    <TextView
+        android:id="@+id/itemIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:text="1."
+        android:textColor="@color/progressbar_orange" />
+
+    <LinearLayout
+        android:id="@+id/mainContentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/itemIndex"
+        android:orientation="vertical" />
+
+    <ImageView
+        android:id="@+id/mDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/mainContentLayout"
+        android:background="#310c0c0c" />
+
+</RelativeLayout>

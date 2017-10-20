@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/xyInfo_mobile"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <!--坐标和经纬度-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="80dp"-->
+    <!--android:divider="@drawable/split_line"-->
+    <!--android:orientation="vertical"-->
+    <!--android:showDividers="middle">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/default_text_small"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0"
+            android:gravity="right|center_vertical"
+            android:text="X"
+            android:textColor="#ff000000"
+            android:textSize="10sp"
+            />
+
+        <TextView
+            android:id="@+id/xEditText"
+            style="@style/default_text_small_purity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="0.0"
+            android:textColor="#ff000000"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/txtCurrentX"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:inputType="numberDecimal"
+            android:text="110.0"
+            android:textColor="#ff000000"
+            android:textSize="10sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/default_text_small"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0"
+            android:gravity="right|center_vertical"
+            android:text="Y"
+            android:textColor="#ff000000"
+            android:textSize="10sp"
+            />
+
+        <TextView
+            android:id="@+id/yEditText"
+            style="@style/default_text_small_purity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="0.0"
+            android:textColor="#ff000000"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/txtCurrentY"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:inputType="numberDecimal"
+            android:text="110.0"
+            android:textColor="#ff000000"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/default_text_small"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0"
+            android:gravity="right|center_vertical"
+            android:text="Z"
+            android:textColor="#ff000000"
+            android:textSize="10sp"
+            />
+
+        <TextView
+            android:id="@+id/txtCurrentZ"
+            style="@style/default_text_small_purity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:inputType="numberDecimal"
+            android:text="0.0"
+            android:textColor="#ff000000"
+            android:textSize="10sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/default_text_small"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0"
+            android:gravity="right|center_vertical"
+            android:text="精度"
+            android:textColor="#ff000000"
+            android:textSize="10sp"
+            />
+
+        <TextView
+            android:id="@+id/accuracy"
+            style="@style/default_text_small_purity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:inputType="numberDecimal"
+            android:text="0.0"
+            android:textColor="#ff000000"
+            android:textSize="10sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/default_text_small"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0"
+            android:gravity="right|center_vertical"
+            android:text="状态"
+            android:textColor="#ff000000"
+            android:textSize="10sp"
+            />
+
+        <TextView
+            android:id="@+id/txtState"
+            style="@style/default_text_small_purity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:inputType="numberDecimal"
+            android:text="0.0"
+            android:textColor="#ff000000"
+            android:textSize="10sp"/>
+    </LinearLayout>
+</LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/localDot"-->
+    <!--style="@style/default_text_large"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/bt_nobgd"-->
+    <!--android:gravity="center"-->
+    <!--android:text="跳转"-->
+    <!--android:textColor="@color/blue"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/localDeviceDot"-->
+    <!--style="@style/default_text_large"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/bt_nobgd"-->
+    <!--android:gravity="center"-->
+    <!--android:text="设备获取"-->
+    <!--android:textColor="@color/blue"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/RTKDot"-->
+    <!--style="@style/default_text_large"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/bt_nobgd"-->
+    <!--android:gravity="center"-->
+
+    <!--android:text="RTK"-->
+    <!--android:textColor="@color/grey"/>-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->

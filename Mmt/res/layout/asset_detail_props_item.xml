@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="50dip"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/asset_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15.0dip"
+        android:textColor="@color/asset_detail_key"
+        android:textSize="18.0sp"
+        tools:text="Key" />
+
+    <TextView
+        android:id="@+id/asset_value"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0dip"
+        android:layout_weight="1.0"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/asset_detail_value"
+        android:textSize="18.0sp"
+        tools:text="Value" />
+
+    <TextView
+        android:id="@+id/asset_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6.0dip"
+        android:drawableLeft="@drawable/icon_profile_edit"
+        android:drawablePadding="4dp"
+        android:paddingTop="@dimen/dimen_8dp"
+        android:paddingBottom="@dimen/dimen_8dp"
+        android:paddingLeft="@dimen/dimen_2dp"
+        android:paddingRight="@dimen/dimen_2dp"
+        android:textColor="#ff727272"
+        android:textSize="16.0sp"
+        android:visibility="visible"
+        android:text="编辑" />
+
+</LinearLayout>

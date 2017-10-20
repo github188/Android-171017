@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="25dip"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/asset_locator_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#ff545454"
+        android:textSize="14.0sp" />
+
+    <View
+        android:id="@+id/divider"
+        android:visibility="gone"
+        android:layout_width="2.0px"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="2.0dip"
+        android:background="@drawable/header_divider_line" />
+
+    <ImageView
+        android:id="@+id/asset_locator_report"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:src="@drawable/asset_locator_upload" >
+    </ImageView>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="5dip"
+    android:paddingTop="5dip" >
+
+    <ImageView
+        android:id="@+id/ownTaskItemImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:minWidth="20dip"
+        android:src="@drawable/undo" />
+
+    <TextView
+        android:id="@+id/ownTaskItemName"
+        style="@style/default_text_large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ownTaskItemForMore"
+        android:layout_toRightOf="@+id/ownTaskItemImage"
+        android:text="调度1号" />
+
+    <TextView
+        android:id="@+id/ownTaskItemTime"
+        style="@style/default_text_medium_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ownTaskItemName"
+        android:layout_toRightOf="@+id/ownTaskItemImage"
+        android:text="2011-11-11 11:11:11" />
+
+    <TextView
+        android:id="@+id/ownTaskItemGroup"
+        style="@style/default_text_medium_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ownTaskItemTime"
+        android:layout_toRightOf="@+id/ownTaskItemImage"
+        android:text="抢修管理-抢修队" />
+
+    <TextView
+        android:id="@+id/ownTaskItemCaseNo"
+        style="@style/default_text_medium_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ownTaskItemGroup"
+        android:layout_toRightOf="@+id/ownTaskItemImage"
+        android:text="案件编号" />
+
+    <ImageView
+        android:id="@+id/ownTaskItemForMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:background="@color/default_no_bg"
+        android:src="@drawable/button_for_more" />
+
+</RelativeLayout>

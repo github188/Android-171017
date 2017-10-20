@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingBottom="8dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:id="@+id/itemIndex"
+        style="@style/default_text_medium_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        tools:text="1."
+        android:textColor="@color/progressbar_orange" />
+
+    <TextView
+        android:id="@+id/costCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/itemIndex"
+        tools:text="成本中心：XX 中心" />
+
+    <TextView
+        android:id="@+id/supplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/costCenter"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/itemIndex"
+        tools:text="供应商：中地数码有限公司" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/supplier"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/itemIndex"
+        tools:text="100000.00 元" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:layout_alignBottom="@id/amount"
+        android:layout_below="@id/supplier"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/common_button_bg"
+        android:textSize="15sp"
+        android:text="删除" />
+
+</RelativeLayout>

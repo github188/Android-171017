@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mapviewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layoutMapRoot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/default_no_bg">
+
+            <!-- 包裹起来做动画效果 -->
+            <RelativeLayout
+                android:id="@+id/toolFrame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dip"
+                android:background="@color/default_no_bg"
+                >
+
+                <include
+                    android:id="@+id/include"
+                    layout="@layout/mapframe_right_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="12dp"/>
+
+                <!-- 底部菜单按钮 -->
+                <include
+                    layout="@layout/mapframe_bottombar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"/>
+
+                <!-- 定位 删除按钮 -->
+                <include
+                    layout="@layout/mapframe_bottom_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/layoutMapToolbar"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="12dp"/>
+
+                <!-- 放大 缩小 复位按钮 -->
+                <include
+                    android:id="@+id/tool_zoom"
+                    layout="@layout/mapframe_zoom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/layoutMain"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <!-- 功能模块在地图上显示的可操作菜单 -->
+                <include
+                    layout="@layout/mapframe_module_tool_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/layoutMain"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginRight="65dp"/>
+
+                <!-- 底部滑动页 -->
+                <include
+                    layout="@layout/mapframe_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_alignBottom="@id/layoutMain"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginRight="65dp"/>
+
+            </RelativeLayout>
+
+            <!-- 平板GIS采集-湖州 -->
+            <RelativeLayout
+                android:id="@+id/gisGathertoolFrame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/default_no_bg"
+                android:visibility="gone"
+                >
+                <!-- 放大 缩小 复位按钮 -->
+                <include
+                    layout="@layout/gisgather_mapframe_zoom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="12dp"
+                    />
+
+                <include
+                    layout="@layout/gisdataoperatepanel"
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+            // baseTopView
+            <!-- GIS采集-产品 -->
+            <RelativeLayout
+                android:id="@+id/gisGathertoolFrameFroProduct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/default_no_bg"
+                android:visibility="gone"
+                >
+
+                <include
+                    layout="@layout/gisgather_pad"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+                <include
+                    layout="@layout/gisgather_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rect_bounds"
+    android:baselineAligned="false">
+
+    <RelativeLayout
+        android:id="@+id/topMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp" >
+
+        <TextView
+            android:id="@+id/maintenanceListItemIndex"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            tools:text="1"
+            android:textColor="@color/progressbar_orange" />
+
+        <TextView
+            android:id="@+id/maintenanceListItemDate"
+            style="@style/default_text_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/default_red"
+            android:layout_marginLeft="5.0dp"
+            tools:text="what"/>
+
+        <TextView
+            android:id="@+id/maintenanceListItemLeftTop"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/maintenanceListItemIndex"
+            android:layout_toLeftOf="@id/maintenanceListItemDate"
+            android:textColor="@color/default_purple"
+            tools:text="No. 0010"/>
+
+        <TextView
+            android:id="@+id/maintenanceListItemRightTop"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/maintenanceListItemLeftTop"
+            android:layout_toRightOf="@+id/maintenanceListItemIndex"
+            android:textColor="@color/default_purple"
+            tools:text="hello"/>
+
+        <TextView
+            android:id="@+id/maintenanceListItemMiddle"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/maintenanceListItemRightTop"
+            android:layout_toRightOf="@id/maintenanceListItemIndex"
+            android:textColor="@color/default_accent_color"
+            tools:text="Summary : hello from the other side hello from the other side"/>
+        <TextView
+            android:id="@+id/maintenanceListItemMiddleBelow"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/maintenanceListItemMiddle"
+            android:layout_toRightOf="@id/maintenanceListItemIndex"
+            android:textColor="@color/default_accent_color"
+            android:visibility="gone"
+            tools:text="updateState"/>
+
+        <TextView
+            android:id="@+id/maintenanceListItemLeftBottom"
+            style="@style/default_text_small_purity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/maintenanceListItemMiddleBelow"
+            android:layout_toLeftOf="@+id/maintenanceListItemDistance"
+            android:layout_toRightOf="@+id/maintenanceListItemIndex"
+            android:textColor="@color/default_accent_color"
+            tools:text="say"/>
+
+        <TextView
+            android:id="@+id/maintenanceListItemDistance"
+            style="@style/default_text_little_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/maintenanceListItemMiddleBelow"
+            android:textColor="@color/default_red"
+            tools:text="how are you"/>
+
+        <ImageView
+            android:id="@+id/ivStatus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="42dp"
+            android:layout_marginTop="2dp"
+            android:visibility="gone"
+            android:src="@drawable/orderlist_finish_signet"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivStatusRightTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:src="@drawable/right_tip"/>
+
+    <ImageView
+        android:id="@+id/med_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/default_line_bg"
+        android:layout_below="@id/topMain"
+        android:contentDescription="@string/text_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/med_divider"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/maintenanceListItemLocation"
+            style="@style/default_text_small_purity"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:text="Locate"
+            android:gravity="center" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/default_line_bg"
+            android:contentDescription="@string/text_image" />
+
+        <TextView
+            android:id="@+id/maintenanceListItemDetail"
+            style="@style/default_text_small_purity"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:gravity="center"
+            android:text="Detail"/>
+    </LinearLayout>
+
+</RelativeLayout>

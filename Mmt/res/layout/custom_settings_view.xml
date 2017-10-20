@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:setting="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#22888888"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/setting_divider"
+        android:orientation="vertical"
+        android:showDividers="none">
+
+
+        <LinearLayout style="@style/style_setting_group">
+
+            <com.mapgis.mmt.module.systemsetting.itemwidget.SwitchItemSettingView
+                android:id="@+id/itemCamera"
+                style="@style/style_setting_item"
+                setting:text_message="使用自定义相机：否"
+                setting:text_title="自定义相机"/>
+
+            <com.mapgis.mmt.module.systemsetting.itemwidget.SwitchItemSettingView
+                android:id="@+id/itemPatrolReport"
+                style="@style/style_setting_item"
+                setting:text_message="巡检上报允许从相册选取：否"
+                setting:text_title="从相册选取上报"/>
+
+            <com.mapgis.mmt.module.systemsetting.itemwidget.SwitchItemSettingView
+                android:id="@+id/itemNewTip"
+                style="@style/style_setting_item"
+                setting:checked="true"
+                setting:text_message="新任务语音提示：是"
+                setting:text_title="新任务语音提示"/>
+
+            <com.mapgis.mmt.module.systemsetting.itemwidget.SwitchItemSettingView
+                android:id="@+id/itemArrviedTip"
+                style="@style/style_setting_item"
+                setting:checked="true"
+                setting:text_message="到位语音提示：是"
+                setting:text_title="到位语音提示"/>
+
+            <com.mapgis.mmt.module.systemsetting.itemwidget.SwitchItemSettingView
+                android:id="@+id/itemGPSTip"
+                style="@style/style_setting_item"
+                setting:checked="true"
+                setting:text_message="GPS信号提示：是"
+                setting:text_title="GPS信号语音提示"/>
+
+            <com.mapgis.mmt.module.systemsetting.itemwidget.SwitchItemSettingView
+                android:id="@+id/itemGPSAccuracyTip"
+                style="@style/style_setting_item"
+                setting:checked="true"
+                setting:text_message="GPS精度提示：是"
+                setting:text_title="GPS精度语音提示"/>
+
+            <com.mapgis.mmt.module.systemsetting.itemwidget.SwitchItemSettingView
+                android:id="@+id/itemNetPing"
+                style="@style/style_setting_item"
+                setting:checked="true"
+                setting:text_title="网络延迟悬浮球"/>
+
+            <com.mapgis.mmt.module.systemsetting.itemwidget.SwitchItemSettingView
+                android:id="@+id/itemTileGrid"
+                style="@style/style_setting_item"
+                setting:checked="true"
+                setting:text_title="瓦片网格显示"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

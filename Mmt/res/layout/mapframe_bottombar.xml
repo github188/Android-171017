@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layoutMapToolbar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mapview_bottombar_bg"
+    android:baselineAligned="false"
+    android:minHeight="50dip"
+    android:orientation="vertical">
+
+</LinearLayout>

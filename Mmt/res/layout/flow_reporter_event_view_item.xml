@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/pictureView"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/flowNameText"
+                style="@style/default_text_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="类型：检漏" />
+
+            <TextView
+                android:id="@+id/stateText"
+                style="@style/default_text_medium_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="（未上报）"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/caseNameText"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:text="事件：漏水"
+            android:textColor="@color/default_text_light_black2" />
+
+        <TextView
+            android:id="@+id/roadNameText"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:text="地址：光谷软件园"
+            android:textColor="@color/default_text_light_black2" />
+
+        <TextView
+            android:id="@+id/timeText"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:text="时间：1989/11/11"
+            android:textColor="@color/default_text_light_black2" />
+
+        <TextView
+            android:id="@+id/contentText"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:text="坐标：1111.1111"
+            android:textColor="@color/default_text_light_black2" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/button_for_more" />
+    </RelativeLayout>
+
+</LinearLayout>

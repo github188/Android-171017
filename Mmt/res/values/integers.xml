@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="delay_hiden_view">3000</integer>
+    <integer name="notify_network_weak">30</integer>
+    <integer name="duration_live_anim">1000</integer>
+    <integer name="duration_rotate_list_expander">500</integer>
+
+</resources>

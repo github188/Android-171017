@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ic_biz_repair" type="drawable" />
+    <item name="ic_biz_building_project" type="drawable" />
+    <item name="ic_biz_gov_project" type="drawable" />
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/layoutTwo"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:background="@color/lightgray">
+
+    <RelativeLayout
+        android:id="@+id/layoutTopbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fffafbfb"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/common_title_back_normal"/>
+
+        <TextView
+            android:id="@+id/tvTitleForTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="派单时间"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvOkForTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="确定"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutTopbar"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/layoutTopbar"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:background="@color/white"-->
+    <!--android:orientation="vertical"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:paddingRight="10dp">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:drawableRight="@drawable/order_pickup_butn_seleted_icon"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="全部"-->
+    <!--android:textSize="18sp"/>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="@color/lightGray"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:drawableRight="@drawable/order_pickup_butn_seleted_icon"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="昨天"-->
+    <!--android:textSize="18sp"/>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="@color/lightGray"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:drawableRight="@drawable/order_pickup_butn_seleted_icon"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="本日"-->
+    <!--android:textSize="18sp"/>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="@color/lightGray"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:drawableRight="@drawable/order_pickup_butn_seleted_icon"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="上周"-->
+    <!--android:textSize="18sp"/>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="@color/lightGray"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:drawableRight="@drawable/order_pickup_butn_seleted_icon"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="本周"-->
+    <!--android:textSize="18sp"/>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="@color/lightGray"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:drawableRight="@drawable/order_pickup_butn_seleted_icon"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="上月"-->
+    <!--android:textSize="18sp"/>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="@color/lightGray"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:drawableRight="@drawable/order_pickup_butn_seleted_icon"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="本月"-->
+    <!--android:textSize="18sp"/>-->
+
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="@color/lightGray"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:drawableRight="@drawable/order_pickup_butn_seleted_icon"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="本年"-->
+    <!--android:textSize="18sp"/>-->
+    <!--</LinearLayout>-->
+</RelativeLayout>

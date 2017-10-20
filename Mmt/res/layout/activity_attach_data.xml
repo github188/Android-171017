@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- 标题栏信息 -->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mainActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/main_menu_top"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/baseActionBarImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/default_actionbar"
+            android:contentDescription="@string/text_image"
+            android:minWidth="56dp"
+            android:paddingLeft="4dp"
+            android:src="@drawable/common_back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/baseActionBarImageView"
+            android:layout_toLeftOf="@+id/linearLayout1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/baseActionBarTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="15"
+                android:text="@string/app_name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_2dp"
+                android:text="当前：1/20"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <ImageButton
+                android:id="@+id/baseActionBarOtherImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/default_actionbar"
+                android:contentDescription="@string/text_image"
+                android:minWidth="56dp"
+                android:paddingRight="4dp"
+                android:src="@drawable/task_detail_back"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/baseActionBarRightImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:background="@drawable/default_actionbar"
+                android:contentDescription="@string/text_image"
+                android:minWidth="56dp"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/export_xls" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/baseActionBarProgressBar"
+            style="@android:style/Widget.ProgressBar.Inverse"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:indeterminateDrawable="@drawable/progressbar_circle_purple"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- 错误栏信息 -->
+    <LinearLayout
+        android:id="@+id/baseErrorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/baseTopView"
+        android:layout_marginTop="-2dp"
+        android:background="#e84e40"
+        android:minHeight="56dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:contentDescription="@string/text_image"
+            android:src="@drawable/commom_notice" />
+
+        <TextView
+            android:id="@+id/baseErrorMsg"
+            style="@style/default_text_medium_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:layout_weight="8"
+            android:gravity="center_vertical"
+            android:maxLines="3"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabIndicatorHeight="3px"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextAppearance="@style/style_tab_text"
+        app:tabTextColor="@color/black" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

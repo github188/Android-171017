@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/default_light_dark">
+
+    <include
+        android:id="@+id/layoutTitle"
+        layout="@layout/main_actionbar"/>
+
+    <LinearLayout
+        android:id="@+id/layoutOpers"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/mapview_bottombar_bg">
+
+        <TextView
+            android:id="@+id/tvRollback"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:gravity="center"
+            android:text="退单"
+            android:textAppearance="@style/default_text_small_purity"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/tvNeedHelp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:gravity="center"
+            android:text="协助"
+            android:textAppearance="@style/default_text_small_purity"
+            android:textColor="@color/nav_lightBlue"/>
+
+        <TextView
+            android:id="@+id/tvHandover"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:gravity="center"
+            android:text="反馈"
+            android:textAppearance="@style/default_text_small_purity"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/hdDetailFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layoutOpers"
+        android:layout_below="@id/layoutTitle">
+    </FrameLayout>
+
+</RelativeLayout>

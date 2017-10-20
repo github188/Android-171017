@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tj_actionbar">#00C7B1</color>
+    <color name="default_actionbar">#4B5DAE</color>
+    <color name="xa_actionbar">#2881a2</color>
+    <color name="xa_actionbar_dark">#2876a2</color>
+</resources>

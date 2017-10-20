@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_empty_loading_data" />
+
+    <LinearLayout
+        android:id="@+id/frame_data_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_atuto_text_bg"
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_searche"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="8dp"
+                android:paddingRight="3dp"
+                android:scaleType="centerInside"
+                android:src="@android:drawable/ic_menu_search" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:completionThreshold="1"
+                android:hint="请输入巡检员名称"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@android:drawable/divider_horizontal_textfield" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#07000000"
+            android:gravity="center_vertical"
+            android:minHeight="48dp"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <CheckBox
+                android:id="@+id/cb_select"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@drawable/button_checkbox"
+                android:paddingRight="8dp" />
+
+            <TextView
+                android:id="@+id/tv_patrol_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="在线人数：0 / 0"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RadioGroup
+                android:id="@+id/rg_patrol_state"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/rb_patrol_on"
+                    style="@style/rb_patrol_state"
+                    android:text="在线"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_patrol_off"
+                    style="@style/rb_patrol_state"
+                    android:text="离线"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_patrol_all"
+                    style="@style/rb_patrol_state"
+                    android:text="全部" />
+
+                <RadioButton
+                    android:id="@+id/rb_patrol_none"
+                    style="@style/rb_patrol_state"
+                    android:text="清空" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@android:drawable/divider_horizontal_textfield" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff">
+
+            <Button
+                android:id="@+id/tv_dept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/header_bar_background"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:paddingLeft="5dp"
+                android:text="平台管理员"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <ExpandableListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:groupIndicator="@null" />
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

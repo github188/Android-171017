@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="measure">
+        <item>距离</item>
+        <item>面积</item>
+    </string-array>
+    <string-array name="backdoors">
+        <item>开启随机坐标模式</item>
+        <item>切换为本地定位模式</item>
+        <item>切换为百度定位模式</item>
+        <item>开启火星转地球坐标模式</item>
+        <item>关闭火星转地球坐标模式</item>
+    </string-array>
+
+    <string-array name="root_path">
+        <item>我的文件</item>
+        <item>手机内存</item>
+        <item>SD卡</item>
+        <item>扩展存储内存</item>
+    </string-array>
+
+    <string-array name="str_password_type">
+        <item>无</item>
+        <item>密码</item>
+        <item>图案</item>
+        <item>指纹</item>
+    </string-array>
+
+    <string-array name="video_bitrates">
+        <item>128</item>
+        <item>256</item>
+        <item>512</item>
+        <item>1024</item>
+    </string-array>
+
+    <string-array name="textCheckItem">
+        <item>网络配置</item>
+        <item>内网连通性</item>
+        <item>外网连通性</item>
+        <item>服务器连通性</item>
+    </string-array>
+
+</resources>

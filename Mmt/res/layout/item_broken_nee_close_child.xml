@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="48dp"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_oid"
+        style="@style/broken_result_text"
+        android:layout_width="0dp"
+        android:layout_marginLeft="@dimen/dimen_24dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="28938"/>
+
+    <TextView
+        android:id="@+id/tv_elemNum"
+        style="@style/broken_result_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="LDJLA897349"/>
+
+    <CheckBox
+        android:id="@+id/cb_set_invalide"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
+        android:text="设为失效"/>
+
+</LinearLayout>

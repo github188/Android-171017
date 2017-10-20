@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 程序版本信息配置 -->
+    <string name="app_name">市政通</string>
+    <string name="version_name">3.6.1202</string>
+    <string name="pingip">0</string>
+    <!-- 登陆默认信息配置 -->
+    <string name="login_server_ip">192.168.12.193</string>
+    <string name="login_server_port">80</string>
+    <string name="login_server_virtual_path">cityinterface</string>
+    <string name="login_default_user_name"/>
+    <string name="login_default_password"/>
+    <string name="login_server_http_protocol_type">http</string>
+
+    <string name="login_url"/>
+    <bool name="remember_password">true</bool>
+    <bool name="check_server_time">true</bool>
+
+    <!-- 本地或者在线的运行参数文件相对路径配置 -->
+    <string name="version">version.json</string>
+    <string name="mobile_config">mobile_config.json</string>
+    <string name="trans_params">trans_params.json</string>
+    <string name="product">product.json</string>
+    <string name="bd_search_city">桂林</string>
+    <string name="bd_dev_key">yRvCSHmnw85H1CzPpo0oSMpW</string>
+    <string name="show_test_location">1</string>
+
+    <!-- 常用字符串 -->
+    <string name="text_ok">确认</string>
+    <string name="text_cancel">取消</string>
+    <string name="text_image">图片</string>
+    <string name="move">移动</string>
+    <string name="text_hint_default">请填写信息</string>
+    <string name="mapmenu_error">未成功加载地图,该功能无法使用</string>
+    <string name="text_select_user">请选择人员</string>
+
+    <string name="listen_net_state_when_update">true</string>
+    <string name="text_gesture_password">屏幕锁定</string>
+    <string name="text_gesture_password_description">从后台重新进入应用需验证手势密码</string>
+    <string name="unlock_number_description">选择您的密码</string>
+    <string name="lockscreen_app_name">图案解锁</string>
+    <string name="lockscreen_access_pattern_start">"开始绘制图案"</string>
+    <string name="lockscreen_access_pattern_cleared">"图案已清除"</string>
+    <string name="lockscreen_access_pattern_cell_added">"已添加单元格"</string>
+    <string name="lockscreen_access_pattern_detected">"图案绘制完成"</string>
+    <string name="lockpattern_retry_button_text">"重试"</string>
+    <string name="lockpattern_continue_button_text">"继续"</string>
+    <string name="lockpattern_confirm_button_text">"确认"</string>
+    <string name="lockpattern_recording_intro_header">"绘制解锁图案"</string>
+    <string name="lockpattern_settings_help_how_to_record">"如何绘制解锁图案"</string>
+    <string name="lockpattern_recording_incorrect_too_short">"至少连接4个点，请重试"</string>
+    <string name="lockpattern_pattern_entered_header">"图案已记录"</string>
+    <string name="lockpattern_need_to_confirm">"请再次绘制解锁图案"</string>
+    <string name="lockpattern_need_to_unlock_wrong">"与上次输入不一致，请重试"</string>
+    <string name="lockpattern_pattern_confirmed_header">"确认保存新解锁图案"</string>
+    <string name="lockpattern_recording_inprogress">"完成后松开手指"</string>
+    <string name="gesture_password_guide_text">你可以创建一个解锁图案，这样他人在借用你的手机时，将无法打开应用。</string>
+    <string name="gesture_password_guide_creat_btn">创建手势密码</string>
+
+    <!--用来分割视频和图片的标记-->
+    <string name="split_flag_video_photo">##</string>
+
+    <!--定期清理文件-->
+    <string name="memory_manager">清理存储空间</string>
+    <string name="file_clear">清理多媒体文件本地存储空间</string>
+    <string name="clear_no_file">没有要清除的文件！</string>
+    <string name="clear_result">总共清理了0个文件，为您节约了0B的空间!</string>
+    <string name="clear_cancel">取消</string>
+    <string name="clear_background">后台清理</string>
+
+    <!--    高级查询功能 更改-->
+    <string name="online_query_title">查询功能</string>
+    <string name="online_query_null">未查询到数据</string>
+    <string name="online_query_data">data</string>
+    <string name="online_query_datastr">dataStr</string>
+    <string name="online_query_layername">layerName</string>
+    <string name="online_query_clickwhichindex">clickWhichIndex</string>
+    <string name="online_query_currentpage">currentPage</string>
+    <string name="online_query_totalrcdnum">totalRcdNum</string>
+    <string name="online_query_where">where</string>
+    <string name="online_query_rect">rect</string>
+    <string name="online_query_objectids">objectIds</string>
+
+    <bool name="select_point_when_event_report">false</bool>
+    <string name="repair_service">/Zondy_MapGISCitySvr_MobileBusiness/REST/RepairStandardRest.svc</string>
+    <string name="string_reportIncidentNum">上报事件数</string>
+    <string name="string_arriveNum">到位点数</string>
+    <string name="string_feedbackNum">反馈点数</string>
+    <string name="string_coverLineLength">覆盖管线长度</string>
+    <string name="string_onLineTimeSum">累计在线\n时长（小时）</string>
+    <string name="string_onLineRoadSum">累计在线\n里程（公里）</string>
+    <string name="string_onLineTimeDaySum">日均在线\n时长（小时）</string>
+    <string name="string_onLineRoadDaySum">日均在线\n里程（公里）</string>
+    <string name="string_stationName">城区</string>
+
+    <string name="string_listitem_index">%1$d.</string>
+    <string name="string_two_with_seperator">%1$s - %2$s</string>
+    <string name="string_two_with_colon">%1$s : %2$s</string>
+
+    <!--                位置与轨迹模块                 -->
+    <string name="pos_and_path_title">位置与轨迹</string>
+    <string name="path_title">巡检轨迹</string>
+    <string name="patroller_list_title">人员列表</string>
+
+    <!--                附近查询模块                  -->
+    <!--查询范围-->
+    <string-array name="nearby_query_radius">
+        <item>500米</item>
+        <item>1000米</item>
+        <item>2000米</item>
+        <item>5000米</item>
+        <item>全部</item>
+    </string-array>
+
+    <!--现场直播-->
+    <string name="live_start">开始直播</string>
+    <string name="live_stop">暂停直播</string>
+
+    <!--直播拉流-->
+    <string name="live_list">直播列表</string>
+    <string name="live_player">现场直播</string>
+    <string name="buffering">正在加载…</string>
+
+    <string name="btn_start">开始</string>
+    <string name="btn_pause">暂停</string>
+    <string name="btn_resume">继续</string>
+    <string name="btn_stop">停止</string>
+    <string name="player_completed">直播已结束</string>
+    <string name="invalid_player_url">播放地址无效</string>
+    <string name="resourse_not_found">404资源未找到</string>
+    <string name="connection_refused">连接被拒绝</string>
+    <string name="connection_timeout">连接超时</string>
+    <string name="empty_playlist">播放列表为空</string>
+    <string name="stream_disconnected">直播流已经断开</string>
+    <string name="network_io_error">网络异常</string>
+    <string name="unknown_error">暂未开直播</string>
+
+    <!--推流中所使用到的常量字段-->
+    <string name="rtmpurl">rtmp://192.168.12.6/live/stream</string>
+    <string name="live_switch_camera">切换摄像头</string>
+
+    <string name="live_start_publish">开始直播</string>
+    <string name="live_stop_publish">结束直播</string>
+
+    <!--停止直播-->
+    <string name="live_stopped">停止直播</string>
+    <!--    断开连接-->
+    <string name="live_disconnected">断开连接</string>
+
+    <string name="live_soft_encoder">软编码</string>
+    <string name="live_hard_encoder">硬编码</string>
+
+    <string name="live_record">录像</string>
+    <string name="live_record_pause">暂停</string>
+    <string name="live_record_resume">继续</string>
+    <string name="live_record_paused">暂停录制</string>
+    <string name="live_record_resumed">继续录制</string>
+    <string name="live_recording_file">文件保存路径: </string>
+    <string name="live_record_dir">MP4保存路径: </string>
+    <string name="live_network_weak">网络环境较差</string>
+    <string name="live_network_resume">网络恢复正常</string>
+
+    <!--anyrtmp-->
+    <string name="str_rtmp">RTMP</string>
+
+    <string name="str_rtmp_success">RTMP 连接成功</string>
+    <string name="str_rtmp_failed">RTMP 连接失败</string>
+    <string name="str_rtmp_status">RTMP 延迟：%1$d 网络：%2$d</string>
+    <string name="str_rtmp_reconnecting">RTMP 重连中(%1$d秒)…</string>
+
+    <string name="live_invalid_url">直播地址无效！</string>
+    <string name="live_loading">正在连接…</string>
+
+    <string name="not_search_statellite">没有搜索到卫星数据</string>
+    <string name="gps_closed">GPS未开启</string>
+    <string name="gps_opened">GPS已开启</string>
+
+    <!--  Bluetooth -->
+    <string name="scanning">扫描设备...</string>
+    <string name="select_device">选择一个设备进行连接</string>
+    <string name="select_set">设置页面(单位秒)</string>
+    <string name="none_paired">没有配对设备</string>
+    <string name="none_found">没有找到设备</string>
+    <string name="title_paired_devices">配对设备</string>
+    <string name="title_other_devices">其他可用设备</string>
+    <string name="button_scan">扫描设备</string>
+    <string name="not_connected">您没有连接到设备</string>
+
+    <!--新版供水管道爆管分析-->
+    <string name="close_valve">保守关阀</string>
+    <string name="allow_open_valve">允许开启已关闭阀门</string>
+    <string name="noneffective_broken_point">爆管位置不在地图范围内</string>
+    <string name="title_broken_analysis_menu">爆管分析</string>
+    <string name="title_analsysis_result">分析结果</string>
+    <string name="expand_close_valve">扩大关阀</string>
+    <string name="reselect_broken_point">重选爆管点</string>
+    <string name="build_xls">正在导出Excel文件…</string>
+    <string name="msg_on_loading">正在加载…</string>
+    <string name="text_locating">正在定位具体位置...</string>
+    <string name="text_not_located">未定位到具体位置</string>
+
+    <string name="text_setpwd_success">密码设置成功</string>
+    <string name="text_setpwd_failed">密码设置失败</string>
+    <string name="text_numpwd_too_short">密码必须为4位以上数字</string>
+    <string name="text_pwd_not_agree">密码不一致</string>
+    <string name="string_forgot_password">忘记密码</string>
+    <string name="string_confirm">确定</string>
+    <string name="string_input_password">请输入密码</string>
+    <string name="string_input_four_password">请输入4位以上数字密码</string>
+    <string name="string_change_account">切换账户</string>
+    <string name="string_redraw">重绘</string>
+    <string name="string_save">保存</string>
+    <string name="string_draw_unlock_pattren">绘制解锁图案</string>
+    <string name="text_fingerprint">指纹解锁</string>
+    <string name="text_authenticate_fingerprint">请验证指纹！</string>
+    <string name="text_normal_login">账号密码登录</string>
+    <string name="setting_normal">通用</string>
+    <string name="text_desc_camera">使用程序定制相机：%s</string>
+    <string name="text_traffic_used">本月APP已使用流量：%s</string>
+    <string name="text_download_manager">下载管理</string>
+    <string name="text_auto_download_notify">WiFi下已开始自动更新</string>
+    <string name="text_has_update_file">有文件需要更新！</string>
+    <string name="text_next_say">下次再说</string>
+    <string name="text_download_ontime">立即更新</string>
+    <string name="text_update_checking">正在检查更新，请稍后...</string>
+    <string name="text_net_error">网络错误</string>
+    <string name="text_unknow_error">未知错误</string>
+    <string name="text_lastest_version">已是最新版本!</string>
+    <string name="text_need_update">需要更新!</string>
+    <string name="text_notwifi_notify">当前连接的不是WiFi网络，是否继续下载？</string>
+    <string name="text_notify">提醒</string>
+    <string name="text_download_cancel">取消并删除已下载的文件!</string>
+    <string name="text_att_data">附属数据</string>
+    <string name="text_eff_none">受影响的设备类型数据为空！</string>
+    <!--js注册以及调用方法-->
+    <string name="js_get_usr_info">GET_USER_INFO</string>
+    <string name="js_go_map">GO_MOBILE_MAP</string>
+    <string name="text_check_net">网络诊断</string>
+
+</resources>

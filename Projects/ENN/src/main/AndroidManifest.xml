@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.project.enn"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:installLocation="auto">
+
+    <application
+        android:name="com.project.enn.ENNApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="${app_icon}"
+        android:persistent="true"
+        android:theme="@style/MmtBaseTheme"
+        tools:replace="android:icon">
+        <!--<meta-data-->
+        <!--android:name="CHANNEL"-->
+        <!--android:value="${CHANNEL_VALUE}"/>-->
+        <activity
+            android:name="com.mapgis.mmt.module.welcome.Welcome"
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="pgyer"
+                    android:scheme="pgyer"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="pipenetenn"
+                    android:scheme="pipenetenn"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.project.enn.maintainconduct.MaintainConductDetailActivity"/>
+        <activity android:name="com.project.enn.maintainconduct.MaintainConductActivity"/>
+        <activity android:name="com.project.enn.maintainconduct.CGYConductDetailActivity"/>
+        <activity android:name="com.project.enn.maintainconduct.CGYConductActivity"/>
+        <activity android:name="com.project.enn.login.SystemSetter"/>
+        <activity android:name="com.project.enn.selfemployed.ExchangeExecuteDetailActivity"/>
+        <activity android:name="com.project.enn.selfemployed.ExchangeExecuteActivity"/>
+        <activity android:name="com.project.enn.selfemployed.MeterListActivity"/>
+        <activity android:name="com.project.enn.selfemployed.MeterDetailActivity"/>
+        <activity android:name="com.project.enn.selfemployed.EditMeterActivity"/>
+        <activity android:name="com.project.enn.selfemployed.AddMeterActivity"/>
+
+        <activity
+            android:name=".navigation.EnnNavigationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+
+        <activity android:name="com.project.enn.dahua.activity.AlarmActivity"/>
+        <activity android:name="com.project.enn.dahua.activity.DaHuaLiveActivity"/>
+        <activity
+            android:name="com.project.enn.dahua.activity.ComeIPhoneActivity"
+            android:theme="@style/MmtBaseTheme.DarkTheme"/>
+
+        <service android:name="com.project.enn.dahua.service.AlarmHeartService"/>
+        <service android:name="com.project.enn.dahua.service.DaHuaService"/>
+
+        <receiver android:name="com.project.enn.dahua.DaHuaBroadcastReceiver"/>
+        <receiver android:name="com.project.enn.dahua.AlarmHeartWakeReceiver"/>
+    </application>
+
+</manifest>

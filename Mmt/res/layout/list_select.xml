@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/listDialogTitle"
+        style="@style/default_text_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dip"
+        android:layout_marginTop="8dip"
+        android:gravity="center_horizontal"
+        android:text="空间查询"
+        android:textColor="@color/progressbar_blue" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:src="@color/progressbar_blue" />
+
+    <ListView
+        android:id="@+id/select_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none" />
+
+</LinearLayout>

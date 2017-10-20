@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_talk_del_history"
+    android:layout_width="fill_parent"
+    android:layout_height="60.0dip"
+    android:layout_marginBottom="6.0dip"
+    android:layout_marginLeft="6.0dip"
+    android:layout_marginRight="6.0dip"
+    android:layout_marginTop="6.0dip"
+    android:background="@drawable/css_detail_opr_bg"
+    android:orientation="horizontal"
+    android:visibility="visible" >
+
+    <LinearLayout
+        android:id="@+id/asset_download_media"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/leba_bg_left_selector"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imgFeedbackByPipeDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/css_header_bar_button"
+            android:clickable="true"
+            android:src="@drawable/detail_download" />
+
+        <TextView
+            android:id="@+id/greet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8.0dip"
+            android:text="属性编辑"
+            android:textColor="#ff719e11"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_greeting_1"
+        android:layout_width="1.0px"
+        android:layout_height="fill_parent"
+        android:background="@drawable/css_divider_line" />
+
+    <LinearLayout
+        android:id="@+id/asset_make_sure"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/leba_bg_mid_selector"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/ivMakeSure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/css_header_bar_button"
+            android:clickable="true"
+            android:onClick="onMakeSureClick"
+            android:src="@drawable/button_reset_painter" />
+
+        <TextView
+            android:id="@+id/history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8.0dip"
+            android:text="确认无误"
+            android:textColor="#ff719e11"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1.0px"
+        android:layout_height="fill_parent"
+        android:background="@drawable/css_divider_line" />
+
+    <LinearLayout
+        android:id="@+id/flex_detail_report"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/leba_bg_mid_selector"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/flexDetailReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/css_header_bar_button"
+            android:clickable="true"
+            android:onClick="flexDetailReportClick"
+            android:src="@drawable/button_main_layercontrol" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8.0dip"
+            android:text="检漏上报"
+            android:textColor="#ff719e11"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_greeting_2"
+        android:layout_width="1.0px"
+        android:layout_height="fill_parent"
+        android:background="@drawable/css_divider_line" />
+
+    <LinearLayout
+        android:id="@+id/asset_flowreport"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/leba_bg_right_selector"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imgFlowReportByPipeDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/css_header_bar_button"
+            android:clickable="true"
+            android:src="@drawable/detail_upload" />
+
+        <TextView
+            android:id="@+id/del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8.0dip"
+            android:text="事件上报"
+            android:textColor="#ff719e11"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

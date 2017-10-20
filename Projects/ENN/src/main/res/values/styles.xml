@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="style_alarm_notify_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#444</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:textSize">@dimen/text_20sp</item>
+    </style>
+
+    <style name="MmtBaseTheme.DarkTheme">
+        <item name="android:windowBackground">@color/tv_patrol_on</item>
+    </style>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/mainActionBar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/main_menu_top">
+
+    <ImageButton
+        android:id="@+id/tvBack"
+        android:layout_width="50dip"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dip"
+        android:background="@drawable/default_actionbar"
+        android:src="@drawable/common_back"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="-25dp"
+        android:layout_toLeftOf="@+id/ivPlanDetail"
+        android:layout_toRightOf="@+id/tvPlanBack"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GIS属性上报"
+            android:textColor="@color/white_text">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvDistance"
+            style="@style/default_text_small_purity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="采集点距离当前(米)：0"
+            android:textColor="@color/white_text"
+            >
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <com.repair.zhoushan.module.casemanage.casedetail.LineLinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/line_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        app:line_dynamic_dimen="10dp"
+        app:line_margin_side="32dp"
+        app:point_size="8dp" />
+
+</ScrollView>

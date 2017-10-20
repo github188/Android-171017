@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="48dp"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/dimen_8dp"
+    android:paddingBottom="@dimen/dimen_8dp"
+    android:paddingLeft="@dimen/dimen_12dp"
+    android:paddingRight="@dimen/dimen_12dp">
+
+    <TextView
+        android:id="@+id/tvKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="编号："
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_16sp" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_12dp"
+        android:text="武汉市洪山区关山大道软件园中路54879257号中地数码科技园内"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/text_16sp" />
+
+</LinearLayout>

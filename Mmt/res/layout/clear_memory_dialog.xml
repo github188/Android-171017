@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:minWidth="300dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        style="@style/default_text_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dip"
+        android:layout_marginTop="8dip"
+        android:gravity="center_horizontal"
+        android:text="清空缓存"
+        android:textColor="@color/progressbar_blue" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:contentDescription="@string/text_image"
+        android:src="@color/progressbar_blue" />
+
+    <LinearLayout
+        android:id="@+id/chkClearMyPlan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/user_unselected" />
+
+        <TextView
+            style="@style/default_text_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的计划" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:src="@color/default_text_light_black2" />
+
+    <LinearLayout
+        android:id="@+id/chkClearFlowType"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/user_unselected" />
+
+        <TextView
+            style="@style/default_text_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="事件流程" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:src="@color/default_text_light_black2"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/chkClearOwnTask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/user_unselected" />
+
+        <TextView
+            style="@style/default_text_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="事务处理" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:src="@color/default_text_light_black2"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/chkClearMapData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/user_unselected" />
+
+        <TextView
+            style="@style/default_text_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地图数据" />
+    </LinearLayout>
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:src="@color/default_text_light_black2"  />
+
+    <LinearLayout
+        android:id="@+id/chkClearReportInBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/user_unselected" />
+
+        <TextView
+            style="@style/default_text_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="后台上报" />
+    </LinearLayout>
+
+    <include layout="@layout/ok_cancel_button" />
+
+</LinearLayout>

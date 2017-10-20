@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_ok_cancel_dialog_Tips"
+        style="@style/default_text_large"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dip"
+        android:textColor="@color/progressbar_blue" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="@color/progressbar_blue"
+        android:contentDescription="@string/text_image" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/layout_ok_cancel_dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:minWidth="240dp" />
+    </ScrollView>
+
+    <include layout="@layout/ok_cancel_button" />
+
+</LinearLayout>

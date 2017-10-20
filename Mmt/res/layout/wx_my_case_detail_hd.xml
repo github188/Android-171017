@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/default_light_dark">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<include-->
+            <!--android:id="@+id/layoutTitle"-->
+            <!--layout="@layout/main_actionbar"/>-->
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/layoutOpers"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="@drawable/mapview_bottombar_bg">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tvRollback"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/layout_focus_bg"-->
+            <!--android:gravity="center"-->
+            <!--android:text="退单"-->
+            <!--android:textAppearance="@style/default_text_small_purity"-->
+            <!--android:textColor="@color/red"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tvNeedHelp"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/layout_focus_bg"-->
+            <!--android:gravity="center"-->
+            <!--android:text="协助"-->
+            <!--android:textAppearance="@style/default_text_small_purity"-->
+            <!--android:textColor="@color/nav_lightBlue"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tvHandover"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/layout_focus_bg"-->
+            <!--android:gravity="center"-->
+            <!--android:text="反馈"-->
+            <!--android:textAppearance="@style/default_text_small_purity"-->
+            <!--android:textColor="@color/blue"/>-->
+            <!--</LinearLayout>-->
+
+            <ScrollView
+                android:id="@+id/layoutDetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/wx_case_report_info"/>
+
+                    <include layout="@layout/wx_case_assign_info"/>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@color/default_light_dark"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvHistoryTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="历史记录"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <ListView
+                android:id="@+id/lvHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/default_no_bg"
+                android:dividerHeight="12dp"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="@drawable/item_focus_bg"
+                android:smoothScrollbar="true"/>
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

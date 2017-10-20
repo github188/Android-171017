@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layoutBack"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="#ffffffff"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/tvBackForMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:text="退单记录"
+        android:textAppearance="@android:style/TextAppearance.Large"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#ffe8eaea"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退单节点："
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="#ff858585"/>
+
+        <TextView
+            android:id="@+id/tvBackStep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工单审核"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退单人员："
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="#ff858585"/>
+
+        <TextView
+            android:id="@+id/tvBacker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统管理员/城中分中心"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退单时间："
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="#ff858585"/>
+
+        <TextView
+            android:id="@+id/tvBackTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-07-09 20:10:30.000"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退单原因："
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="#ff858585"/>
+
+        <TextView
+            android:id="@+id/tvBackReason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分派错了SB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            />
+    </LinearLayout>
+</LinearLayout>

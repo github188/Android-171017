@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/base_root_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!-- 标题栏信息 -->
+    <LinearLayout
+        android:id="@+id/baseTopView"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:orientation="vertical">
+
+        <include layout="@layout/main_actionbar" />
+    </LinearLayout>
+
+    <com.mapgis.mmt.common.widget.NetCheckView
+        android:id="@+id/netCheckView"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layerType="software"
+        android:padding="40dp"
+        app:textColor="#047ebf"
+        app:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/item_net_config"
+            layout="@layout/net_check_item_view" />
+
+        <include
+            android:id="@+id/item_net_inner"
+            layout="@layout/net_check_item_view" />
+
+        <include
+            android:id="@+id/item_net_outer"
+            layout="@layout/net_check_item_view" />
+
+        <include
+            android:id="@+id/item_net_server"
+            layout="@layout/net_check_item_view" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_check_control"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginLeft="@dimen/dimen_40dp"
+        android:layout_marginRight="@dimen/dimen_40dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:text="开始检测"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/selector_net_check_btn"/>
+
+</LinearLayout>

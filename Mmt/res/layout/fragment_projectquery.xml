@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <!--标题栏-->
+    <include
+        android:id="@+id/cusActionBar"
+        layout="@layout/search_actionbar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--android:layout_height="32dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_tab_bound_bg"
+            android:padding="1dp"-->
+            <!--tab导航栏-->
+            <com.mapgis.mmt.common.widget.customview.MultiSwitchButton
+                android:id="@+id/multiSwitchButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                />
+            <!--分割线-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@color/default_light_dark"/>
+
+            <!--内容列表-->
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/frameOnLoading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:gravity="center"
+            android:background="#eee"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在加载..."
+                android:textColor="#c1000000"
+                android:textSize="16sp"/>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

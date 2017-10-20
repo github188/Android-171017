@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layerInfo_mobile"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:tag="gisOperatePanel"
+    android:theme="@android:style/Theme.Holo.Dialog">
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!-->-->
+
+    <!--<TextView-->
+
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:text="GIS采集"-->
+    <!--android:textColor="#ff000000"-->
+    <!--android:textSize="15sp"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+    <!--图层-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/corners_bg"
+        android:divider="@drawable/split_line"
+        android:orientation="vertical"
+        android:showDividers="middle"
+
+        >
+        //200dp
+
+
+        <ScrollView
+            android:id="@+id/radioGroup"
+            style="@style/default_text_small_purity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="vertical"
+            >
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            >
+
+            <TextView
+                android:id="@+id/editDefaultAttrs"
+                style="@style/default_text_small_purity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bt_nobgd"
+                android:gravity="center"
+                android:text="默认属性"
+                android:textColor="@color/blue"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--操作面板-->
+    <LinearLayout
+        android:id="@+id/pojOpt_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corners_bg"
+        android:divider="@drawable/split_line"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/split_line"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/delPoj"
+                style="@style/default_text_small_purity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/bt_nobgd"
+                android:gravity="center"
+                android:text="删除工程"
+                android:textColor="@color/red"/>
+
+            <TextView
+                android:id="@+id/reset"
+                style="@style/default_text_small_purity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/bt_nobgd"
+                android:gravity="center"
+                android:text="清空"
+                android:textColor="@color/red"/>
+
+
+            <TextView
+                android:id="@+id/submit"
+                style="@style/default_text_small_purity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/bt_nobgd"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/blue"/>
+        </LinearLayout>
+
+        <!--其他操作-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/split_line"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <CheckBox
+                android:id="@+id/autoLinkPoint"
+                style="@style/default_text_small_purity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:text="自动连线"
+                android:textColor="#ff000000"
+                android:textSize="12sp"/>
+
+            <CheckBox
+                android:id="@+id/todayGather"
+                style="@style/default_text_small_purity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:text="今日采集"
+                android:textColor="#ff000000"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

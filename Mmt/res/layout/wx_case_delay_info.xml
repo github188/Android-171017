@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layoutDelay"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="#ffffffff"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/tvDelayForMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:text="延期申请"
+        android:textAppearance="@android:style/TextAppearance.Large"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#ffe8eaea"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="申请人员："
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="#ff858585"/>
+
+        <TextView
+            android:id="@+id/tvDelayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="吴剑/城中分中心"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="申请完成："
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="#ff858585"/>
+
+        <TextView
+            android:id="@+id/tvDelayToTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-07-10 20:09:00.000"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="审核人员："
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="#ff858585"/>
+
+        <TextView
+            android:id="@+id/tvDelayChecker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="罗伯特/信息中心"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="申请状态："
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="#ff858585"/>
+
+        <TextView
+            android:id="@+id/tvDelayState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已通过"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="延期原因："
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="#ff858585"/>
+
+        <TextView
+            android:id="@+id/tvDelayReason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="世界这么大，我想去看看"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            />
+    </LinearLayout>
+</LinearLayout>

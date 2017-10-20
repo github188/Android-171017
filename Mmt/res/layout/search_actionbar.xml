@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/main_menu_top"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="50dip"
+        android:layout_height="match_parent"
+        android:background="@drawable/default_actionbar"
+        android:contentDescription="@string/text_image"
+        android:src="@drawable/common_back" />
+
+    <EditText
+        android:id="@+id/txtSearch"
+        style="@style/default_text_medium_1"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:background="@drawable/default_input_edit"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="工单编号" />
+
+    <ImageButton
+        android:id="@+id/btnOtherAction"
+        android:layout_width="50dip"
+        android:layout_height="match_parent"
+        android:background="@drawable/default_actionbar"
+        android:contentDescription="@string/text_image"
+        android:src="@drawable/search_white" />
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+   <!-- <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016 3 25 17:00:10"
+        android:textColor="#027cff"
+        android:textSize="20sp"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="用户实时信息"
+        android:textColor="#02fa38"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/point_info_text"
+        android:text="姓名：admin"/>
+
+    <TextView
+        android:id="@+id/time"
+        style="@style/point_info_text"
+        android:text="时间：2016 03 05 00:00:00"/>
+
+    <TextView
+        android:id="@+id/position"
+        style="@style/point_info_text"
+        android:text="位置：10002.00,09384.387"/>
+
+    <TextView
+        android:id="@+id/accr"
+        style="@style/point_info_text"
+        android:text="定位精度：0.0(米)"/>
+
+    <TextView
+        android:id="@+id/res"
+        style="@style/point_info_text"
+        android:text="定位来源：Random"/>
+
+    <TextView
+        android:id="@+id/lat"
+        style="@style/point_info_text"
+        android:text="经度：0"/>
+
+    <TextView
+        android:id="@+id/lag"
+        style="@style/point_info_text"
+        android:text="纬度：0"/>
+
+    <TextView
+        android:id="@+id/speed"
+        style="@style/point_info_text"
+        android:text="速度：0.0"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="手机使用状况"
+        android:textColor="#02fa38"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/cpu"
+        style="@style/point_info_text"
+        android:text="cpu：0"/>
+
+    <TextView
+        android:id="@+id/category"
+        style="@style/point_info_text"
+        android:text="电量：100%"/>
+
+    <TextView
+        android:id="@+id/memory"
+        style="@style/point_info_text"
+        android:text="内存：28%"/>
+
+</LinearLayout>

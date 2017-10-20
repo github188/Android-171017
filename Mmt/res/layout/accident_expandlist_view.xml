@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:baselineAligned="false"
+              android:fitsSystemWindows="false"
+              android:orientation="vertical">
+
+    <TextView
+        android:visibility="gone"
+        style="@style/default_text_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="@dimen/singline_height"
+        android:text="爆管分析结果"
+        android:textColor="@color/progressbar_blue"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:src="@color/default_line_bg"/>
+
+    <ExpandableListView
+        android:id="@+id/expandListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:groupIndicator="@null"
+        android:layout_above="@+id/shortMessageLayout"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"/>
+
+    <include layout="@layout/ok_cancel_button"
+        />
+
+</LinearLayout>

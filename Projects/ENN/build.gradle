@@ -1,0 +1,100 @@
+apply plugin: 'com.android.application'
+
+def computeVersionName() {
+    def date = new Date()
+    def formattedDate = date.format('MMdd')
+    return "3.7.${formattedDate}"
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    signingConfigs {
+        config {
+            storeFile file("../../debug.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+        bug {
+            storeFile file("../../debug.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }
+    defaultConfig {
+        applicationId 'com.project.enn'
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 4
+        versionName computeVersionName()
+        multiDexEnabled true
+        signingConfig signingConfigs.config
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            zipAlignEnabled true
+            shrinkResources false
+
+        }
+        release {
+            minifyEnabled false
+            zipAlignEnabled true
+            shrinkResources false
+            // 混淆文件位置
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+//            applicationVariants.all { variant ->
+//                variant.outputs.each { output ->
+//                    def outputFile = output.outputFile
+//                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//                        def fileName = "${variant.productFlavors[0].name}_v${defaultConfig.versionName}.apk"
+//                        output.outputFile = new File(outputFile.parent, fileName)
+//                    }
+//                }
+//            }
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    productFlavors {
+        prod {
+            resValue "string", "app_name", "新奥运营管理"
+            // 修改 AndroidManifest.xml 里渠道变量
+            manifestPlaceholders = [CHANNEL_VALUE: "ENN_prod"
+                                    , app_icon   : "@mipmap/icon"]
+        }
+        beta {
+            applicationIdSuffix '.beta'
+            resValue "string", "app_name", "新奥运营管理内测版"
+            // 修改 AndroidManifest.xml 里渠道变量
+            manifestPlaceholders = [CHANNEL_VALUE: "ENN_beta"
+                                    , app_icon   : "@mipmap/icon_beta"]
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':Mmt')
+}
+

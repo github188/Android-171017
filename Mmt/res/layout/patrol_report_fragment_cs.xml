@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomLayout"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scroolView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/patrolReportBtn">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--  小类  -->
+                <com.mapgis.mmt.common.widget.customview.ImageButtonView
+                    android:id="@+id/smallClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <!--  坐标  -->
+                <com.mapgis.mmt.common.widget.customview.ImageButtonView
+                    android:id="@+id/coordinate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <!--  地址  -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:minHeight="@dimen/singline_height">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/flex_flow_address"/>
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        style="@style/default_text_large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:layout_toRightOf="@id/imageView1"
+                        android:minWidth="60dip"
+                        android:text="地址"/>
+
+                    <EditText
+                        android:id="@+id/patrolReportAddress"
+                        style="@style/default_text_medium_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/patrolReportAddressButton"
+                        android:layout_toRightOf="@id/textView1"
+                        android:background="@color/default_no_bg"
+                        android:minWidth="160dip"/>
+
+                    <ImageButton
+                        android:id="@+id/patrolReportAddressButton"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/default_no_bg"
+                        android:src="@drawable/button_for_more"/>
+                </RelativeLayout>
+
+                <!--  描述  -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:minHeight="@dimen/singline_height">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/flex_flow_description"/>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        style="@style/default_text_large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:layout_toRightOf="@+id/imageView4"
+                        android:minWidth="60dip"
+                        android:text="描述"/>
+
+                    <ImageButton
+                        android:id="@+id/patrolReportContentButton"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/default_no_bg"
+                        android:src="@drawable/button_for_more"/>
+
+                    <EditText
+                        android:id="@+id/patrolReportContent"
+                        style="@style/default_text_medium_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@id/textView4"
+                        android:layout_toLeftOf="@id/patrolReportContentButton"
+                        android:layout_toRightOf="@id/textView4"
+                        android:layout_toStartOf="@id/patrolReportContentButton"
+                        android:background="@color/default_no_bg"
+                        android:lines="3"/>
+                </RelativeLayout>
+
+                <!--  拍照  -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:minHeight="@dimen/mutiline_height">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/flex_flow_takephoto"/>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/default_text_large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:layout_toRightOf="@+id/imageView2"
+                        android:minWidth="60dip"
+                        android:text="拍照"/>
+
+                    <FrameLayout
+                        android:id="@+id/photoFrameLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView2"/>
+                </RelativeLayout>
+
+                <!--  录音  -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:minHeight="@dimen/mutiline_height">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/record"/>
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        style="@style/default_text_large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:layout_toRightOf="@+id/imageView7"
+                        android:minWidth="60dip"
+                        android:text="录音"/>
+
+                    <FrameLayout
+                        android:id="@+id/recorderFrameLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView7"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/selfCheckBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="5"
+            android:background="@drawable/button_radius"
+            android:text="自       查"
+            android:textColor="@color/white_text"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/patrolReportBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:background="@drawable/button_radius"
+            android:text="上      报"
+            android:textColor="@color/white_text"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

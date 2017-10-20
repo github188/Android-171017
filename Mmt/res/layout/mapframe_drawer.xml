@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 页面内容 -->
+
+    <include layout="@layout/mapframe_main" />
+
+    <!-- 侧边栏的选项 -->
+
+    <ListView
+        android:id="@+id/rightDrawer"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/default_light_dark" />
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:my="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip" >
+
+        <TextView
+            android:id="@+id/planItemName"
+            style="@style/default_text_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:text="阀门计划" />
+
+        <TextView
+            android:id="@+id/planItemType"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/planItemName"
+            android:text="阀门巡检" />
+
+        <TextView
+            android:id="@+id/planItemCycle"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/planItemName"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/planItemType"
+            android:text="每天一次" />
+
+        <ImageView
+            android:id="@+id/planItemImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/button_for_more" />
+
+        <TextView
+            android:id="@+id/planItemTime"
+            style="@style/default_text_small_purity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/planItemImage"
+            android:text="8/31/09:04"
+            android:textColor="@color/default_text_light_black2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/planBarParentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/planBarArriveLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/default_text_small_purity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到位："
+                android:textColor="@color/progressbar_blue" />
+
+            <TextView
+                android:id="@+id/planItemArrive"
+                style="@style/default_text_small_purity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="60dip"
+                android:text="114/114"
+                android:textColor="@color/progressbar_blue" />
+
+            <com.mapgis.mmt.common.widget.customview.MyProgressbarView
+                android:id="@+id/arriveProgressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="10dip"
+                my:progressbarColor="@color/progressbar_blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/planBarFeedbackLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/default_text_small_purity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="反馈："
+                android:textColor="@color/progressbar_orange" />
+
+            <TextView
+                android:id="@+id/planItemFeedback"
+                style="@style/default_text_small_purity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="60dip"
+                android:text="4/6"
+                android:textColor="@color/progressbar_orange" />
+
+            <com.mapgis.mmt.common.widget.customview.MyProgressbarView
+                android:id="@+id/feedbackProgressbar"
+                android:layout_width="match_parent"
+                android:layout_height="10dip"
+                my:progressbarColor="@color/progressbar_orange"
+                my:progressbarWidth="135dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

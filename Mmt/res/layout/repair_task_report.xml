@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/repairTaskReportFragment"
+        android:layout_width="match_parent"
+        android:layout_height="400dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/repairTaskReportFragmentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="300dip"
+        android:text="无照片"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/repairTaskReportEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/repairTaskTakePhotoLayout"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/edit_text_selector"
+        android:gravity="top|left"
+        android:hint="请描述"
+        android:minLines="3" />
+
+    <LinearLayout
+        android:id="@+id/repairTaskTakePhotoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/repairTaskTakePhotoButton"
+            android:layout_width="120dip"
+            android:layout_height="50dp"
+            android:background="@drawable/css_button_default"
+            android:text="拍照/重拍"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/repairTaskReportButton"
+            android:layout_width="120dip"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/css_button_default"
+            android:text="提交"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

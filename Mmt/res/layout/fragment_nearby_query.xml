@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner_query_radius"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0c000000"
+            android:gravity="center_vertical"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#3a000000" />
+
+        <TextView
+            android:id="@+id/spinner_query_layername"
+            style="?android:attr/spinnerItemStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#0c000000"
+            android:clickable="true"
+            android:drawableRight="@drawable/tree_ex"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingRight="8dp"
+            android:textAlignment="center" />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0c000000"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        app:theme="@style/Theme.AppCompat"
+        android:id="@+id/tabLayout_layer_titles"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#21000000"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="2dp"
+        app:tabIndicatorColor="#4063ff"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#4063ff"
+        app:tabTextColor="#000" />
+    <!--<com.mapgis.mmt.common.widget.slidingtab.SlidingTabLayout-->
+        <!--android:id="@+id/tabLayout_layer_titles"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp" />-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

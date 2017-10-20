@@ -1,0 +1,44 @@
+package com.swipebacklayout.lib.app;
+
+import android.os.Bundle;
+import android.preference.PreferenceActivity;
+import android.view.View;
+
+import com.swipebacklayout.lib.SwipeBackLayout;
+
+public class SwipeBackPreferenceActivity extends PreferenceActivity implements SwipeBackActivityBase {
+	private SwipeBackActivityHelper mHelper;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		mHelper = new SwipeBackActivityHelper(this);
+		mHelper.onActivtyCreate();
+	}
+
+	@Override
+	protected void onPostCreate(Bundle savedInstanceState) {
+		super.onPostCreate(savedInstanceState);
+		mHelper.onPostCreate();
+	}
+
+	@Override
+	public View findViewById(int id) {
+		View v = super.findViewById(id);
+		if (v == null && mHelper != null)
+			return mHelper.findViewById(id);
+		return v;
+	}
+
+	public SwipeBackLayout getSwipeBackLayout() {
+		return mHelper.getSwipeBackLayout();
+	}
+
+	public void setSwipeBackEnable(boolean enable) {
+		getSwipeBackLayout().setEnableGesture(enable);
+	}
+
+	public void scrollToFinishActivity() {
+		getSwipeBackLayout().scrollToFinishActivity();
+	}
+}

@@ -1,0 +1,6 @@
+include ':ThirdPartyLibraries'
+include ':Mmt'
+include ':Projects:ENN'
+include ':httpexecutor'
+include ':EventCore'
+include ':LogLib'

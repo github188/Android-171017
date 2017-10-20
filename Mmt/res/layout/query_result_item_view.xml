@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <ImageButton
+            android:id="@+id/tv_locate"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_mark_normal"
+            android:background="@null"/>
+        <TextView
+            android:id="@+id/itemIndex"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/progressbar_orange"
+            tools:text="1." />
+        <TextView
+            android:id="@+id/tv_elemNum"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/itemIndex"
+            android:textSize="16sp"
+            tools:text="FM_94893849" />
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:ellipsize="marquee"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="20000米" />
+
+    </LinearLayout>
+
+    <!--<TextView
+        android:id="@+id/itemIndex"
+        style="@style/default_text_medium_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/progressbar_orange"
+        android:visibility="gone"
+        tools:text="1." />
+
+    <TextView
+        android:id="@+id/tv_elemNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/itemIndex"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:text="FM_94893849" />
+
+
+    <TextView
+        android:id="@+id/tv_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ellipsize="marquee"
+        android:maxLines="1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        tools:text="20000米" />
+
+    <TextView
+        android:id="@+id/tv_locate"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_distance"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/common_button_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="定位"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_locate"
+        android:layout_alignBottom="@id/tv_locate"
+        android:layout_alignTop="@id/tv_locate"
+        android:layout_below="@id/tv_elemNum"
+        android:layout_marginRight="55dp"
+        android:layout_toRightOf="@id/itemIndex"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:text="位置：中地数码有限公司就爱看大家发记录反馈" />-->
+
+</RelativeLayout>

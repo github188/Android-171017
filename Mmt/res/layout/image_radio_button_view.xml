@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:id="@+id/mainLayout"
+    android:orientation="horizontal"
+    android:minHeight="48dp">
+
+    <ImageView
+        android:id="@+id/imageButtonViewImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/setting_confirm"/>
+
+    <TextView
+        android:id="@+id/imageButtonViewKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:maxWidth="165dp"
+        android:layout_toRightOf="@id/imageButtonViewImage"
+        tools:text="RadioButton"/>
+
+    <TextView
+        android:id="@+id/imageButtonViewMust"
+        android:layout_width="8dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="*"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/sketch_last_vertex_background_color"/>
+
+</LinearLayout>

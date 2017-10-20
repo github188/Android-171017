@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="55dip"
+    android:background="@drawable/header_bar_background"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/detail_revert_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/margin_tendip"
+        android:layout_marginRight="@dimen/margin_tendip"
+        android:background="@drawable/css_header_bar_button"
+        android:clickable="true"
+        android:src="@drawable/button_revert" />
+
+    <ImageView
+        android:id="@+id/detail_loc_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/margin_tendip"
+        android:layout_marginRight="@dimen/margin_tendip"
+        android:background="@drawable/css_header_bar_button"
+        android:clickable="true"
+        android:src="@drawable/detail_loc_btn" />
+
+    <TextView
+        android:id="@+id/textview_Title"
+        style="@style/Text.primaryWitheTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="属性编辑"
+        android:textColor="#ff545454"
+        android:textSize="18.0sp" />
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/asset_detail_bg"
+        android:orientation="vertical"
+        android:paddingBottom="12.0dip" >
+
+        <include layout="@layout/asset_detail_title" />
+
+        <include layout="@layout/asset_detail_media" />
+
+        <include layout="@layout/asset_detail_props_list" />
+    </LinearLayout>
+
+</LinearLayout>

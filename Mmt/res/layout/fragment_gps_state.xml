@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_total_statellite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textColor="@color/default_text_light_black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_used_statellite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_total_statellite"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:text=""
+            android:textColor="@color/default_text_light_black"
+            android:textSize="16sp"/>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/mpChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_total_statellite"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp">
+
+        <Space
+            android:id="@+id/space_middle_line"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tv_longitude"
+            style="@style/left_text_gps_state"
+            android:text="经度：-"/>
+
+        <TextView
+            android:id="@+id/tv_latitude"
+            style="@style/right_text_gps_state"
+            android:layout_alignBottom="@id/tv_longitude"
+            android:text="纬度：-"/>
+
+        <TextView
+            android:id="@+id/tv_accuracy"
+            style="@style/left_text_gps_state"
+            android:layout_below="@id/tv_longitude"
+            android:layout_marginTop="@dimen/gps_text_divide_height"
+            android:text="精度：-"/>
+
+        <TextView
+            android:id="@+id/tv_src"
+            style="@style/right_text_gps_state"
+            android:layout_alignBottom="@id/tv_accuracy"
+            android:text="源自：-"/>
+
+        <TextView
+            android:id="@+id/tv_x"
+            style="@style/left_text_gps_state"
+            android:layout_below="@id/tv_accuracy"
+            android:layout_marginTop="@dimen/gps_text_divide_height"
+            android:text="X 值：-"/>
+
+        <TextView
+            android:id="@+id/tv_y"
+            style="@style/right_text_gps_state"
+            android:layout_alignBaseline="@id/tv_x"
+            android:text="Y 值：-"/>
+
+        <TextView
+            android:id="@+id/tv_altitude"
+            style="@style/left_text_gps_state"
+            android:layout_below="@id/tv_x"
+            android:layout_marginTop="@dimen/gps_text_divide_height"
+            android:text="海拔：-"/>
+
+        <TextView
+            android:id="@+id/tv_speed"
+            style="@style/right_text_gps_state"
+            android:layout_alignBaseline="@id/tv_altitude"
+            android:text="速度：-"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/left_text_gps_state"
+            android:layout_below="@id/tv_altitude"
+            android:layout_marginTop="@dimen/gps_text_divide_height"
+            android:text="时间：-"/>
+
+        <TextView
+            android:id="@+id/tv_provider"
+            style="@style/right_text_gps_state"
+            android:layout_alignBaseline="@id/tv_time"
+            android:text="方式：-"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnReportMMt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_blue"
+        android:text="上传日志"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+</LinearLayout>

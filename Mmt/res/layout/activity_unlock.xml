@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:visibility="visible"
+        tools:context=".module.systemsetting.locksetting.numpwd.UnlockNumberPasswordActivity">
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_32dp"
+            android:layout_weight="2"/>
+
+        <ImageView
+            android:id="@+id/numberpwd_unlock_face"
+            android:layout_width="@dimen/dimen_80dp"
+            android:layout_height="@dimen/dimen_80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0.0dip"
+            android:background="@drawable/card_avatar"
+            android:padding="@dimen/dimen_4dp"
+            android:scaleType="fitXY"/>
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_unlock_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_40dp"
+            android:layout_marginRight="@dimen/dimen_40dp"
+            android:layout_marginTop="0.0dip"
+            android:gravity="center_horizontal"
+            android:shadowColor="#b3ffffff"
+            android:shadowRadius="1.0"
+            android:text="@string/string_input_four_password"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_16sp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_16dp"
+            android:layout_weight="2"/>
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/string_input_password"
+                android:inputType="numberPassword"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:textColor="@color/color_ffffff"/>
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/login_button_bg"
+                android:text="@string/string_confirm"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#fe030008"/>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_weight="10"/>
+
+        <TextView
+            android:id="@+id/numberpwd_unlock_forget"
+            style="@style/style_unlock_text"
+            android:text="@string/string_forgot_password"/>
+
+        <TextView
+            android:id="@+id/tv_change_account"
+            style="@style/style_unlock_text"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="@string/string_change_account"
+            android:visibility="gone"
+            />
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_weight="6"/>
+    </LinearLayout>
+</ScrollView>

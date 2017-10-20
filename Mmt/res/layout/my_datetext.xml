@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20.0dip"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lblDate"
+        style="@style/login_label"
+        android:layout_alignBottom="@+id/txtDateLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/txtDateLayout"
+        android:text="点击按钮选择日期"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:id="@+id/txtDateLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/txtDateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="获取日期" />
+
+        <Button
+            android:id="@+id/txtTimeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="获取时间"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

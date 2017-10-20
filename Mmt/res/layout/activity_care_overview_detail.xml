@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/result_text"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_actionbar" />
+
+    <include layout="@layout/sliding_content_view" />
+
+    <!-- 底部工具栏信息 -->
+    <LinearLayout
+        android:id="@+id/bottomViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/result_text"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="4dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/baseBottomView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mapview_bottombar_bg"
+            android:baselineAligned="false"
+            android:minHeight="50dip"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/layout_focus_bg"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/text_image"
+                android:minWidth="40dip"
+                android:src="@drawable/flex_flow_takephoto"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imageView1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/default_text_large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="相机"
+                    android:textColor="@color/default_text_black"/>
+
+                <TextView
+                    android:id="@+id/txtSysPhoto"
+                    style="@style/default_text_medium_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="使用自定义相机：否"/>
+            </LinearLayout>
+
+            <com.mapgis.mmt.common.widget.customview.SwitchImageButton
+                android:id="@+id/btnIsSysPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+        <com.mapgis.mmt.common.widget.customview.ImageLineView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/layout_focus_bg"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/text_image"
+                android:minWidth="40dip"
+                android:src="@drawable/setting_location"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imageView2"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/default_text_large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="到位语音"
+                    android:textColor="@color/default_text_black"/>
+
+                <TextView
+                    android:id="@+id/txtArrivedTip"
+                    style="@style/default_text_medium_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="到位语音提示开启：是"/>
+            </LinearLayout>
+
+            <com.mapgis.mmt.common.widget.customview.SwitchImageButton
+                android:id="@+id/btnArrivedTip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+        <com.mapgis.mmt.common.widget.customview.ImageLineView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/layout_focus_bg"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/text_image"
+                android:minWidth="40dip"
+                android:src="@drawable/setting_about"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imageView3"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/default_text_large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GPS信号"
+                    android:textColor="@color/default_text_black"/>
+
+                <TextView
+                    android:id="@+id/txtgpsSignal"
+                    style="@style/default_text_medium_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GPS信号语音提示开启：是"/>
+            </LinearLayout>
+
+            <com.mapgis.mmt.common.widget.customview.SwitchImageButton
+                android:id="@+id/btngpsSignal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+        <com.mapgis.mmt.common.widget.customview.ImageLineView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/layout_focus_bg"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/text_image"
+                android:minWidth="40dip"
+                android:src="@drawable/setting_layer"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imageView4"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/default_text_large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GPS精度"
+                    android:textColor="@color/default_text_black"/>
+
+                <TextView
+                    android:id="@+id/txtSignalAccuracy"
+                    style="@style/default_text_medium_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GPS精度语音提示开启：是"/>
+            </LinearLayout>
+
+            <com.mapgis.mmt.common.widget.customview.SwitchImageButton
+                android:id="@+id/btnSignalAccuracy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+        <com.mapgis.mmt.common.widget.customview.ImageLineView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_current_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:ellipsize="marquee"
+        android:lines="1"
+        android:text="正在清理："
+        android:textColor="#d10400fd"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:indeterminate="true" />
+
+    <ScrollView
+        android:id="@+id/sv_list_delete"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shape_memory_clear_bg">
+
+        <TextView
+            android:id="@+id/tv_list_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/clear_no_file"
+            android:lineSpacingExtra="1.2dp"
+            android:minLines="10"
+            android:textColor="#ce000000"
+            android:textSize="14sp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_delete_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="marquee"
+        android:lines="1"
+        android:text="@string/clear_result"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#52000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:divider="#000"
+        android:dividerPadding="10dp"
+        android:orientation="horizontal"
+        android:showDividers="end">
+
+        <Button
+            android:id="@+id/btn_negative"
+            style="@style/clear_btn"
+            android:text="@string/clear_cancel" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#52000000" />
+
+        <Button
+            android:id="@+id/btn_positive"
+            style="@style/clear_btn"
+            android:text="@string/clear_background" />
+    </LinearLayout>
+</LinearLayout>

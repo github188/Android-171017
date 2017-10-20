@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/listDialogTitle"
+            style="@style/default_text_large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="15dp"
+            android:text="请按住讲话"
+            android:textColor="@color/progressbar_blue" />
+        <ImageView
+            android:id="@+id/recorder_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"
+            android:src="@drawable/btn_dialog_close" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:src="@color/progressbar_blue" />
+
+    <ImageView
+        android:id="@+id/microphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icon_voice_volume_1" />
+
+    <TextView
+        android:id="@+id/recorderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="-"
+        android:textColor="@color/text_darkGray"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/recorderLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="录音时长"
+        android:textColor="@color/text_darkGray"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <include layout="@layout/ok_cancel_button" />
+    </LinearLayout>
+
+</LinearLayout>

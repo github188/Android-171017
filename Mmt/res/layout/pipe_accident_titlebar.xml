@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/main_menu_top" >
+
+    <ImageButton
+        android:id="@+id/tvPlanBack"
+        android:layout_width="50dip"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dip"
+        android:background="@drawable/default_actionbar"
+        android:src="@drawable/common_back"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/ivPlanDetail"
+        android:layout_toRightOf="@+id/tvPlanBack"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvPlanName"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white_text" >
+        </TextView>
+
+        <Button
+            android:id="@+id/tvTaskState"
+            style="@style/default_text_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:background="@null"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textColor="@color/white_text" >
+        </Button>
+    </LinearLayout>
+    
+    <ProgressBar
+        android:id="@+id/searchProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:indeterminateDrawable="@drawable/progressbar_circle_purple" 
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/ivPlanDetail"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/default_actionbar"
+        android:src="@drawable/detail" 
+        android:visibility="invisible"/>
+    
+</RelativeLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:my="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fffdfdfe"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/ivMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/button_for_more" />
+
+    <LinearLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/ivMore"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvSN"
+                style="@style/default_text_small_purity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="1." />
+
+            <TextView
+                android:id="@+id/tvEndTime"
+                style="@style/default_text_small_purity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="8/31/09:04" />
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/default_text_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_toEndOf="@id/tvSN"
+                android:layout_toLeftOf="@id/tvEndTime"
+                android:layout_toRightOf="@id/tvSN"
+                android:layout_toStartOf="@id/tvEndTime"
+                android:text="阀门计划" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#310c0c0c" />
+
+        <LinearLayout
+            android:id="@+id/layoutPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/default_text_small_purity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="到位："
+                    android:textColor="@color/progressbar_blue" />
+
+                <TextView
+                    android:id="@+id/tvArrive"
+                    style="@style/default_text_small_purity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="60dip"
+                    android:text="114/114"
+                    android:textColor="@color/progressbar_blue" />
+
+                <com.mapgis.mmt.common.widget.customview.MyProgressbarView
+                    android:id="@+id/pbArrive"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="10dip"
+                    my:progressbarColor="@color/progressbar_blue" />
+
+                <TextView
+                    android:id="@+id/tvArriveRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_6dp"
+                    android:textColor="@color/progressbar_blue"
+                    android:text="0%"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutFb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/default_text_small_purity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="反馈："
+                    android:textColor="@color/progressbar_orange" />
+
+                <TextView
+                    android:id="@+id/tvFeedback"
+                    style="@style/default_text_small_purity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="60dip"
+                    android:text="4/6"
+                    android:textColor="@color/progressbar_orange" />
+
+                <com.mapgis.mmt.common.widget.customview.MyProgressbarView
+                    android:id="@+id/pbFeedback"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="10dip"
+                    my:progressbarColor="@color/progressbar_orange"
+                    my:progressbarWidth="135dp" />
+
+                <TextView
+                    android:id="@+id/tvFeedbackRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_6dp"
+                    android:textColor="@color/progressbar_orange"
+                    android:text="0%"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutPipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/default_text_small_purity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="管段："
+                    android:textColor="@color/green" />
+
+                <TextView
+                    android:id="@+id/tvArrivePipe"
+                    style="@style/default_text_small_purity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="60dip"
+                    android:text="114/114"
+                    android:textColor="@color/green" />
+
+                <com.mapgis.mmt.common.widget.customview.MyProgressbarView
+                    android:id="@+id/pbArrivePipe"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="10dip"
+                    my:progressbarColor="@color/green" />
+
+                <TextView
+                    android:id="@+id/tvArrivePipeRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_6dp"
+                    android:textColor="@color/green"
+                    android:text="0%"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#310c0c0c" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvArea"
+                style="@style/default_text_medium_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="阀门巡检" />
+
+            <TextView
+                android:id="@+id/tvCycle"
+                style="@style/default_text_medium_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="每天一次" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivStatus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/orderlist_finish_signet"
+        android:visibility="gone" />
+</RelativeLayout>

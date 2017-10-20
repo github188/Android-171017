@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffeeeeec"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/cusActionBar"
+        layout="@layout/search_actionbar" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="40.0dip"
+        android:background="@color/snow"
+        android:scrollbars="none">
+
+        <com.mapgis.mmt.common.widget.filtermenubar.FilterMenuBar
+            android:id="@+id/mMenuBar"
+            android:layout_width="match_parent"
+            android:layout_height="40.0dip"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+    </HorizontalScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@color/default_light_dark" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/listViewNet"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/default_no_bg"
+        android:dividerHeight="12dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:smoothScrollbar="true" />
+</LinearLayout>

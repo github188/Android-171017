@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/asset_detail_head" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/asset_detail_bg"
+        android:orientation="vertical"
+        android:paddingBottom="12.0dip" >
+
+        <include layout="@layout/asset_detail_title" />
+
+        <FrameLayout
+            android:id="@+id/frag_pipe_detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60.0dip"
+            android:layout_marginBottom="6.0dip"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginRight="6.0dip"
+            android:layout_marginTop="6.0dip"
+            android:background="@drawable/css_detail_opr_bg" >
+        </FrameLayout>
+        
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginRight="6.0dip"
+            android:background="@drawable/leba_shape_bg" >
+
+            <LinearLayout
+                android:id="@+id/rootLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginRight="6.0dip" 
+                android:orientation="vertical">
+                
+                <RelativeLayout
+                    android:id="@+id/deviceTypeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:minHeight="40dip" >
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/default_text_large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_toRightOf="@+id/imageView2"
+                        android:minWidth="60dip"
+                        android:text="类型：" />
+
+                    <TextView
+                        android:id="@+id/deviceType"
+                        style="@style/default_text_medium_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView2"
+                        android:minWidth="60dip"
+                        android:text="类型" />
+
+                    <ImageButton
+                        android:id="@+id/deviceTypeBtn"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/default_no_bg"
+                        android:src="@drawable/button_for_more" />
+                </RelativeLayout>
+                
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#22000000" />
+                
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

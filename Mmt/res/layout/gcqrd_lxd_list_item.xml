@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/rect_bounds"
+              android:baselineAligned="false"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:id="@+id/maintenanceListItemIndex"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/progressbar_orange"/>
+
+        <TextView
+            android:id="@+id/maintenanceListItemLeftTop"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/maintenanceListItemRightTop"
+            android:layout_toRightOf="@+id/maintenanceListItemIndex"
+            android:textColor="@color/default_purple"/>
+
+        <TextView
+            android:id="@+id/maintenanceListItemRightTop"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/default_purple"/>
+
+        <TextView
+            android:id="@+id/maintenanceListItemMiddle"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/maintenanceListItemLeftTop"
+            android:layout_toLeftOf="@+id/maintenanceListItemDistance"
+            android:layout_toRightOf="@+id/maintenanceListItemIndex"
+            android:textColor="@color/default_accent_color"/>
+
+        <TextView
+            android:id="@+id/maintenanceListItemLeftBottom"
+            style="@style/default_text_small_purity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/maintenanceListItemMiddle"
+            android:layout_toLeftOf="@+id/maintenanceListItemDistance"
+            android:layout_toRightOf="@+id/maintenanceListItemIndex"
+            android:textColor="@color/default_accent_color"/>
+
+        <TextView
+            android:id="@+id/maintenanceListItemDate"
+            style="@style/default_text_little_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/maintenanceListItemDistance"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/default_red"/>
+
+        <TextView
+            android:id="@+id/maintenanceListItemDistance"
+            style="@style/default_text_little_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/maintenanceListItemMiddle"
+            android:textColor="@color/default_red"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/default_line_bg"
+        android:contentDescription="@string/text_image"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/maintenanceListItemguajie"
+            style="@style/default_text_small_purity"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:gravity="center"
+            android:text="挂接"/>
+    </LinearLayout>
+
+</LinearLayout>

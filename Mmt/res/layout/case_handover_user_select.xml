@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/caseHandoverTitle"
+        style="@style/default_text_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dip"
+        android:layout_marginTop="8dip"
+        android:gravity="center_horizontal"
+        android:text="@string/text_select_user"
+        android:textColor="@color/progressbar_blue"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:contentDescription="@string/text_image"
+        android:src="@color/progressbar_blue"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical">
+
+        <com.mapgis.mmt.common.widget.customview.MutilTreeView
+            android:id="@+id/caseHandoverList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/caseHandoverEdit"/>
+
+        <EditText
+            android:id="@+id/caseHandoverEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/caseHandoverLayout"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_text_default"
+            android:gravity="top|left"
+            android:hint="@string/text_hint_default"
+            android:lines="2"/>
+
+        <LinearLayout
+            android:id="@+id/caseHandoverLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <include layout="@layout/ok_cancel_button"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

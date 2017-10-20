@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    android:background="@drawable/shape_spinner_view"
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"></View>-->
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/dialog_person_detail_info"
+        android:text="姓名：周康"/>
+
+    <TextView
+        android:id="@+id/partment"
+        style="@style/dialog_person_detail_info"
+        android:text="单位"/>
+
+    <TextView
+        android:id="@+id/PHONE_NUMBER"
+        style="@style/dialog_person_detail_info"
+        android:text="手机"/>
+
+    <TextView
+        android:id="@+id/IsOline"
+        style="@style/dialog_person_detail_info"
+        android:text="状态"/>
+
+    <TextView
+        android:id="@+id/Position"
+        style="@style/dialog_person_detail_info"
+        android:text="位置"/>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#000"></View>-->
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="定位"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#888"></View>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="今日轨迹"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#888"></View>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="取消"/>
+    </LinearLayout>-->
+
+</LinearLayout>

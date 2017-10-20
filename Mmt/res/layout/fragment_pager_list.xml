@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.patrolproduct.module.projectquery.ListPagerFragment">
+
+<!--    android:listSelector="@drawable/item_focus_bg"-->
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+       android:id="@+id/listViewResult"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/find_webmap_title_text"
+       android:cacheColorHint="#00000000"
+       android:divider="@color/default_no_bg"
+       android:dividerHeight="12dp"
+       android:fadingEdge="none"
+       android:fastScrollEnabled="false"
+       android:footerDividersEnabled="false"
+       android:headerDividersEnabled="false"
+
+       android:orientation="vertical"
+       android:smoothScrollbar="true" />
+
+</FrameLayout>

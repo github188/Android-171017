@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="10dp"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="上报事件：10  到位点：30  反馈点：50"/>
+
+    <EditText
+        android:id="@+id/txtRemark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="备注信息"
+        android:lines="3"/>
+</LinearLayout>

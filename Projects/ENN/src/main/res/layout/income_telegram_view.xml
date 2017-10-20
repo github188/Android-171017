@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#333"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pic_defalutuser"/>
+
+    <TextView
+        android:id="@+id/tv_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="1787394791"
+        android:textColor="#fff"
+        android:textSize="@dimen/text_24sp"/>
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="马永欣"
+        android:textColor="#fff"
+        android:textSize="@dimen/text_20sp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_16dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通话时长：00:00:00"
+        android:textColor="#fff"
+        android:textSize="@dimen/text_20sp"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_16dp"
+        android:layout_weight="1"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Space
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"/>
+
+            <ImageView
+                android:id="@+id/btn_hungup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_hj"/>
+
+            <Space
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"/>
+
+            <ImageView
+                android:id="@+id/btn_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_jt"/>
+
+            <Space
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_after_answer_hungup"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/btn_hj"
+            android:visibility="gone"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <ImageButton
+        android:id="@+id/ib_userInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/common_userinfo"
+        android:layout_marginTop="80dp"/>
+
+    <ImageButton
+        android:id="@+id/ib_todayPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/button_mainmenu_openfile"
+        android:layout_toRightOf="@id/ib_userInfo"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/stat_sys_phone_call"
+        android:layout_toRightOf="@id/ib_todayPath"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="80dp"
+        />
+</RelativeLayout>

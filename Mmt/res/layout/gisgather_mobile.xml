@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.v4.widget.DrawerLayout-->
+<!--android:id="@+id/gisgatherPanel_mobile"-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent">-->
+
+<RelativeLayout
+    android:id="@+id/gisgatherPanel_mobile"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/gisgather_bottomopt_btn_mobile_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/mapview_bottombar_bg"
+        android:minHeight="50dip"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/targetAddDot"
+            style="@style/default_text_medium_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:gravity="center"
+            android:text="添点"/>
+
+
+        <TextView
+            android:id="@+id/addLine"
+            style="@style/default_text_medium_1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:gravity="center"
+            android:text="连线"/>
+
+        <TextView
+            android:id="@+id/editGraphic"
+            style="@style/default_text_medium_1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:gravity="center"
+            android:text="编辑"/>
+
+        <TextView
+            android:id="@+id/deleteGraphic"
+            style="@style/default_text_medium_1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:gravity="center"
+            android:text="删除"/>
+
+        <TextView
+            android:id="@+id/currentDot"
+            style="@style/default_text_medium_1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:gravity="center"
+            android:text="定位"/>
+
+        <TextView
+            android:id="@+id/moreBtn"
+            style="@style/default_text_medium_1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:clickable="true"
+            android:gravity="center"
+
+            android:text="更多"/>
+    </LinearLayout>
+
+
+    <!-- 放大 缩小 复位按钮 -->
+    <include
+        layout="@layout/gisgather_mapframe_zoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/gisgather_bottomopt_btn_mobile_panel"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        />
+
+    <include
+        layout="@layout/gisgather_xyshowpanel_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/default_text_small_purity"
+        android:layout_above="@id/gisgather_bottomopt_btn_mobile_panel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        />
+
+</RelativeLayout>
+
+    <!--<include-->
+    <!--layout="@layout/gisdataoperatepanel_mobile"-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="right"-->
+    <!--android:layout_marginBottom="60dp"-->
+    <!--/>-->
+
+    <!--</android.support.v4.widget.DrawerLayout>-->

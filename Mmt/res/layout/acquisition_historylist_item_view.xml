@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rect_bounds"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:padding="12dp" >
+
+        <TextView
+            android:id="@+id/acquisitionListItemIndex"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="1"
+            android:textColor="@color/progressbar_orange" />
+
+        <TextView
+            android:id="@+id/acquisitionListItemType"
+            style="@style/default_text_small_purity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="片区采集"
+            android:textColor="@color/default_accent_color" />
+
+        <TextView
+            android:id="@+id/acquisitionListItemName"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/acquisitionListItemIndex"
+            android:text="EventCode" />
+
+        <TextView
+            android:id="@+id/acquisitionListItemCaseNO"
+            style="@style/default_text_small_purity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/acquisitionListItemName"
+            android:layout_toRightOf="@+id/acquisitionListItemIndex"
+            android:text="采集描述" />
+
+        <TextView
+            android:id="@+id/acquisitionListItemStatus"
+            style="@style/default_text_small_purity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/acquisitionListItemType"
+            android:text="状态"
+            android:textColor="@color/default_accent_color" />
+
+        <TextView
+            android:id="@+id/acquisitionListItemReporter"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/acquisitionListItemCaseNO"
+            android:layout_toRightOf="@+id/acquisitionListItemIndex"
+            android:text="上报人" />
+
+        <TextView
+            android:id="@+id/acquisitionListItemReportDate"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/acquisitionListItemStatus"
+            android:text="上报时间" />
+
+        <TextView
+            android:id="@+id/acquisitionListItemAddress"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/acquisitionListItemIndex"
+            android:layout_below="@+id/acquisitionListItemReporter"
+            android:text="工程位置" />
+    </RelativeLayout>
+
+</LinearLayout>

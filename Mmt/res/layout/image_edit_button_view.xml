@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:minHeight="48dp" >
+
+    <ImageView
+        android:id="@+id/imageButtonViewImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/handoverfo_clock" />
+
+    <TextView
+        android:id="@+id/imageButtonViewKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:maxWidth="165dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/imageButtonViewImage"
+        tools:text="开始时间"/>
+
+    <EditText
+        android:id="@+id/imageEditViewEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/imageButtonViewMust"
+        android:layout_toRightOf="@+id/imageButtonViewKey"
+        android:background="@color/default_no_bg"
+        android:gravity="top"
+        android:minWidth="180dip"
+        tools:text="2016-03-28 10:10:10"/>
+
+    <TextView
+        android:id="@+id/imageButtonViewMust"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/imageButtonViewButton"
+        android:gravity="center"
+        android:text="*"
+        android:textColor="@color/sketch_last_vertex_background_color" />
+
+    <ImageButton
+        android:id="@+id/imageButtonViewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@color/default_no_bg"
+        android:src="@drawable/button_for_more" />
+
+</RelativeLayout>

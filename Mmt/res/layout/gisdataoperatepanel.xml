@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/gis_operatePanel"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ligth_grey_stroke_color"
+    android:focusableInTouchMode="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:tag="gisOperatePanel">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="GIS数据采集"
+                android:textColor="#ff000000"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <!--管网选择-->
+        <LinearLayout
+            android:id="@+id/operate_panel"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/corners_bg">
+
+            <TextView
+                android:id="@+id/gisdata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/shaoxing_login_expand1"
+                android:gravity="center"
+                android:text="供水"
+                android:textColor="#ff000000"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <!--图层-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/corners_bg"
+            android:divider="@drawable/split_line"
+            android:orientation="vertical"
+            android:showDividers="middle"
+            >
+            //200dp
+
+
+            <ScrollView
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:scrollbars="vertical"
+                >
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                >
+
+                <TextView
+                    android:id="@+id/editDefaultAttrs"
+                    style="@style/default_text_large"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bt_nobgd"
+                    android:gravity="center"
+                    android:text="默认属性"
+                    android:textColor="@color/blue"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!--坐标和经纬度-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/corners_bg"
+            android:divider="@drawable/split_line"
+            android:orientation="vertical"
+
+            android:showDividers="middle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:divider="@drawable/split_line"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/default_text_large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="#ff000000"
+                        />
+
+                    <EditText
+                        android:id="@+id/xEditText"
+                        style="@style/default_text_medium_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:inputType="numberDecimal"
+                        android:text="0.0"
+                        android:textColor="#ff000000"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/default_text_large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/bt_nobgd"
+                        android:gravity="center"
+                        android:text="Y"
+                        android:textColor="#ff000000"
+                        />
+
+                    <EditText
+                        android:id="@+id/yEditText"
+                        style="@style/default_text_medium_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:inputType="numberDecimal"
+                        android:text="0.0"
+                        android:textColor="#ff000000"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/localDot"
+                    style="@style/default_text_large"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_nobgd"
+                    android:gravity="center"
+                    android:text="跳转"
+                    android:textColor="@color/blue"/>
+
+                <TextView
+                    android:id="@+id/localDeviceDot"
+                    style="@style/default_text_large"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_nobgd"
+                    android:gravity="center"
+                    android:text="设备获取"
+                    android:textColor="@color/blue"/>
+
+                <TextView
+                    android:id="@+id/RTKDot"
+                    style="@style/default_text_large"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_nobgd"
+                    android:gravity="center"
+
+                    android:text="RTK"
+                    android:textColor="@color/grey"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--操作面板-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/corners_bg"
+            android:divider="@drawable/split_line"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:id="@+id/targetAddDot"
+                    style="@style/default_text_large"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_nobgd"
+
+                    android:gravity="center"
+                    android:text="添点"
+                    android:textColor="@color/blue"/>
+
+                <TextView
+                    android:id="@+id/fastAddDot"
+                    style="@style/default_text_large"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+
+                    android:background="@drawable/bt_nobgd"
+                    android:gravity="center"
+                    android:text="直接添点"
+                    android:textColor="@color/grey"/>
+
+                <!--<TextView-->
+                <!--android:id="@+id/dirctAddDot"-->
+                <!--style="@style/default_text_large"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center"-->
+                <!--android:text="直接加点"-->
+                <!--android:textColor="#ff000000"/>-->
+
+                <TextView
+                    android:id="@+id/addLine"
+                    style="@style/default_text_large"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_nobgd"
+                    android:gravity="center"
+                    android:text="连线"
+                    android:textColor="@color/blue"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:id="@+id/editGraphic"
+                    style="@style/default_text_large"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_nobgd"
+
+                    android:gravity="center"
+                    android:text="编辑"
+                    android:textColor="@color/blue"/>
+
+                <TextView
+                    android:id="@+id/deleteGraphic"
+                    style="@style/default_text_large"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+
+                    android:background="@drawable/bt_nobgd"
+                    android:gravity="center"
+                    android:text="删除"
+                    android:textColor="@color/red"/>
+
+
+            </LinearLayout>
+            <!--其他操作-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:divider="@drawable/split_line"
+                android:gravity="center"
+                android:showDividers="middle">
+
+                <TextView
+                    android:id="@+id/historyGather"
+                    style="@style/default_text_large"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_nobgd"
+                    android:gravity="center"
+                    android:text="历史采集"
+                    android:textColor="@color/blue"/>
+
+                <CheckBox
+                    android:id="@+id/todayGather"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="高亮今日"
+                    android:textColor="#ff000000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                >
+
+
+                <TextView
+                    android:id="@+id/reset"
+                    style="@style/default_text_large"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_nobgd"
+                    android:gravity="center"
+                    android:text="重置"
+                    android:textColor="@color/red"/>
+
+                <TextView
+                    android:id="@+id/delPoj"
+                    style="@style/default_text_large"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_nobgd"
+                    android:gravity="center"
+                    android:text="删除工程"
+                    android:textColor="@color/red"/>
+
+                <TextView
+                    android:id="@+id/submit"
+                    style="@style/default_text_large"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_nobgd"
+                    android:gravity="center"
+                    android:text="提交"
+                    android:textColor="@color/blue"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

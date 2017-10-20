@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40.0dip"
+    android:layout_marginTop="20.0dip"
+    android:gravity="center_vertical" >
+
+    <ToggleButton
+        android:id="@+id/togButton"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/switch_off"
+        android:textOff=""
+        android:textOn="" />
+
+    <TextView
+        android:id="@+id/togText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/togButton"
+        android:layout_alignBottom="@+id/togButton"
+        android:layout_alignParentLeft="true"
+        android:text="说明"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:background="@color/white"
+                      android:descendantFocusability="blocksDescendants"
+                      android:paddingBottom="12dp"
+                      android:paddingLeft="12dp"
+                      android:paddingRight="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/index"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:text="1"
+            android:textColor="@color/progressbar_orange"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/eventCase"
+            style="@style/default_text_medium_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:text="案件编号"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/eventState"
+            style="@style/default_text_medium_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:text="状态"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/gisType"
+            style="@style/default_text_medium_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:text="gis类型"
+            android:textColor="@color/black"
+            />
+
+        <!--<TextView-->
+            <!--android:id="@+id/layerName"-->
+            <!--style="@style/default_text_medium_1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="图层"-->
+            <!--android:textColor="@color/black"-->
+            <!--/>-->
+
+        <TextView
+            android:id="@+id/operateTyoe"
+            style="@style/default_text_medium_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:text="操作类型"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/positionX"
+            style="@style/default_text_medium_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:text="X坐标"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/positionY"
+            style="@style/default_text_medium_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:text="Y坐标"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/reporter"
+            style="@style/default_text_medium_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:text="上报人"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/reporterTime"
+            style="@style/default_text_medium_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:text="上报时间"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+</HorizontalScrollView>

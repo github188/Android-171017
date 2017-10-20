@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/repairTaskReportEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/edit_text_selector"
+        android:gravity="left|top"
+        android:hint="请描述"
+        android:minLines="6" />
+
+    <Button
+        android:id="@+id/repairTaskReportWithoutPhotoCommitButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="2dip"
+        android:background="@drawable/css_button_default"
+        android:text="提交"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/repairTaskReportWithoutPhotoCancelButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="2dip"
+        android:background="@drawable/css_button_default"
+        android:text="取消"
+        android:textColor="@color/white" />
+
+</LinearLayout>

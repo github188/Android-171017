@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:foreground="?android:attr/selectableItemBackground" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvSN"
+                style="@style/default_text_small_purity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:layout_alignBaseline="@+id/tvUserName"
+                android:text="1. " />
+
+            <TextView
+                android:id="@+id/tvUserName"
+                style="@style/default_text_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tvSN"
+                tools:text="吴文俊" />
+
+            <TextView
+                android:id="@+id/tvDept"
+                style="@style/default_text_small_purity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                tools:text="市政事业部" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#310c0c0c" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:paddingStart="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDetail"
+                style="@style/default_text_small_purity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="当日完成任务量  阀门：已到位7个，已反馈3个 管段： 已到位长度2.4公里 "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvRemark"
+                style="@style/default_text_small_purity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                tools:text="根据中央气象台天气预报，局部地区大到暴雨，放假一天，暂停巡检"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:src="#310c0c0c" />
+
+        <TextView
+            android:id="@+id/tvNoteTime"
+            style="@style/default_text_small_purity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            tools:text="2015-12-01 16:24:29"
+            android:layout_gravity="end"
+            android:textColor="@color/text_darkGray" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

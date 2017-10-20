@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mainActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/main_menu_top"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/baseActionBarImageView"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dip"
+            android:paddingRight="5.0dip"
+            android:background="@drawable/default_actionbar"
+            android:contentDescription="@string/text_image"
+            android:src="@drawable/common_back" />
+
+        <TextView
+            android:id="@+id/baseActionBarTextView"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            android:text="工单详情"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:drawableRight="@drawable/ic_arrow_drop_down"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dip" >
+
+            <ImageButton
+                android:id="@+id/baseActionBarOtherImageView"
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/default_actionbar"
+                android:contentDescription="@string/text_image"
+                android:src="@drawable/task_detail_back"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/baseActionBarRightImageView"
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/default_actionbar"
+                android:contentDescription="@string/text_image"
+                android:src="@drawable/task_detail_next"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/baseActionBarProgressBar"
+            style="@android:style/Widget.ProgressBar.Inverse"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:indeterminateDrawable="@drawable/progressbar_circle_purple"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <!-- 底部工具栏信息 -->
+    <LinearLayout
+        android:id="@+id/baseBottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/mapview_bottombar_bg"
+        android:baselineAligned="false"
+        android:minHeight="50dip"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/mainFormMid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mainActionBar"
+        android:layout_above="@id/baseBottomView">
+    </FrameLayout>
+
+</RelativeLayout>

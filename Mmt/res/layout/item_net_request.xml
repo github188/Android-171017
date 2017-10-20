@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/netRequestItemIndex"
+            style="@style/default_text_small_purity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="1."
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/netRequestItemInterface"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dp"
+            android:layout_toRightOf="@+id/netRequestItemIndex"
+            android:text="接口名称" />
+
+        <TextView
+            android:id="@+id/netRequestItemStatus"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/netRequestItemInterface"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:text="成功" />
+
+        <TextView
+            android:id="@+id/tv_netStatus"
+            style="@style/default_text_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/netRequestItemInterface"
+            android:layout_toLeftOf="@id/netRequestItemStatus"
+            android:text="请求状态:" />
+
+        <View
+            android:id="@+id/divider_top_mid"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/netRequestItemInterface"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:id="@+id/ll_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider_top_mid"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/netRequestItemIndex">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_netType"
+                    style="@style/default_text_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请求类型:" />
+
+                <TextView
+                    android:id="@+id/netRequestItemType"
+                    style="@style/default_text_small_purity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_netType"
+                    android:text="POST" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_netCode"
+                    style="@style/default_text_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="响应状态:" />
+
+                <TextView
+                    android:id="@+id/netRequestItemCode"
+                    style="@style/default_text_medium_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_netCode"
+                    android:text="200" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_one"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/netRequestItemIndex">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_netSendTraffic"
+                    style="@style/default_text_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发送流量:" />
+
+                <TextView
+                    android:id="@+id/netRequestItemSendTraffic"
+                    style="@style/default_text_medium_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_netSendTraffic"
+                    android:text="0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp">
+
+                <TextView
+                    android:id="@+id/tv_netReceiveTraffic"
+                    style="@style/default_text_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="接收流量:" />
+
+                <TextView
+                    android:id="@+id/netRequestItemReceiveTraffic"
+                    style="@style/default_text_medium_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_netReceiveTraffic"
+                    android:text="200" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider_mid_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/ll_two"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider_mid_bottom"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/ll_index">
+
+            <TextView
+                android:id="@+id/netRequestItemTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_access_time"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="2016-09-12 12:12:15"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/netRequestItemSpan"
+                style="@style/default_text_medium_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/netRequestItemTime"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:text="200" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+

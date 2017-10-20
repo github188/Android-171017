@@ -1,0 +1,121 @@
+{
+  "copyrightText": "中地数码数字城市事业部",
+  "description": "",
+  "documentInfo": {
+    "Title": null,
+    "Author": null,
+    "Comments": null,
+    "Subject": null,
+    "Category": null,
+    "Keywords": null
+  },
+  "fullExtent": {
+    "spatialReference": {
+      "wkid": 1
+    },
+    "xmin": 489388.853601873,
+    "ymin": 385534.295546885,
+    "xmax": 527531.150642069,
+    "ymax": 406792.1045
+  },
+  "hasVersionedData": false,
+  "hasAnnotation": false,
+  "initialExtent": {
+    "spatialReference": {
+      "wkid": 1
+    },
+    "xmin": 489388.853601873,
+    "ymin": 385534.295546885,
+    "xmax": 527531.150642069,
+    "ymax": 406792.1045
+  },
+  "layers": null,
+  "mapName": "gw",
+  "minScale": 0.0,
+  "maxScale": 0.0,
+  "serviceDescription": null,
+  "singleFusedMapCache": false,
+  "spatialReference": {
+    "wkid": 1
+  },
+  "supportsDynamicLayers": false,
+  "tileInfo": {
+    "dpi": 96,
+    "format": "PNG",
+    "rows": 256,
+    "cols": 256,
+    "lods": [
+      {
+        "level": 0,
+        "resolution": 66.1459656252646,
+        "scale": 250000.0
+      },
+      {
+        "level": 1,
+        "resolution": 33.0729828126323,
+        "scale": 125000.0
+      },
+      {
+        "level": 2,
+        "resolution": 16.9333672000677,
+        "scale": 64000.0
+      },
+      {
+        "level": 3,
+        "resolution": 8.46668360003387,
+        "scale": 32000.0
+      },
+      {
+        "level": 4,
+        "resolution": 4.23334180001693,
+        "scale": 16000.0
+      },
+      {
+        "level": 5,
+        "resolution": 2.11667090000847,
+        "scale": 8000.0
+      },
+      {
+        "level": 6,
+        "resolution": 1.05833545000423,
+        "scale": 4000.0
+      },
+      {
+        "level": 7,
+        "resolution": 0.529167725002117,
+        "scale": 2000.0
+      },
+      {
+        "level": 8,
+        "resolution": 0.264583862501058,
+        "scale": 1000.0
+      },
+      {
+        "level": 9,
+        "resolution": 0.198437896875794,
+        "scale": 750.0
+      },
+      {
+        "level": 10,
+        "resolution": 0.132291931250529,
+        "scale": 500.0
+      },
+      {
+        "level": 11,
+        "resolution": 0.0661459656252646,
+        "scale": 250.0
+      }
+    ],
+    "origin": {
+      "x": -5123200.0,
+      "y": 10002100.0
+    },
+    "spatialReference": {
+      "wkid": 1
+    },
+    "initLevel": 12
+  },
+  "units": "meters",
+  "currentVersion": 0.0,
+  "capabilities": null
+}

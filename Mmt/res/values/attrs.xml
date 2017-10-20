@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Gallery">
+        <attr name="android:galleryItemBackground"></attr>
+    </declare-styleable>
+    <declare-styleable name="MyProgressbarView">
+        <attr name="progressbarColor" format="color"/>
+        <attr name="progressbarWidth" format="dimension"/>
+        <attr name="progressbarMaxProgress" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="NavigationView">
+        <attr name="normalColor" format="color"/>
+        <attr name="pressedColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="roundedimageview">
+        <attr name="border_inside_color" format="color"/>
+        <attr name="border_outside_color" format="color"/>
+        <attr name="border_thickness" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="StretchPanel">
+        <attr name="contentView" format="reference"/>
+        <attr name="stretchView" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="NumberPickerView">
+        <attr name="zh_maxQuantity" format="integer"/>
+        <attr name="zh_minQuantity" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="SemiCircleLayout">
+        <attr name="zh_maxShowCount" format="integer"/>
+    </declare-styleable>
+
+    <!-- LockPatternView class attributes -->
+    <declare-styleable name="LockPatternView">
+
+        <!--
+             Aspect to use when drawing LockPatternView. Choices are "square"(default), "lock_width"
+             or "lock_height"
+        -->
+        <attr name="aspect">
+            <enum name="square" value="0"/>
+            <enum name="lockWidth" value="1"/>
+            <enum name="lockHeight" value="2"/>
+        </attr>
+        <attr name="line" format="color"/>
+        <attr name="btnNormal" format="reference"/>
+        <attr name="btnTouched" format="reference"/>
+        <attr name="circleNormal" format="reference"/>
+        <attr name="circleGreen" format="reference"/>
+        <attr name="circleRed" format="reference"/>
+        <attr name="arrowGreenUp" format="reference"/>
+        <attr name="arrowRedUp" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MultiSwitchButtonV2">
+        <attr name="tab_checked_text_color" format="color"/>
+        <attr name="tab_unchecked_text_color" format="color"/>
+        <attr name="tab_checked_backgroundcolor" format="color"/>
+        <attr name="tab_text_size" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="MovieRecorderView">
+        <!-- 开始是否打开摄像头 -->
+        <attr name="attr_is_open_camera" format="boolean"/>
+        <!-- 一次拍摄最长时间 -->
+        <attr name="attr_record_max_time" format="integer"/>
+        <!-- 视频分辨率宽度 -->
+        <attr name="attr_width" format="integer"/>
+        <!-- 视频分辨率高度 -->
+        <attr name="attr_height" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="LineLinearLayout">
+        <!--时间轴偏移值-->
+        <attr name="line_margin_side" format="dimension"/>
+        <!--时间轴动态调整值-->
+        <attr name="line_dynamic_dimen" format="dimension"/>
+        <!--线宽-->
+        <attr name="line_stroke_width" format="dimension"/>
+        <!--线的颜色-->
+        <attr name="line_color" format="color"/>
+        <!--点的大小-->
+        <attr name="point_size" format="dimension"/>
+        <!--点的颜色-->
+        <attr name="point_color" format="color"/>
+        <!--图标-->
+        <attr name="icon_src" format="reference"/>
+    </declare-styleable>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference"/>
+        <attr name="metaButtonBarButtonStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ThreeStatusCheckBox">
+        <attr name="checkStatus">
+            <enum name="checkNone" value="0"/>
+            <enum name="chekcPart" value="1"/>
+            <enum name="checkAll" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <attr name="text_title" format="string"/>
+    <attr name="text_message" format="string"/>
+    <attr name="icon" format="reference"/>
+    <attr name="iconVisiable" format="boolean"/>
+    <attr name="messageVisiable" format="boolean"/>
+    <declare-styleable name="SwitchItemSettingView">
+        <attr name="checked" format="boolean"/>
+        <attr name="text_title"/>
+        <attr name="text_message"/>
+        <attr name="icon"/>
+        <attr name="iconVisiable"/>
+        <attr name="messageVisiable"/>
+    </declare-styleable>
+
+    <declare-styleable name="MoreItemSettingView">
+        <attr name="iconMoreVisiable" format="boolean"/>
+        <attr name="text_right_message" format="string"/>
+        <attr name="rightMessageVisiable" format="boolean"/>
+        <attr name="text_title"/>
+        <attr name="text_message"/>
+        <attr name="icon"/>
+        <attr name="iconVisiable"/>
+        <attr name="messageVisiable"/>
+    </declare-styleable>
+
+    <declare-styleable name="NetCheckView">
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="leftDrawable" format="reference" />
+        <attr name="topDrawable" format="reference" />
+        <attr name="rightDrawable" format="reference" />
+        <attr name="leftLineColor" format="color" />
+        <attr name="rightLineColor" format="color" />
+        <attr name="pointRadius" format="dimension" />
+        <attr name="space" format="dimension" />
+    </declare-styleable>
+
+</resources>

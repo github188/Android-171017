@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/line_chart"
+        android:layout_width="match_parent"
+        android:layout_height="240dp" />
+
+    <RelativeLayout
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_max_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最大:"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_min_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tv_max_desc"
+            android:layout_below="@id/tv_max_desc"
+            android:layout_marginTop="4dp"
+            android:text="最小:"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_max_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_max_desc"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/tv_max_desc"
+            android:text="--"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_min_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_min_desc"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/tv_max_desc"
+            android:text="--"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</FrameLayout>

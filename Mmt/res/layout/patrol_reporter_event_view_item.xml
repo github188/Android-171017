@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rect_bounds"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp" >
+
+        <TextView
+            android:id="@+id/patrolReportListItemIndex"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="1"
+            android:textColor="@color/red" />
+        <TextView
+            android:id="@+id/txtEventCode"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/patrolReportListItemIndex"
+            android:text="编号：PE150000245" />
+        <TextView
+            android:id="@+id/bigClassText"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtEventCode"
+            android:layout_toRightOf="@id/patrolReportListItemIndex"
+            android:text="类型：困难用水" />
+
+        <TextView
+            android:id="@+id/stateText"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="（未上报）"
+            android:textColor="@color/default_line_bg" />
+
+        <TextView
+            android:id="@+id/smallClassText"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bigClassText"
+            android:layout_toRightOf="@id/patrolReportListItemIndex"
+            android:text="內容：水压小" />
+
+        <TextView
+            android:id="@+id/addressText"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/smallClassText"
+            android:layout_toRightOf="@id/patrolReportListItemIndex"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="地址：光谷软件园光谷软件园光谷软件园光谷软件园光谷软件园光谷软件园" />
+
+        <TextView
+            android:id="@+id/reportTimeText"
+            style="@style/default_text_medium_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addressText"
+            android:layout_toRightOf="@id/patrolReportListItemIndex"
+            android:text="时间：1989/11/11" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/default_line_bg"
+        android:contentDescription="@string/text_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/patrolReportListItemLocation"
+            style="@style/default_text_small_purity"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:gravity="center"
+            android:text="定位" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/default_line_bg"
+            android:contentDescription="@string/text_image" />
+
+        <TextView
+            android:id="@+id/patrolReportListItemDetail"
+            style="@style/default_text_small_purity"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:gravity="center"
+            android:text="详情" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:minHeight="48dp">
+
+    <ImageView
+        android:id="@+id/imageButtonViewImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/handoverfo_clock" />
+
+    <TextView
+        android:id="@+id/imageButtonViewKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/imageButtonViewImage"
+        android:maxWidth="165dp"
+        tools:text="开始时间" />
+
+    <TextView
+        android:id="@+id/imageButtonViewMust"
+        android:layout_width="8dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/imageButtonViewKey"
+        android:text="*"
+        android:textColor="@color/sketch_last_vertex_background_color" />
+
+
+    <ImageButton
+        android:id="@+id/imageButtonViewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:background="@color/default_no_bg"
+        android:src="@drawable/button_for_more" />
+
+    <TextView
+        android:id="@+id/imageButtonViewValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/imageButtonViewMust"
+        android:layout_toLeftOf="@id/imageButtonViewButton"
+        android:layout_toRightOf="@id/imageButtonViewMust"
+        android:layout_toStartOf="@id/imageButtonViewButton"
+        android:background="@color/default_no_bg"
+        android:ellipsize="end"
+        android:minWidth="180dip"
+        android:singleLine="true"
+        tools:text="2016-03-28 10:10:10" />
+</RelativeLayout>

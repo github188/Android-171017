@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="40dp"
+    android:background="#28000000"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textData"
+        android:textColor="#de000000"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:minHeight="40dp"
+        android:paddingLeft="16dp"
+        android:text="我是一个组"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+
+    <include
+        android:visibility="gone"
+        layout="@layout/list_divider_view" />
+</LinearLayout>

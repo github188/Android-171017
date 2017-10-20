@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="ics_blue">#ff33b5e5</color>
+    <color name="transparent">#90000000</color>
+    <color name="mapview_background">#ff0a0a0a</color>
+    <color name="action_bar_gradient_background1">#ff4d4d4d</color>
+    <color name="action_bar_gradient_background2">#ff0a0a0a</color>
+    <color name="action_bar_stroke_color">#33505050</color>
+    <color name="application_background">#ff0a0a0a</color>
+    <color name="application_divider_color">#99515050</color>
+    <color name="dialog_divider_color">#ff666666</color>
+    <color name="application_action_bar_button_stroke_color">#ff505050</color>
+    <color name="application_action_bar_button_pressed_color">#ffff4f00</color>
+    <color name="application_action_bar_button_checked_color">#ffe19d00</color>
+    <color name="application_action_bar_button_focused_color">#ffff4f00</color>
+    <color name="application_action_bar_text_color">#ffffffff</color>
+    <color name="application_action_bar_button_background_color">#ffe90000</color>
+    <color name="tool_bar_background_color1">#994d4d4d</color>
+    <color name="tool_bar_background_color2">#990a0a0a</color>
+    <color name="tool_bar_stroke_color">#ffc7c7c7</color>
+    <color name="black_text">#ff000000</color>
+    <color name="text_darkGray">#ff666666</color>
+    <color name="text_lightGray">#ff9e9fa1</color>
+    <color name="toolbar_text_white">#ff0b0b0b</color>
+    <color name="white_text">#ffffffff</color>
+    <color name="listview_background">#ff0a0a0a</color>
+    <color name="listview_cacheColorHint">#00000000</color>
+    <color name="find_webmap_group_background">#ff0a0a0a</color>
+    <color name="find_webamp_list_color_hint">#ffffffff</color>
+    <color name="find_webamp_list_color_divider">#ffffffff</color>
+    <color name="findmap_title_background_top">#ff4084d7</color>
+    <color name="findmap_title_background_bottom">#ff1054a7</color>
+    <color name="find_webmap_group_background_collapsed">#ffeeeeee</color>
+    <color name="find_webmap_group_background_expanded">#ffe19d00</color>
+    <color name="find_webmap_group_text_expanded">#ff000000</color>
+    <color name="find_webmap_title_text">#ffe6e4e3</color>
+    <color name="find_webmap_item_divider">#99515050</color>
+    <color name="find_webmap_item_info_thumbnail_shape">#bf505050</color>
+    <color name="sketch_line_color">#ffcc00ff</color>
+    <color name="sketch_background_line_color">#ffffffff</color>
+    <color name="sketch_vertex_background_color">#ffffffff</color>
+    <color name="sketch_vertex_stroke_color">#ff000000</color>
+    <color name="sketch_last_vertex_background_color">#ffff0000</color>
+    <color name="sketch_move_vertex_background_color">#ff06ffe5</color>
+    <color name="units_shadow_color">#bf0a0a0a</color>
+    <color name="units_listitem_text_darkGray">#ff666666</color>
+    <color name="callout_background">#7f0a0a0a</color>
+    <color name="found_features_item_divider">#99515050</color>
+    <color name="text_white">#fffff6f6</color>
+    <color name="my_text_color">#ffc7dbee</color>
+    <color name="Identify_callout_text_color">#fff2f2f2</color>
+    <color name="default_button_normal_stroke_color1">#ff746d65</color>
+    <color name="default_button_normal_stroke_color2">#7f826d6d</color>
+    <color name="ligth_grey_stroke_color">#ffdcdada</color>
+    <color name="callout_stroke_color1">#ffeaeaea</color>
+    <color name="callout_stroke_color2">#fffdfe06</color>
+    <color name="callout_background_color1">#ff20222c</color>
+    <color name="callout_background_color2">#7ff60b0b</color>
+    <color name="dashboard_enabled_title_text">#ffe6e4e3</color>
+    <color name="dashboard_disabled_title_text">#ff4f4f4f</color>
+    <color name="default_button_normal_background_color1">#ffeacc8b</color>
+    <color name="default_button_normal_background_color2">#ff746243</color>
+    <color name="default_button_normal_background_color3">#fffa7c00</color>
+    <color name="default_button_pressed_background_color1">#ff66cfe6</color>
+    <color name="default_button_pressed_background_color2">#ff207fb9</color>
+    <color name="default_button_pressed_background_color3">#ff0060b8</color>
+    <color name="default_button_focused_background_color1">#ff5ac7e5</color>
+    <color name="default_button_focused_background_color2">#ff207fb9</color>
+    <color name="default_button_focused_background_color3">#ff0060b8</color>
+    <color name="darkgrey_layout_background_color1">#bf686767</color>
+    <color name="darkgrey_layout_background_color2">#bf262525</color>
+    <color name="darkgrey_layout_background_color3">#bf1e1d1d</color>
+    <color name="half_transparen_black">#aa000000</color>
+    <color name="poilistdef">#fff1f1f1</color>
+    <color name="poilistpress">#ffffffff</color>
+    <color name="asset_detail_bg">#fff1f3f5</color>
+    <color name="asset_detail_key">#ff727272</color>
+    <color name="asset_detail_value">#ff343434</color>
+
+    <!-- edit by wl -->
+    <color name="default_text_purple">#dd593298</color>
+    <color name="default_text_light_black">#bb000000</color>
+    <color name="default_text_light_black2">#77000000</color>
+    <color name="default_text_black">#000000</color>
+    <!-- 去除背景色(背景色透明) -->
+    <color name="default_no_bg">#00000000</color>
+    <color name="progressbar_blue">#0591c5</color>
+    <color name="progressbar_orange">#f87f39</color>
+
+    <!-- 半透明蓝色 -->
+    <color name="transparent_blue">#110591c5</color>
+    <!-- 进度条背景色 -->
+    <color name="progressbar_bg">#efefef</color>
+    <!-- ListItem点击时的背景色 -->
+    <color name="default_item_bg">#550591c5</color>
+    <!-- 分割线 -->
+    <color name="default_line_bg">#22000000</color>
+    <!-- 浅白色 -->
+    <color name="default_light_dark">#e0e0e0</color>
+    <!-- 淡蓝色 -->
+    <color name="default_light_blue">#370591c5</color>
+    <!-- 强调色 -->
+    <color name="default_accent_color">#5677fc</color>
+    <!-- 紫色 -->
+    <color name="default_purple">#673ab7</color>
+    <!-- 半透明紫色 -->
+    <color name="transparent_purple">#11673ab7</color>
+    <!-- 红色 -->
+    <color name="default_red">#e51c23</color>
+    <!-- 灰色 -->
+    <color name="grey">#808080</color>
+
+    <!-- 菜单背景颜色 -->
+    <color name="nav_bg">#FF44333D</color>
+    <!-- 菜单颜色 -->
+    <color name="nav_blue">#FF2959A4</color>
+    <color name="nav_lightBlue">#FF00B3C0</color>
+    <color name="nav_green">#FF00B587</color>
+    <color name="nav_lightGreen">#FF6BA200</color>
+    <color name="nav_orange">#FFEC5F4A</color>
+    <color name="nav_yellow">#FFD69F0B</color>
+    <color name="nav_purple">#FF6018D3</color>
+    <color name="nav_pressed_blue">#C82959A4</color>
+    <color name="nav_pressed_lightBlue">#C800B3C0</color>
+    <color name="nav_pressed_green">#C800B587</color>
+    <color name="nav_pressed_lightGreen">#C86BA200</color>
+    <color name="nav_pressed_orange">#C8EC5F4A</color>
+    <color name="nav_pressed_yellow">#C8D69F0B</color>
+    <color name="nav_pressed_purple">#C86018D3</color>
+
+    <color name="dividing_line">#310c0c0c</color>
+
+    <color name="trace_online">#ccff0000</color>
+    <color name="trace_point">#ff33cc</color>
+    <color name="trace_offline">#cc008b8b</color>
+
+    <color name="griditems_bg">#ffe8ecef</color>
+    <color name="commo_text_color">#ff333333</color>
+    <color name="line">#ffd3dde6</color>
+
+    <color name="gesture_background">#ff303237</color>
+    <color name="color_hei_8">#00000000</color>
+    <drawable name="trans">@color/color_hei_8</drawable>
+
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#40000000</color>
+    <!--窗口背景颜色-->
+    <color name="bgColor_alertview_alert">#f8f8f8</color>
+    <color name="bgColor_alertview_alert_start">#f0f0f0</color>
+    <!--标题颜色-->
+    <color name="textColor_alert_title">#000000</color>
+    <color name="textColor_actionsheet_title">#8f8f8f</color>
+    <!--消息颜色-->
+    <color name="textColor_alert_msg">#000000</color>
+    <color name="textColor_actionsheet_msg">#8f8f8f</color>
+    <!--线条颜色-->
+    <color name="bgColor_divier">#d7d7db</color>
+    <!--取消按钮颜色-->
+    <color name="textColor_alert_button_cancel">#007aff</color>
+    <!--高亮按钮颜色-->
+    <color name="textColor_alert_button_destructive">#ff3b30</color>
+    <!--普通按钮文字颜色-->
+    <color name="textColor_alert_button_others">#007aff</color>
+    <!--点击颜色-->
+    <color name="bgColor_alert_button_press">#EAEAEA</color>
+    <!--actionsheet模式的取消按钮背景颜色-->
+    <color name="bgColor_actionsheet_cancel_nor">#ffffff</color>
+
+    <color name="patrol_unarrive">#000000</color>
+    <color name="patrol_arrived">#ff8000</color>
+    <color name="patrol_feedbacked">#0000aa</color>
+    <color name="item_pressed_color">#f4f4f4</color>
+    <color name="highrise_search_background">#FF33B5E5</color>
+    <color name="posandpath_text_color">#db0b0b0b</color>
+    <!--现场直播推流-->
+    <color name="black_overlay">#66000000</color>
+    <color name="tv_patrol_on">#000</color>
+    <color name="tv_patrol_off">#8a000000</color>
+    <color name="trace_green">#4DDC26</color>
+
+    <color name="color_dfe9f3">#DFE9F3</color>
+    <color name="color_f6fafe">#F6FAFE</color>
+    <color name="color_d8e7f5">#D8E7F5</color>
+    <color name="color_d1e6f7">#D1E6F7</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_0099a2">#0099a2</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_ffffff">#FFFFFF</color>
+    <color name="color_dd462c">#DD462C</color>
+    <color name="color_f1f1f1">#F1F1F1</color>
+
+    <!--不同网络状态的颜色-->
+    <color name="color_net_best">#039306</color>
+    <color name="color_net_better">#047faf</color>
+    <color name="color_net_good">#fdc303</color>
+    <color name="color_net_bad">#ef6c15</color>
+    <color name="color_net_not_accessable">#ce1313</color>
+
+    <color name="primary">#009688</color>
+    <color name="primary_dark">#00796B</color>
+    <color name="primary_light">#B2DFDB</color>
+    <color name="accent">#009688</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="item_pressed">#40888888</color>
+    <color name="color_tag">#99ff0000</color>
+    <color name="check_normal">#4ea403</color>
+</resources>

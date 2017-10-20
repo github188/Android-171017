@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@drawable/main_menu_top">
+
+    <ImageButton
+        android:id="@+id/backImageButton"
+        android:layout_width="50dip"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dip"
+        android:background="@drawable/default_actionbar"
+        android:src="@drawable/common_back"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/ivResultDetail"
+        android:layout_toRightOf="@+id/backImageButton"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_text"
+            android:text="位置与轨迹"
+            android:textSize="@dimen/text_18sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:textSize="@dimen/text_14sp"
+            android:text="在线：10 离线：2"
+            android:textColor="@color/white_text"
+            android:visibility="visible">
+        </TextView>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loadProgressBar"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:indeterminateDrawable="@drawable/progressbar_circle_purple"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/ivResultDetail"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/default_actionbar"
+        android:src="@drawable/detail"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

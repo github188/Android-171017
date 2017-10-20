@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="我是ChildItem"
+        android:textAppearance="@style/default_text_medium_1"/>
+
+    <ImageView
+        android:id="@+id/iv_locate"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/task_detail_location"/>
+
+    <ImageView
+        android:id="@+id/iv_detail"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:paddingRight="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/detail_blue"/>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutActionBar"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/main_menu_top"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/detail_revert_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:clickable="true"
+        android:paddingLeft="@dimen/margin_tendip"
+        android:paddingRight="@dimen/margin_tendip"
+        android:scaleType="centerInside"
+        android:src="@drawable/common_back" />
+
+    <ImageView
+        android:id="@+id/detail_loc_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:paddingLeft="@dimen/margin_tendip"
+        android:paddingRight="@dimen/margin_tendip"
+        android:scaleType="centerInside"
+        android:src="@drawable/common_location" />
+
+    <TextView
+        android:id="@+id/textview_Title"
+        style="@style/Text.primaryWitheTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="详细信息"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textSize="18.0sp" />
+
+</RelativeLayout>

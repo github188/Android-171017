@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <ExpandableListView
+        android:id="@+id/userSelectList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/shortMessageLayout"
+        android:layout_alignParentTop="true"
+        android:cacheColorHint="#00000000"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/shortMessageLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:background="@drawable/new_msg_bg"
+        android:minHeight="60dip"
+        android:visibility="visible" >
+
+        <EditText
+            android:id="@+id/shortMessageEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toLeftOf="@+id/shortMessageButton"
+            android:background="@drawable/new_msg_edit"
+            android:hint="输入内容..."
+            android:inputType="textMultiLine"
+            android:minHeight="40dp"
+            android:maxLines="6"
+            android:singleLine="false" >
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/shortMessageButton"
+            android:layout_width="60dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/default_actionbar"
+            android:focusable="true"
+            android:src="@drawable/new_msg_button"
+            android:text="发送"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+</RelativeLayout>

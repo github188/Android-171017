@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/ligth_grey_stroke_color"
+              android:padding="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/corners_bg"
+        >
+        <!--android:background="@drawable/corners_bg"-->
+        <TextView
+            android:id="@+id/todayTimeBtn"
+            style="@style/default_text_medium_1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/bt_nobgd"
+            android:gravity="center"
+            android:text="今日"
+            android:textColor="@color/blue"/>
+
+        <TextView
+            android:id="@+id/custromTimeBtn"
+            style="@style/default_text_medium_1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/bt_nobgd"
+            android:gravity="center"
+            android:text="自定义"
+            android:textColor="@color/blue"/>
+
+        <LinearLayout
+            android:id="@+id/custromTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            >
+
+            <EditText
+                android:id="@+id/custromStartTime"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:background="@drawable/edit_text_default"
+                android:gravity="center_vertical"
+                android:inputType="date"/>
+
+            <TextView
+                style="@style/default_text_medium_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:text="至"
+                android:textColor="@color/grey"/>
+
+            <EditText
+                android:id="@+id/custromEndTime"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/edit_text_default"
+                android:gravity="center_vertical"
+                android:inputType="date"/>
+
+            <TextView
+                android:id="@+id/querybtn"
+                style="@style/default_text_large"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bt_nobgd"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/blue"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,215 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/default_text_medium_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text=" 字段名："/>
+
+            <TextView
+                android:id="@+id/wordsText"
+                style="@style/default_text_medium_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"/>
+
+            <ImageButton
+                android:id="@+id/wordsButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/default_no_bg"
+                android:src="@drawable/button_for_more"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/default_line_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/default_text_medium_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text=" 运算符："/>
+
+            <TextView
+                android:id="@+id/operatorText"
+                style="@style/default_text_medium_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"/>
+
+            <ImageButton
+                android:id="@+id/operatorButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/default_no_bg"
+                android:src="@drawable/button_for_more"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/default_line_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/default_text_medium_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text=" 条件值："/>
+
+            <EditText
+                android:id="@+id/conditionEditText"
+                android:layout_width="0dp"
+                android:layout_height="50dip"
+                android:layout_weight="6"
+                android:background="@color/default_no_bg"
+                android:hint="请输入..."/>
+
+            <ImageButton
+                android:id="@+id/conditionEditTextoperatorButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/default_no_bg"
+                android:src="@drawable/button_for_more"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/default_line_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/default_text_medium_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text=" 连接符："/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:layout_weight="6"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/default_text_small_purity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="（或"/>
+
+                <com.mapgis.mmt.common.widget.customview.SwitchImageButton
+                    android:id="@+id/toggleButton"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    style="@style/default_text_small_purity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="且）"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/default_line_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/addButton"
+                style="@style/default_text_medium_1"
+                android:layout_width="140dip"
+                android:layout_height="35dip"
+                android:background="@drawable/button_normal"
+                android:text="添加"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@+id/okButton"
+                style="@style/default_text_medium_1"
+                android:layout_width="140dip"
+                android:layout_height="35dip"
+                android:layout_marginLeft="20dip"
+                android:background="@drawable/button_normal"
+                android:text="确定"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/progressbar_blue"/>
+
+    <LinearLayout
+        android:id="@+id/resultLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:cacheColorHint="#00000000"/>
+    </LinearLayout>
+
+
+</LinearLayout>

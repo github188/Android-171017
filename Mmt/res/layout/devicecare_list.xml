@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_light_dark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/main_menu_top"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:background="@drawable/default_actionbar"
+            android:contentDescription="@string/text_image"
+            android:src="@drawable/common_back" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/txtSearch"
+                style="@style/default_text_medium_1"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/default_input_edit"
+                android:clickable="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="搜索条件" />
+
+            <ImageView
+                android:id="@+id/iv_qrcode"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/ic_scan_qrcode_black_24dp" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btnSorter"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:background="@drawable/default_actionbar"
+            android:contentDescription="@string/text_image"
+            android:src="@drawable/navigation_locate"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <com.filtermenubar.FilterMenuBar
+        android:id="@+id/filterView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@color/default_light_dark" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/contentListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/default_no_bg"
+        android:dividerHeight="12dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@drawable/item_focus_bg"
+        android:smoothScrollbar="true" />
+
+</LinearLayout>

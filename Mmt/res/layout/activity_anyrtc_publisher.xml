@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <org.webrtc.SurfaceViewRenderer
+            android:id="@+id/suface_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="48dp"
+            android:id="@+id/llayout_host_tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/btn_switch_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:onClick="OnBtnClicked"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_switch" />
+
+            <!--<ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="OnBtnClicked"
+                android:scaleType="centerInside"
+                android:layout_margin="15dp"
+                android:src="@mipmap/btn_close" />-->
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txt_rtmp_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/llayout_host_tools"
+            android:layout_margin="15dp"
+            android:text="RTMP"
+            android:textColor="@android:color/holo_red_dark" />
+    </RelativeLayout>
+
+    <!-- 标题栏信息 -->
+    <LinearLayout
+        android:id="@+id/baseTopView"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:orientation="vertical">
+
+        <include layout="@layout/main_actionbar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LoadingView"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/loadingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="正在连接"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@null"
+        android:minHeight="48dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/publish"
+            style="@style/live_button"
+            android:text="@string/live_start_publish" />
+
+        <Button
+            android:id="@+id/swCam"
+            style="@style/live_button"
+            android:text="@string/live_switch_camera"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/record"
+            style="@style/live_button"
+            android:text="@string/live_record"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/swEnc"
+            style="@style/live_button"
+            android:text="@string/live_soft_encoder"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!--测试时候用url-->
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/baseTopView"
+        android:layout_margin="10dp"
+        android:textColor="@color/accent_material_light"
+        android:textSize="14sp" />
+</RelativeLayout>

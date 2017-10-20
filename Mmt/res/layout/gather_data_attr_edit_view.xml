@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_ok_cancel_dialog_Tips"
+        style="@style/default_text_large"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:padding="10dip"
+        android:textColor="@color/progressbar_blue" />
+
+    <ImageView
+        android:id="@+id/btn_imageline_1"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/tv_ok_cancel_dialog_Tips"
+        android:background="@color/progressbar_blue"
+        android:contentDescription="@string/text_image" />
+
+    <LinearLayout
+        android:id="@+id/layout_ok_cancel_dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_imageline_1"
+        android:minWidth="240dp"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btn_imageline_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/layout_ok_cancel_dialog_content"
+        android:background="@color/progressbar_blue"
+        android:contentDescription="@string/text_image"
+        android:minWidth="300dp" />
+
+    <LinearLayout
+        android:id="@+id/btn_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_imageline_2"
+        android:divider="@color/progressbar_blue"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/default_text_blue"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:gravity="center"
+            android:text="@string/text_cancel" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/progressbar_blue"
+            android:contentDescription="@string/text_image" />
+
+        <Button
+            android:id="@+id/btn_edit"
+            style="@style/default_text_blue"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:gravity="center"
+            android:text="@string/move" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/progressbar_blue"
+            android:contentDescription="@string/text_image" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/default_text_blue"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_focus_bg"
+            android:gravity="center"
+            android:minWidth="120dp"
+            android:text="@string/text_ok" />
+    </LinearLayout>
+
+</RelativeLayout>

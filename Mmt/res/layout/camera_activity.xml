@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor_overlay"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/dimissActivity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bgColor_overlay" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/black">
+
+        <com.mapgis.mmt.common.camera.MovieRecorderView
+            android:id="@+id/movieRecorderView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/shoot_button"
+            android:layout_width="@dimen/video_bottom_height"
+            android:layout_height="@dimen/video_bottom_height"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_movie_add_shoot"
+            android:text="按住拍"
+            android:textColor="#20b6ff" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"  >
+   
+    <!--  设备上报  的 填写  属性 布局  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:minHeight="40dip" >
+        
+        <TextView
+            android:id="@+id/attName"
+            style="@style/default_text_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@+id/imageView4"
+            android:minWidth="60dip"
+            android:text="属性名：" />
+
+        <EditText
+            android:id="@+id/attEditText"
+            style="@style/default_text_medium_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/attName"
+            android:background="@color/default_no_bg"
+            android:minWidth="160dip" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#22000000" />
+    
+</LinearLayout>

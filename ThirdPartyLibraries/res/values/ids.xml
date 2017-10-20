@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <item name="gridview" type="id"/>
+    <item name="webview" type="id"/>
+    <item name="scrollview" type="id"/>
+    <item name="done" type="id">false</item>
+    <item name="date_picker_header" type="id">false</item>
+    <item name="day_picker_selected_date_layout" type="id">false</item>
+    <item name="date_picker_month_and_day" type="id">false</item>
+    <item name="date_picker_month" type="id">false</item>
+    <item name="date_picker_day" type="id">false</item>
+    <item name="date_picker_year" type="id">false</item>
+    <item name="animator" type="id">false</item>
+    <item name="month_text_view" type="id">false</item>
+    <item name="auto_focus" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="quit" type="id"/>
+
+</resources>
