@@ -11,7 +11,7 @@ import org.json.JSONObject;
 import java.net.SocketTimeoutException;
 
 public abstract class ARequestCallback implements IRequestCallback {
-    private static final String TAG = "ARequestCallback";
+    private static final String TAG = "ARequestCallback";//maoshoubei test modify
 
 
     public boolean isForComplexResponse() {
