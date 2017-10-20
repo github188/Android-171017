@@ -2,7 +2,7 @@ package com.ecity.android.eventcore;
 
 public class CommonEvent {
     private int id;
-    private Object data;
+    private Object data;//
     private int status;
     private String message;
     private Class<?> targetClass;
