@@ -56,7 +56,6 @@ public class RequestExecutor {
         Iterator<Map.Entry<String, String>> it = parameters.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry<String, String> entry = it.next();
-            System.out.println("key= " + entry.getKey() + " and value= " + entry.getValue());
             urlBuilder.addQueryParameter(entry.getKey(), parameters.get(entry.getKey()));
         }
 

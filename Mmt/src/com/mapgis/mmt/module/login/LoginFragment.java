@@ -37,9 +37,7 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.ecity.android.eventcore.EventBusUtil;
-import com.ecity.android.eventcore.ResponseEvent;
-import com.event.ResponseEventStatus;
+import com.ecity.android.httpexecutor.IRequestFinishCallback;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.mapgis.mmt.AppManager;
@@ -68,7 +66,7 @@ import com.mapgis.mmt.module.systemsetting.locksetting.util.PasswordHandleExcept
 import com.mapgis.mmt.module.systemsetting.locksetting.util.PasswordManager;
 import com.mapgis.mmt.module.welcome.Welcome;
 import com.mapgis.mmt.net.HttpRequest;
-import com.network.LoginService;
+import com.network.request.TestConnectionRequest;
 import com.zbar.lib.CaptureActivity;
 
 import java.util.ArrayList;
@@ -110,7 +108,6 @@ public class LoginFragment extends Fragment implements Login.PermissionCheckCall
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EventBusUtil.register(this);
         getActivity().getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         NotificationManager nm = (NotificationManager) getActivity().getSystemService(Context.NOTIFICATION_SERVICE);
@@ -440,7 +437,7 @@ public class LoginFragment extends Fragment implements Login.PermissionCheckCall
 
         ServerConfigInfo cfg = ServerConnectConfig.getInstance().getServerConfigInfo();
 
-        LoginService.getInstance().getTestConnectionData("11");//@maoshoubei 测试okHttp框架
+        new TestConnectionRequest(getActivity(), new MyRequestFinishCallback()).execute();//@maoshoubei 测试okhttp框架
 
         mLoginTask = new NetTestTask(LoginFragment.this, false) {
             @Override
@@ -930,25 +927,19 @@ public class LoginFragment extends Fragment implements Login.PermissionCheckCall
         if (loadingDialog != null && loadingDialog.isShowing()) {
             loadingDialog.dismiss();
         }
-        EventBusUtil.unregister(this);
         super.onDestroy();
     }
 
-    public void onEventMainThread(ResponseEvent event) {
-        if (!event.isOK()) {
-            return;
-        }
-        switch (event.getId()) {
-            case ResponseEventStatus.LOGIN_TEST_CONNECTION_DATA:
-                handleTestConnection(event);
-                break;
-            default:
-                break;
-        }
-    }
+    /**
+     * 回调 获取请求完成数据
+     **/
+    private class MyRequestFinishCallback implements IRequestFinishCallback {
 
-    private void handleTestConnection(ResponseEvent event) {
 
+        @Override
+        public void onRequestProcessed(Object o) {
+
+        }
     }
 
 }

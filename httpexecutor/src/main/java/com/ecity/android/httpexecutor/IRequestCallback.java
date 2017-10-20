@@ -4,8 +4,6 @@ import java.util.Map;
 
 public interface IRequestCallback {
 
-    boolean isForComplexResponse();
-
     boolean isPost();
 
     String getUrl();

@@ -13,12 +13,6 @@ import java.net.SocketTimeoutException;
 public abstract class ARequestCallback implements IRequestCallback {
     private static final String TAG = "ARequestCallback";//maoshoubei test modify
 
-
-    public boolean isForComplexResponse() {
-        return true;
-    }
-
-
     /**
      * Get the event id for this request. This id will be used by EventBusUtil
      * when posting an event.
@@ -109,7 +103,7 @@ public abstract class ARequestCallback implements IRequestCallback {
             if (isBlankString(msg)) {
                 msg = getErrorMessage();
             }
-            LogUtil.e(TAG, "request error. " + msg);
+            //LogUtil.e(TAG, "request error. " + msg);
             event = new ResponseEvent(getEventId(), ReservedEvent.Response.ERROR, msg);
         }
 

@@ -1,4 +1,4 @@
-package com;
+package com.ecity.android.httpexecutor;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -21,7 +21,8 @@ public abstract class AbsRequestParameter {
     }
 
     private void setDefaultParameters(Map<String, String> map) {
-        map.put("sys", "Android");
+        map.put("plat", "mobile");
+        map.put("f", "json");
     }
 
     protected abstract void fillParameters(Map<String, String> map);
